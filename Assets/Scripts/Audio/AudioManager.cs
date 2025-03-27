@@ -10,6 +10,10 @@ public class AudioManager : MonoSingleton<AudioManager>
         {
             bank.Load();
         }
+        SetBusVolume(SaveManager.Instance.systemData.MasterVolume, BusType.Master);
+        SetBusVolume(SaveManager.Instance.systemData.SFXVolume, BusType.SFX);
+        SetBusVolume(SaveManager.Instance.systemData.MusicVolume, BusType.Music);
+        SetBusVolume(SaveManager.Instance.systemData.UIVolume, BusType.UI);
     }
     public void PlaySound(AK.Wwise.Event soundEvent)
     {
@@ -21,4 +25,18 @@ public class AudioManager : MonoSingleton<AudioManager>
         soundEvent.Post(gameObj);
     }
 
+    public void SetBusVolume(float value, BusType bus)
+    {
+        Debug.Log($"setting volume {value} for {bus}_volume");
+        AkUnitySoundEngine.SetRTPCValue($"{bus}_volume" , Mathf.Clamp01(value));
+    }
+
+}
+
+public enum BusType
+{
+    Master,
+    Music,
+    SFX,
+    UI
 }

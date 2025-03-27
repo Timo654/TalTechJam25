@@ -85,10 +85,10 @@ public class SaveManager : MonoSingleton<SaveManager>
 [Serializable]
 public class SystemData
 {
-    public float MasterVolume = 50f;
-    public float SFXVolume = 50f;
-    public float UIVolume = 40f;
-    public float MusicVolume = 20f;
+    public float MasterVolume = 0.5f;
+    public float SFXVolume = 0.5f;
+    public float UIVolume = 0.4f;
+    public float MusicVolume = 0.2f;
 }
 
 [Serializable]

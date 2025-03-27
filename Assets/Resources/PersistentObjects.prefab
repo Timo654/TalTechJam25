@@ -30,8 +30,67 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7611736983183140763}
+  - {fileID: 4002559234077145571}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4491542720746368703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4002559234077145571}
+  - component: {fileID: 3374335867609719821}
+  m_Layer: 0
+  m_Name: SaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4002559234077145571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4491542720746368703}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1114004957818087586}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3374335867609719821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4491542720746368703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdea1647f0b426e47a4fcadd210000dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  systemData:
+    MasterVolume: 0.5
+    SFXVolume: 0.5
+    UIVolume: 0.4
+    MusicVolume: 0.2
+  gameData:
+    version: 2
+    money: 0
+    currentBall: 0
+    currentBody: 0
+    currentTrack: 0
+    currentLevel: 0
+  runtimeData:
+    previousSceneName: 
 --- !u!1 &5016839012092585960
 GameObject:
   m_ObjectHideFlags: 0
