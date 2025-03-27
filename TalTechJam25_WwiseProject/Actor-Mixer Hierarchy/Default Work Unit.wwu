@@ -1,6 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}" SchemaVersion="123">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="SFX" ID="{549DD944-30D0-4192-90BE-C95A812204DF}" ShortID="809955697">
+					<ChildrenList>
+						<Sound Name="enemy_hit_test" ID="{23911B7D-BA14-4984-A51A-328ADFC482E3}" ShortID="990800552">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="EnemyHitReceive" ID="{C7035B11-1A12-4BB1-91EF-990D3B71E513}">
+									<Language>SFX</Language>
+									<AudioFile>EnemyHitReceive.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="821328263"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="EnemyHitReceive" ID="{C7035B11-1A12-4BB1-91EF-990D3B71E513}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="fire_hit_ambient_test" ID="{230C25D6-4434-4C8B-B670-CC09C7E74C71}" ShortID="516794987">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="fireSound" ID="{4AB1C0F5-45A1-4B05-B2F6-6D30DF267ABC}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0.41304347826087"/>
+										<Property Name="LoopEnd" Type="Real64" Value="6.78695652173913"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>fireSound.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="797319761"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="fireSound" ID="{4AB1C0F5-45A1-4B05-B2F6-6D30DF267ABC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI" ID="{A4FE66D0-0BCE-4AB6-9DF4-3B928AF2ACC4}" ShortID="979635429">
+					<ChildrenList>
+						<Sound Name="back_button_sfx" ID="{84E14798-A4A8-4C16-9A42-34911103C1BD}" ShortID="66681518">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Back" ID="{47964963-BCCE-42C1-8E0C-AD1A1C37AC50}">
+									<Language>SFX</Language>
+									<AudioFile>Back.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1029377040"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Back" ID="{47964963-BCCE-42C1-8E0C-AD1A1C37AC50}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="button_click_main" ID="{37210FC2-838F-4B74-BBC9-51575BF75851}" ShortID="658549640">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="uiClick2" ID="{C6E33A55-9411-47BC-96AB-7992460B14BA}">
+									<Language>SFX</Language>
+									<AudioFile>uiClick2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="43292710"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="uiClick2" ID="{C6E33A55-9411-47BC-96AB-7992460B14BA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="hover_mouse_sfx" ID="{4E64F89E-0EE1-4AD1-B76F-5407D1B54426}" ShortID="817688982">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="StepsWood2" ID="{6F561761-4D32-4EA3-95EC-6E1B8C54DE35}">
+									<Language>SFX</Language>
+									<AudioFile>StepsWood2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="152334766"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="StepsWood2" ID="{6F561761-4D32-4EA3-95EC-6E1B8C54DE35}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: fa5f4f3a636db646b7188ed2b02a7026
     GuidInternal: 
-    m_lastTime: -8584585235156460153
+    m_lastTime: -8584585089815959920
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: dddb6d1508ee114fac7ad0f52b71377a
     GuidInternal: 
-    m_lastTime: -8584585235156940188
+    m_lastTime: -8584585082041657013
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,57 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: d91a7081917d5a409b7a074139308337
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: dddb6d1508ee114fac7ad0f52b71377a
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: d91a7081917d5a409b7a074139308337
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+    - name: SFX
+      guid: 512253d45fd4e54d8d0c5958e3c4dde7
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: dddb6d1508ee114fac7ad0f52b71377a
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 512253d45fd4e54d8d0c5958e3c4dde7
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX
+    - name: UI
+      guid: b228d2abd797cc4a9b42192c90c53efa
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: dddb6d1508ee114fac7ad0f52b71377a
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: UI
+        ObjectType: 2
+        guid: b228d2abd797cc4a9b42192c90c53efa
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\UI
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,8 +117,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d5c87e189aefe04597a0738b241d60ca
     GuidInternal: 
-    m_lastTime: -8584585235156810112
-    List: []
+    m_lastTime: -8584585075556140034
+    List:
+    - name: MainBank
+      guid: 9492af1512c2434b83aefeb6ea153484
+      id: 2880737896
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d5c87e189aefe04597a0738b241d60ca
+      - ElementName: MainBank
+        ObjectType: 7
+        guid: 9492af1512c2434b83aefeb6ea153484
+      Path: SoundBanks\Default Work Unit\MainBank
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +145,159 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: d62b92dde4877747b03afdd74af8b072
     GuidInternal: 
-    m_lastTime: -8584585235156607342
-    List: []
+    m_lastTime: -8584585077120059708
+    List:
+    - name: Music
+      guid: b95ddb8bddbe584685f413d54ce464cd
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: Music
+        ObjectType: 4
+        guid: b95ddb8bddbe584685f413d54ce464cd
+      Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_back_button_sfx
+      guid: 1963990965e7784bae246651e5fb3ce7
+      id: 3386456026
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: UI
+        ObjectType: 4
+        guid: a888da91ef63464083bf78b63914ca4d
+      - ElementName: Play_back_button_sfx
+        ObjectType: 3
+        guid: 1963990965e7784bae246651e5fb3ce7
+      Path: Events\Default Work Unit\UI\Play_back_button_sfx
+      maxAttenuation: 0
+      maxDuration: 0.1339229
+      minDuration: 0.1339229
+    - name: Play_button_click_main
+      guid: c611f17061b4bf429f314c6aa7e44dc3
+      id: 1531308565
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: UI
+        ObjectType: 4
+        guid: a888da91ef63464083bf78b63914ca4d
+      - ElementName: Play_button_click_main
+        ObjectType: 3
+        guid: c611f17061b4bf429f314c6aa7e44dc3
+      Path: Events\Default Work Unit\UI\Play_button_click_main
+      maxAttenuation: 0
+      maxDuration: 0.68750566
+      minDuration: 0.68750566
+    - name: Play_enemy_hit_test
+      guid: d41915b7a2685943920f63bce8bfd97a
+      id: 1291546063
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 74141f36b2617b41a862b3f712e3eb14
+      - ElementName: Play_enemy_hit_test
+        ObjectType: 3
+        guid: d41915b7a2685943920f63bce8bfd97a
+      Path: Events\Default Work Unit\SFX\Play_enemy_hit_test
+      maxAttenuation: 0
+      maxDuration: 3.5
+      minDuration: 3.5
+    - name: Play_fire_hit_ambient_test
+      guid: d524aed5dac1294396fd6322b8294558
+      id: 1077075440
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 74141f36b2617b41a862b3f712e3eb14
+      - ElementName: Play_fire_hit_ambient_test
+        ObjectType: 3
+        guid: d524aed5dac1294396fd6322b8294558
+      Path: Events\Default Work Unit\SFX\Play_fire_hit_ambient_test
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_hover_mouse_sfx
+      guid: 37790e2b076d254e9e4377a4692c4d1b
+      id: 713846344
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: UI
+        ObjectType: 4
+        guid: a888da91ef63464083bf78b63914ca4d
+      - ElementName: Play_hover_mouse_sfx
+        ObjectType: 3
+        guid: 37790e2b076d254e9e4377a4692c4d1b
+      Path: Events\Default Work Unit\UI\Play_hover_mouse_sfx
+      maxAttenuation: 0
+      maxDuration: 0.43750566
+      minDuration: 0.43750566
+    - name: SFX
+      guid: 74141f36b2617b41a862b3f712e3eb14
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 74141f36b2617b41a862b3f712e3eb14
+      Path: Events\Default Work Unit\SFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI
+      guid: a888da91ef63464083bf78b63914ca4d
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: UI
+        ObjectType: 4
+        guid: a888da91ef63464083bf78b63914ca4d
+      Path: Events\Default Work Unit\UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -94,7 +310,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 8221c26751d5bb4a95f7cbc40d660655
     GuidInternal: 
-    m_lastTime: -8584585235156743391
+    m_lastTime: -8584585089816159391
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -108,7 +324,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 1341530b8f811e44b4a0988b2fd78130
     GuidInternal: 
-    m_lastTime: -8584585235156862309
+    m_lastTime: -8584585089815999817
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -122,7 +338,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: b237b0cb81fdd24280bc14337cab956c
     GuidInternal: 
-    m_lastTime: -8584585235157087589
+    m_lastTime: -8584585089815999817
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -136,10 +352,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: efebc2c1b122934e843294ecc64feccf
     GuidInternal: 
-    m_lastTime: -8584585235155741164
+    m_lastTime: -8584585089815969895
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0600000007000000090000000a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

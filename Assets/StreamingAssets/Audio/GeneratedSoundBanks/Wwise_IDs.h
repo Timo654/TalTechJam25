@@ -11,9 +11,27 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID PLAY_BACK_BUTTON_SFX = 3386456026U;
+        static const AkUniqueID PLAY_BUTTON_CLICK_MAIN = 1531308565U;
+        static const AkUniqueID PLAY_ENEMY_HIT_TEST = 1291546063U;
+        static const AkUniqueID PLAY_FIRE_HIT_AMBIENT_TEST = 1077075440U;
+        static const AkUniqueID PLAY_HOVER_MOUSE_SFX = 713846344U;
+    } // namespace EVENTS
+
+    namespace BANKS
+    {
+        static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID MAINBANK = 2880737896U;
+    } // namespace BANKS
+
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID SFX = 393239870U;
+        static const AkUniqueID UI = 1551306167U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

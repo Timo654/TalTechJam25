@@ -1,0 +1,133 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Linux",
+  "BasePlatform": "Linux",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2880737896",
+    "Type": "User",
+    "GUID": "{15AF9294-C212-4B43-83AE-FEB6EA153484}",
+    "Language": "SFX",
+    "Hash": "{ECB00123-9B50-AF72-8565-C96FD4A48722}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainBank",
+    "ShortName": "MainBank",
+    "Path": "MainBank.bnk",
+    "Media": [
+     {
+      "Id": "43292710",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "uiClick2.wav",
+      "CachePath": "94/{9417E5A7-F3FA-DF5D-7034-8F0C6E5EBA4E}.wem"
+     },
+     {
+      "Id": "152334766",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "StepsWood2.wav",
+      "CachePath": "0E/{0EA70A8F-AA01-284C-49A2-002718754828}.wem"
+     },
+     {
+      "Id": "797319761",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "fireSound.wav",
+      "CachePath": "F5/{F563D9B0-5737-354A-FC3D-871A02D40827}.wem"
+     },
+     {
+      "Id": "821328263",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EnemyHitReceive.wav",
+      "CachePath": "A2/{A2016406-5CC6-E03F-7D9C-06A06C9EF445}.wem"
+     },
+     {
+      "Id": "1029377040",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Back.wav",
+      "CachePath": "CF/{CF2BC049-1B04-D369-1C47-20B4B7A8B2DF}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3386456026",
+      "Name": "Play_back_button_sfx",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Play_back_button_sfx",
+      "GUID": "{09996319-E765-4B78-AE24-6651E5FB3CE7}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.1339229",
+      "DurationMax": "0.1339229",
+      "MediaRefs": [
+       {
+        "Id": "1029377040"
+       }
+      ]
+     },
+     {
+      "Id": "1531308565",
+      "Name": "Play_button_click_main",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Play_button_click_main",
+      "GUID": "{70F111C6-B461-42BF-9F31-4C6AA7E44DC3}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.68750566",
+      "DurationMax": "0.68750566",
+      "MediaRefs": [
+       {
+        "Id": "43292710"
+       }
+      ]
+     },
+     {
+      "Id": "1291546063",
+      "Name": "Play_enemy_hit_test",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_enemy_hit_test",
+      "GUID": "{B71519D4-68A2-4359-920F-63BCE8BFD97A}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.5",
+      "DurationMax": "3.5",
+      "MediaRefs": [
+       {
+        "Id": "821328263"
+       }
+      ]
+     },
+     {
+      "Id": "1077075440",
+      "Name": "Play_fire_hit_ambient_test",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_fire_hit_ambient_test",
+      "GUID": "{D5AE24D5-C1DA-4329-96FD-6322B8294558}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "797319761"
+       }
+      ]
+     },
+     {
+      "Id": "713846344",
+      "Name": "Play_hover_mouse_sfx",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Play_hover_mouse_sfx",
+      "GUID": "{2B0E7937-6D07-4E25-9E43-77A4692C4D1B}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.43750566",
+      "DurationMax": "0.43750566",
+      "MediaRefs": [
+       {
+        "Id": "152334766"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{1776FCF6-843A-B1E5-28E6-6A1E0C691287}"
+ }
+}

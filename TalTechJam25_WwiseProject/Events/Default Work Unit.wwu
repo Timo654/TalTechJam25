@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{DD922BD6-87E4-4777-B03A-FDD74AF8B072}" SchemaVersion="123">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{DD922BD6-87E4-4777-B03A-FDD74AF8B072}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{DD922BD6-87E4-4777-B03A-FDD74AF8B072}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Music" ID="{8BDB5DB9-BEDD-4658-85F4-13D54CE464CD}" ShortID="643978840"/>
+				<Folder Name="SFX" ID="{361F1474-61B2-417B-A862-B3F712E3EB14}" ShortID="183455253">
+					<ChildrenList>
+						<Event Name="Play_fire_hit_ambient_test" ID="{D5AE24D5-C1DA-4329-96FD-6322B8294558}">
+							<ChildrenList>
+								<Action Name="" ID="{BF3E4B61-0ED1-4078-95B3-703075F2B98D}" ShortID="306046059">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="fire_hit_ambient_test" ID="{230C25D6-4434-4C8B-B670-CC09C7E74C71}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_enemy_hit_test" ID="{B71519D4-68A2-4359-920F-63BCE8BFD97A}">
+							<ChildrenList>
+								<Action Name="" ID="{9A08AFDA-709F-403A-9384-A1E351FBB7F5}" ShortID="840319164">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="enemy_hit_test" ID="{23911B7D-BA14-4984-A51A-328ADFC482E3}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI" ID="{91DA88A8-63EF-4046-83BF-78B63914CA4D}" ShortID="266962007">
+					<ChildrenList>
+						<Event Name="Play_back_button_sfx" ID="{09996319-E765-4B78-AE24-6651E5FB3CE7}">
+							<ChildrenList>
+								<Action Name="" ID="{F3425F54-53E7-4BB5-ACAB-EA031110B3DB}" ShortID="52561067">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="back_button_sfx" ID="{84E14798-A4A8-4C16-9A42-34911103C1BD}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_button_click_main" ID="{70F111C6-B461-42BF-9F31-4C6AA7E44DC3}">
+							<ChildrenList>
+								<Action Name="" ID="{D8631C1F-D5E1-49D0-AABF-75D02A18A4E7}" ShortID="549781029">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="button_click_main" ID="{37210FC2-838F-4B74-BBC9-51575BF75851}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_hover_mouse_sfx" ID="{2B0E7937-6D07-4E25-9E43-77A4692C4D1B}">
+							<ChildrenList>
+								<Action Name="" ID="{998D9BB9-55D7-4A63-BD77-5440C91B1BB2}" ShortID="596471445">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="hover_mouse_sfx" ID="{4E64F89E-0EE1-4AD1-B76F-5407D1B54426}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
