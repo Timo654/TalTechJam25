@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="MainBank" ID="{15AF9294-C212-4B43-83AE-FEB6EA153484}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SFX" ID="{549DD944-30D0-4192-90BE-C95A812204DF}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI" ID="{A4FE66D0-0BCE-4AB6-9DF4-3B928AF2ACC4}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

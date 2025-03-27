@@ -5,10 +5,22 @@ Event	ID	Name			Wwise Object Path	Notes
 	1531308565	Play_button_click_main			\Default Work Unit\UI\Play_button_click_main	
 	3386456026	Play_back_button_sfx			\Default Work Unit\UI\Play_back_button_sfx	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1006694123	Music_volume			\Default Work Unit\Music_volume	
+	1564184899	SFX_volume			\Default Work Unit\SFX_volume	
+	1719345792	UI_volume			\Default Work Unit\UI_volume	
+	4179668880	Master_volume			\Default Work Unit\Master_volume	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	43292710	button_click_main	G:\TalTechJam25\TalTechJam25_WwiseProject\.cache\94\{9417E5A7-F3FA-DF5D-7034-8F0C6E5EBA4E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\button_click_main		121372
-	152334766	hover_mouse_sfx	G:\TalTechJam25\TalTechJam25_WwiseProject\.cache\0E\{0EA70A8F-AA01-284C-49A2-002718754828}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\hover_mouse_sfx		77272
-	797319761	fire_hit_ambient_test	G:\TalTechJam25\TalTechJam25_WwiseProject\.cache\8C\{8CD0558C-E59C-AE6F-2EFC-136AF5587FDB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\fire_hit_ambient_test		1323144
-	821328263	enemy_hit_test	G:\TalTechJam25\TalTechJam25_WwiseProject\.cache\A2\{A2016406-5CC6-E03F-7D9C-06A06C9EF445}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\enemy_hit_test		617496
-	1029377040	back_button_sfx	G:\TalTechJam25\TalTechJam25_WwiseProject\.cache\CF\{CF2BC049-1B04-D369-1C47-20B4B7A8B2DF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\back_button_sfx		23768
+	43292710	button_click_main	C:\Users\Tim\Desktop\Gaming Jams\TalTechJam25\TalTechJam25_WwiseProject\.cache\94\{9417E5A7-F3FA-DF5D-7034-8F0C6E5EBA4E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\button_click_main		121372
+	152334766	hover_mouse_sfx	C:\Users\Tim\Desktop\Gaming Jams\TalTechJam25\TalTechJam25_WwiseProject\.cache\0E\{0EA70A8F-AA01-284C-49A2-002718754828}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\hover_mouse_sfx		77272
+	797319761	fire_hit_ambient_test	C:\Users\Tim\Desktop\Gaming Jams\TalTechJam25\TalTechJam25_WwiseProject\.cache\8C\{8CD0558C-E59C-AE6F-2EFC-136AF5587FDB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\fire_hit_ambient_test		1323144
+	821328263	enemy_hit_test	C:\Users\Tim\Desktop\Gaming Jams\TalTechJam25\TalTechJam25_WwiseProject\.cache\A2\{A2016406-5CC6-E03F-7D9C-06A06C9EF445}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\enemy_hit_test		617496
+	1029377040	back_button_sfx	C:\Users\Tim\Desktop\Gaming Jams\TalTechJam25\TalTechJam25_WwiseProject\.cache\CF\{CF2BC049-1B04-D369-1C47-20B4B7A8B2DF}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\back_button_sfx		23768
 
