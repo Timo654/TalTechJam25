@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: dddb6d1508ee114fac7ad0f52b71377a
     GuidInternal: 
-    m_lastTime: -8584585082041657013
+    m_lastTime: -8584585061437483942
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d5c87e189aefe04597a0738b241d60ca
     GuidInternal: 
-    m_lastTime: -8584585075556140034
+    m_lastTime: -8584585061436968037
     List:
     - name: MainBank
       guid: 9492af1512c2434b83aefeb6ea153484
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: d62b92dde4877747b03afdd74af8b072
     GuidInternal: 
-    m_lastTime: -8584585077120059708
+    m_lastTime: -8584585061438348530
     List:
     - name: Music
       guid: b95ddb8bddbe584685f413d54ce464cd
@@ -355,7 +355,7 @@ MonoBehaviour:
     m_lastTime: -8584585089815969895
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0600000007000000090000000a000000
+  ExpandedWaapiItemIds: 0200000005000000060000000700000008000000090000000a0000000c0000000d0000000e0000000f00000015000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

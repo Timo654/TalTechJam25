@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{15AF9294-C212-4B43-83AE-FEB6EA153484}",
     "Language": "SFX",
-    "Hash": "{ECB00123-9B50-AF72-8565-C96FD4A48722}",
+    "Hash": "{38A6B757-21CE-47F7-AEAB-BE2F35B020C3}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainBank",
     "ShortName": "MainBank",
     "Path": "MainBank.bnk",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "fireSound.wav",
-      "CachePath": "F5/{F563D9B0-5737-354A-FC3D-871A02D40827}.wem"
+      "CachePath": "8C/{8CD0558C-E59C-AE6F-2EFC-136AF5587FDB}.wem"
      },
      {
       "Id": "821328263",
@@ -128,6 +128,6 @@
     ]
    }
   ],
-  "FileHash": "{1776FCF6-843A-B1E5-28E6-6A1E0C691287}"
+  "FileHash": "{05856E0B-A54D-5F49-7832-929E95000487}"
  }
 }
