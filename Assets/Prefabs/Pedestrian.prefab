@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 2574243121126187705}
   - component: {fileID: 3717002237829993730}
   - component: {fileID: 2376694190383346873}
-  - component: {fileID: 2338298629991464223}
+  - component: {fileID: 2151380906236633908}
   m_Layer: 0
   m_Name: Pedestrian
   m_TagString: Untagged
@@ -114,14 +114,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7814299432080817148}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.42261827, y: 0, z: 0, w: 0.9063079}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1817989323696309704}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -50, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &3717002237829993730
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -181,17 +181,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityType: 0
-  brokenSprite: {fileID: 5167950290877453069, guid: 34676405600a0da4aa427cf442787a43, type: 3}
---- !u!114 &2338298629991464223
-MonoBehaviour:
+  movementSpeed: 10
+--- !u!95 &2151380906236633908
+Animator:
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7814299432080817148}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3160f36692b46f45ae41112e3a123b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 10
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8cb6556cbd8e9214c8cc5c6998f412c2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
