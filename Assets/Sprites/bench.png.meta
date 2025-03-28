@@ -40,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -132,20 +132,20 @@ TextureImporter:
       name: bench_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 0
         y: 0
-        width: 61
-        height: 60
+        width: 86
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f4287a4d6a7d425b0800000000000000
-      internalID: -5393949342150720945
+      spriteID: 34cd7af6a9c03314ea8b8dd48e038e1f
+      internalID: -1305181085
       vertices: []
       indices: 
       edges: []
@@ -154,20 +154,20 @@ TextureImporter:
       name: bench_1
       rect:
         serializedVersion: 2
-        x: 98
+        x: 86
         y: 0
-        width: 66
-        height: 58
+        width: 86
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bb906194666c35920800000000000000
-      internalID: 2977941921237174715
+      spriteID: f4402588524215f4cb1b3615c5366040
+      internalID: -1214894858
       vertices: []
       indices: 
       edges: []
@@ -176,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6396de5bc91d81a4ca948e3a4210f45e
     internalID: 0
     vertices: []
     indices: 
@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bench_0: -1305181085
+      bench_1: -1214894858
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

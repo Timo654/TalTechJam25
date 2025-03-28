@@ -43,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -135,20 +135,20 @@ TextureImporter:
       name: bolt_scooter_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 3
-        width: 82
-        height: 77
+        x: 0
+        y: 0
+        width: 86
+        height: 95
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 14afb23ef89282350800000000000000
-      internalID: 5992085002184817217
+      spriteID: 547cc250e55e8c94f9a6e91e13deeada
+      internalID: 45777261
       vertices: []
       indices: 
       edges: []
@@ -157,42 +157,20 @@ TextureImporter:
       name: bolt_scooter_1
       rect:
         serializedVersion: 2
-        x: 90
-        y: 2
-        width: 80
-        height: 65
+        x: 86
+        y: 0
+        width: 86
+        height: 95
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e0fd898247f3d1030800000000000000
-      internalID: 3466997056275013390
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bolt_scooter_2
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 23
-        width: 51
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 19498cf64941522b0800000000000000
-      internalID: -5610055133056953199
+      spriteID: 74bfc1a793011fb43888c0403b0acd35
+      internalID: -1927644714
       vertices: []
       indices: 
       edges: []
@@ -201,7 +179,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5131443f0c9715a4b87d221ea86d7658
     internalID: 0
     vertices: []
     indices: 
@@ -210,7 +188,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bolt_scooter_0: 45777261
+      bolt_scooter_1: -1927644714
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

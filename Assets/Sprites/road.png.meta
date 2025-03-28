@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 3adee5e91837ed7439e9d9c5084164fb
+guid: 546e9e1727208904e828668592489ffe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7621895044635818046
-    second: walk_cycle_man_0
-  - first:
-      213: 5786842518255102374
-    second: walk_cycle_man_1
-  - first:
-      213: -4416870066084901979
-    second: walk_cycle_man_2
-  - first:
-      213: -84799262919508457
-    second: walk_cycle_man_3
+      213: 7094887773775264657
+    second: road_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,9 +40,9 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -135,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walk_cycle_man_0
+      name: road_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 95
-        height: 112
+        width: 45
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,74 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c70c25e6d6993690800000000000000
-      internalID: -7621895044635818046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_cycle_man_1
-      rect:
-        serializedVersion: 2
-        x: 95
-        y: 0
-        width: 95
-        height: 112
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6a9e8bf3c9efe4050800000000000000
-      internalID: 5786842518255102374
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_cycle_man_2
-      rect:
-        serializedVersion: 2
-        x: 190
-        y: 0
-        width: 95
-        height: 112
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5ab04f3931024b2c0800000000000000
-      internalID: -4416870066084901979
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_cycle_man_3
-      rect:
-        serializedVersion: 2
-        x: 285
-        y: 0
-        width: 95
-        height: 112
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 71eb778058bb2def0800000000000000
-      internalID: -84799262919508457
+      spriteID: 19bf22507da167260800000000000000
+      internalID: 7094887773775264657
       vertices: []
       indices: 
       edges: []
@@ -226,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e8adf14f72055a9429d8b87686e3a5f3
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -236,10 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      walk_cycle_man_0: -7621895044635818046
-      walk_cycle_man_1: 5786842518255102374
-      walk_cycle_man_2: -4416870066084901979
-      walk_cycle_man_3: -84799262919508457
+      road_0: 7094887773775264657
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
