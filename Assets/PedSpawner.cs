@@ -1,11 +1,10 @@
-using DG.Tweening;
 using System.Collections;
 using UnityEngine;
 
 public class PedSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject pedPrefab;
-    private float[] randomLanes = {-3.5f, 0f, 4f};
+    private float[] randomLanes = { -3.5f, 0f, 4f };
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,10 +18,16 @@ public class PedSpawner : MonoBehaviour
             yield return new WaitForSeconds(2f);
             Debug.Log("spawned ped");
             var gameObj = Instantiate(pedPrefab, transform);
-            Debug.Log(transform.position);
-            // why the FUCK does this not work
-            gameObj.transform.SetLocalPositionAndRotation(new Vector3(randomLanes[Random.Range(0, randomLanes.Length - 1)], Mathf.Abs(transform.position.y) + 20f, 0f), Quaternion.Euler(new Vector3(-50f, 0, 0)));
+            // Calculate the spawn position dynamically
+            Vector3 spawnPosition = new Vector3(
+                randomLanes[Random.Range(0, randomLanes.Length)], // Random lane
+                Mathf.Abs(transform.position.y) + 20f,           // Always spawn above the top of the screen
+                0f                                              // Z-axis remains the same
+            );
 
+            // Set position and rotation
+            gameObj.transform.localPosition = spawnPosition; // Use the calculated spawn position
+            gameObj.transform.localRotation = Quaternion.Euler(-50f, 0f, 0f);
         }
     }
 
