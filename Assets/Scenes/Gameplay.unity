@@ -1193,7 +1193,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entityPrefabs:
   - {fileID: 7814299432080817148, guid: e66ffa24c83f7a24f8e61a0eb592f641, type: 3}
-  - {fileID: 637187648677020260, guid: 15f857ccd5c6cd04bb45d131f77fc6dd, type: 3}
+  - {fileID: 7814299432080817148, guid: eb98bfeec29a8804792029bb3da74b98, type: 3}
+  - {fileID: 7814299432080817148, guid: 65fbd061d628a29478a161cdc25bc5d0, type: 3}
+  - {fileID: 7814299432080817148, guid: 2c51ac29a681e0d42a56375fad8a51f9, type: 3}
+  - {fileID: 7814299432080817148, guid: 5ef6bcd01e5cf5f4a8199a6b262f24ac, type: 3}
+  - {fileID: 7814299432080817148, guid: 3072b1d98d50ffd479079898ea513a59, type: 3}
 --- !u!1 &1912440678
 GameObject:
   m_ObjectHideFlags: 0
