@@ -27,7 +27,6 @@ public class AudioManager : MonoSingleton<AudioManager>
 
     public void SetBusVolume(float value, BusType bus)
     {
-        Debug.Log($"setting volume {value} for {bus}_volume");
         AkUnitySoundEngine.SetRTPCValue($"{bus}_volume" , Mathf.Clamp01(value));
     }
 
