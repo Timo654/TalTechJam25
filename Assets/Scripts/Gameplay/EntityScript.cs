@@ -31,6 +31,7 @@ public class EntityScript : MonoBehaviour
 
     private void Update()
     {
+        return;
         // not ideal but THEY DO despawn eventually...
         var vect = (transform.position - Camera.main.transform.position).normalized;
         var dot = Vector3.Dot(Camera.main.transform.forward, vect);
