@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: e244d4033b7d0e442b84c0bc7ffb9f3e
+guid: 3adee5e91837ed7439e9d9c5084164fb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2039922323249818689
-    second: traffic_sign_0
+      213: -7621895044635818046
+    second: walk_cycle_man_0
   - first:
-      213: 8452523254442769136
-    second: traffic_sign_1
+      213: 5786842518255102374
+    second: walk_cycle_man_1
+  - first:
+      213: -4416870066084901979
+    second: walk_cycle_man_2
+  - first:
+      213: -84799262919508457
+    second: walk_cycle_man_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: traffic_sign_0
+      name: walk_cycle_man_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 2
         y: 0
-        width: 59
-        height: 94
+        width: 94
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 14ce1b68b824f4c10800000000000000
-      internalID: 2039922323249818689
+      spriteID: 2c70c25e6d6993690800000000000000
+      internalID: -7621895044635818046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: traffic_sign_1
+      name: walk_cycle_man_1
       rect:
         serializedVersion: 2
-        x: 85
+        x: 104
         y: 0
-        width: 87
-        height: 58
+        width: 83
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +172,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0fa3ac4dd156d4570800000000000000
-      internalID: 8452523254442769136
+      spriteID: 6a9e8bf3c9efe4050800000000000000
+      internalID: 5786842518255102374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_cycle_man_2
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 0
+        width: 94
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab04f3931024b2c0800000000000000
+      internalID: -4416870066084901979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk_cycle_man_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 83
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71eb778058bb2def0800000000000000
+      internalID: -84799262919508457
       vertices: []
       indices: 
       edges: []
@@ -185,9 +235,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      traffic_sign_0: 2039922323249818689
-      traffic_sign_1: 8452523254442769136
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

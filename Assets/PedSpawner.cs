@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using UnityEngine;
 
@@ -21,13 +22,16 @@ public class PedSpawner : MonoBehaviour
             // Calculate the spawn position dynamically
             Vector3 spawnPosition = new Vector3(
                 randomLanes[Random.Range(0, randomLanes.Length)], // Random lane
-                Mathf.Abs(transform.position.y) + 20f,           // Always spawn above the top of the screen
+                Mathf.Abs(transform.position.y) + 25f,           // Always spawn above the top of the screen
                 0f                                              // Z-axis remains the same
             );
 
             // Set position and rotation
             gameObj.transform.localPosition = spawnPosition; // Use the calculated spawn position
             gameObj.transform.localRotation = Quaternion.Euler(-50f, 0f, 0f);
+            var sr = gameObj.GetComponentInChildren<SpriteRenderer>();
+            sr.color = new Color(1, 1, 1, 0);
+            sr.DOFade(1f, 0.5f);
         }
     }
 
