@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{15AF9294-C212-4B43-83AE-FEB6EA153484}",
     "Language": "SFX",
-    "Hash": "{38A6B757-21CE-47F7-AEAB-BE2F35B020C3}",
+    "Hash": "{0ECBB3D9-483B-74B8-259F-F4D777227689}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainBank",
     "ShortName": "MainBank",
     "Path": "MainBank.bnk",
@@ -125,9 +125,61 @@
        }
       ]
      }
+    ],
+    "Busses": [
+     {
+      "Id": "393239870",
+      "Name": "SFX",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX",
+      "GUID": "{D4532251-D45F-4DE5-8D0C-5958E3C4DDE7}"
+     },
+     {
+      "Id": "1551306167",
+      "Name": "UI",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\UI",
+      "GUID": "{ABD228B2-97D7-4ACC-9B42-192C90C53EFA}"
+     },
+     {
+      "Id": "3803692087",
+      "Name": "Master Audio Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music",
+      "GUID": "{81701AD9-7D91-405A-9B7A-074139308337}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1006694123",
+      "Name": "Music_volume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Music_volume",
+      "GUID": "{53655B8C-A570-4FD5-A1FB-D61BE90D629B}"
+     },
+     {
+      "Id": "1564184899",
+      "Name": "SFX_volume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\SFX_volume",
+      "GUID": "{FFE55D6A-08C6-4266-AC4A-60059347B177}"
+     },
+     {
+      "Id": "1719345792",
+      "Name": "UI_volume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\UI_volume",
+      "GUID": "{086D344A-9ADC-4D1D-AF04-67C1FFBB6580}"
+     },
+     {
+      "Id": "4179668880",
+      "Name": "Master_volume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Master_volume",
+      "GUID": "{39F01C3D-6D69-4616-B1F2-33510B068D62}"
+     }
     ]
    }
   ],
-  "FileHash": "{560413FC-18C3-25AA-2213-689E8FCCD192}"
+  "FileHash": "{D2797AA9-E721-D9E2-9089-69242FC3EFB2}"
  }
 }
