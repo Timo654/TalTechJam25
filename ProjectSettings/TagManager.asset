@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags: []
   layers:
   - Default
@@ -11,11 +11,11 @@ TagManager:
   - 
   - Water
   - UI
+  - Background
+  - Entities
+  - Pedestrians
   - 
-  - 
-  - 
-  - 
-  - 
+  - Character
   - 
   - 
   - 
@@ -41,3 +41,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 4186942119
+    locked: 0
+  - name: Entities
+    uniqueID: 177917811
+    locked: 0
+  - name: Pedestrians
+    uniqueID: 665230923
+    locked: 0
+  - name: Player
+    uniqueID: 1593269839
+    locked: 0
+  m_RenderingLayers:
+  - Default
