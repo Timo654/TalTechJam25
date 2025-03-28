@@ -34,13 +34,13 @@ public class PlayerMove : MonoBehaviour
         switch (currentLane)
         {
             case 0:
-                transform.position = new Vector2(lanes[currentLane].position.x - 1, transform.position.y);
+                transform.localPosition = new Vector3(lanes[currentLane].position.x - 1.5f, transform.localPosition.y, transform.localPosition.z);
                 break;
             case 1:
-                transform.position = new Vector2(lanes[currentLane].position.x, transform.position.y);
+                transform.localPosition = new Vector3(lanes[currentLane].position.x, transform.localPosition.y, transform.localPosition.z);
                 break;
             case 2:
-                transform.position = new Vector2(lanes[currentLane].position.x + 1, transform.position.y);
+                transform.localPosition = new Vector3(lanes[currentLane].position.x + 1.5f, transform.localPosition.y, transform.localPosition.z);
                 break;
         }
         
