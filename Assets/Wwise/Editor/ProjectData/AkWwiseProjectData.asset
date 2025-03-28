@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: dddb6d1508ee114fac7ad0f52b71377a
     GuidInternal: 
-    m_lastTime: -8584585061437483942
+    m_lastTime: -8584584975021147890
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d5c87e189aefe04597a0738b241d60ca
     GuidInternal: 
-    m_lastTime: -8584585061436968037
+    m_lastTime: -8584584975020841441
     List:
     - name: MainBank
       guid: 9492af1512c2434b83aefeb6ea153484
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: d62b92dde4877747b03afdd74af8b072
     GuidInternal: 
-    m_lastTime: -8584585061438348530
+    m_lastTime: -8584584975021614831
     List:
     - name: Music
       guid: b95ddb8bddbe584685f413d54ce464cd
@@ -310,8 +310,64 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 8221c26751d5bb4a95f7cbc40d660655
     GuidInternal: 
-    m_lastTime: -8584585089816159391
-    List: []
+    m_lastTime: -8584584975021614831
+    List:
+    - name: Master_volume
+      guid: 3d1cf039696d1646b1f233510b068d62
+      id: 4179668880
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8221c26751d5bb4a95f7cbc40d660655
+      - ElementName: Master_volume
+        ObjectType: 13
+        guid: 3d1cf039696d1646b1f233510b068d62
+      Path: Game Parameters\Default Work Unit\Master_volume
+    - name: Music_volume
+      guid: 8c5b655370a5d54fa1fbd61be90d629b
+      id: 1006694123
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8221c26751d5bb4a95f7cbc40d660655
+      - ElementName: Music_volume
+        ObjectType: 13
+        guid: 8c5b655370a5d54fa1fbd61be90d629b
+      Path: Game Parameters\Default Work Unit\Music_volume
+    - name: SFX_volume
+      guid: 6a5de5ffc6086642ac4a60059347b177
+      id: 1564184899
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8221c26751d5bb4a95f7cbc40d660655
+      - ElementName: SFX_volume
+        ObjectType: 13
+        guid: 6a5de5ffc6086642ac4a60059347b177
+      Path: Game Parameters\Default Work Unit\SFX_volume
+    - name: UI_volume
+      guid: 4a346d08dc9a1d4daf0467c1ffbb6580
+      id: 1719345792
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8221c26751d5bb4a95f7cbc40d660655
+      - ElementName: UI_volume
+        ObjectType: 13
+        guid: 4a346d08dc9a1d4daf0467c1ffbb6580
+      Path: Game Parameters\Default Work Unit\UI_volume
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
