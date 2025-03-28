@@ -1,23 +1,23 @@
 using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class EntityScript : MonoBehaviour
 {
     [SerializeField] private EntityType entityType;
-    [SerializeField] private Sprite brokenSprite;
     public static event Action<EntityType> EntityAttacked;
-    private SpriteRenderer spriteRenderer;
+    private Animator animator;
+    // TODO - use an event to change the speed
+    public float movementSpeed = 10f;
     private void Awake()
     {
-        spriteRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        animator = transform.GetComponent<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("triggerered");
         Debug.Log(collision.gameObject.name);
-        spriteRenderer.sprite = brokenSprite;
+        animator.SetTrigger("Destroy");
         EntityAttacked?.Invoke(entityType);
     }
 
@@ -31,6 +31,10 @@ public class EntityScript : MonoBehaviour
             Debug.Log("off screen, destroying...");
             Destroy(gameObject);
         }
+    }
+    private void FixedUpdate()
+    {
+        transform.localPosition += movementSpeed * Time.fixedDeltaTime * new Vector3(0, -1, 0);
     }
 }
 
