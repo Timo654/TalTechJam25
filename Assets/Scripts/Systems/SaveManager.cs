@@ -95,7 +95,11 @@ public class SystemData
 public class GameData
 {
     public int version = 2;
-    public bool hasClearedOnce = false;
+    public bool f_hasClearedOnce = false;
+    public bool f_neutralCleared = false;
+    public bool f_pacifistCleared = false;
+    public bool f_goodCleared = false;
+    public bool f_trashCleared = false;
 }
 
 [Serializable]

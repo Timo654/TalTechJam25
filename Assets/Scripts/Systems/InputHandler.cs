@@ -8,7 +8,7 @@ public class InputHandler : MonoBehaviour
     public static event Action OnPauseInput; // bool is if paused or not, true is paused
 
     private bool isPaused = false;
-    private bool inputDisabled = true;
+    private bool inputEnabled = false;
     InputAction movement;
     InputAction pause;
     private void Awake()
@@ -25,6 +25,7 @@ public class InputHandler : MonoBehaviour
         pause.Enable();
         PauseMenu.OnPauseGame += SetPaused;
         GameManager.GameActive += ToggleInput;
+        CreditsHandler.AllowInput += ToggleInput;
     }
 
     private void OnDisable()
@@ -35,11 +36,12 @@ public class InputHandler : MonoBehaviour
         pause.Disable();
         PauseMenu.OnPauseGame -= SetPaused;
         GameManager.GameActive -= ToggleInput;
+        CreditsHandler.AllowInput -= ToggleInput;
     }
 
     private void ToggleInput(bool obj)
     {
-        inputDisabled = false;
+        inputEnabled = obj;
     }
 
     private void SetPaused(bool val)
@@ -49,13 +51,13 @@ public class InputHandler : MonoBehaviour
 
     private void OnPause(InputAction.CallbackContext context)
     {
-        if (inputDisabled) return;
+        if (!inputEnabled) return;
         OnPauseInput?.Invoke();
     }
 
     private void OnMovement(InputAction.CallbackContext context)
     {
-        if (isPaused || inputDisabled) return;
+        if (isPaused || !inputEnabled) return;
         var moveDir = context.ReadValue<Vector2>();
         OnMoveInput?.Invoke(moveDir);
     }
