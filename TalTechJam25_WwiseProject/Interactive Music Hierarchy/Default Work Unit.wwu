@@ -542,7 +542,7 @@
 									<ChildrenList>
 										<MusicSegment Name="GameplayMusicFirstPartNoDrum" ID="{1E5040FB-7005-4AA0-ADE4-5B5B22AAE0CA}" ShortID="305248117">
 											<PropertyList>
-												<Property Name="EndPosition" Type="Real64" Value="73637.3557955374"/>
+												<Property Name="EndPosition" Type="Real64" Value="80000"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
 														<Value>1</Value>
@@ -574,6 +574,11 @@
 																	<PropertyList>
 																		<Property Name="IsFolder" Type="bool" Value="True"/>
 																	</PropertyList>
+																	<ChildrenList>
+																		<MusicTransition Name="Transition" ID="{24235799-41D1-40FE-A4E9-C33F4D89C834}">
+																			<TransitionInfo/>
+																		</MusicTransition>
+																	</ChildrenList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</Custom>
@@ -609,6 +614,150 @@
 																				</Reference>
 																			</ObjectList>
 																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Drumset1" ID="{318AD63D-9E02-43E3-AD88-51D44074E84E}" ShortID="473333484">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="3"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="Courage1" ID="{D66BBB1A-34F9-4A29-8B31-558F7C1A4958}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="DrumChanger" ID="{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{9A1D8EAB-1C35-43A9-BAF5-2DBE92D80CB0}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ChildrenList>
+																		<MusicTransition Name="Transition" ID="{E9FC418A-060D-429B-820D-D1172CB33FE1}">
+																			<TransitionInfo/>
+																		</MusicTransition>
+																	</ChildrenList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Drumset1" ID="{8CC5600F-EE24-43A5-811D-774C2199E322}">
+															<Language>SFX</Language>
+															<AudioFile>Drumset1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1064049400"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{65955AB1-DEEC-4F2E-BDF9-4D50D78736CF}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="Drumset1" ID="{5E67B7F1-516B-4868-8125-467A3437129C}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="64000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																								<Property Name="PlayAt" Type="Real64" Value="8000"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="Drumset1" ID="{8CC5600F-EE24-43A5-811D-774C2199E322}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																		<ReferenceList>
+																			<Reference Name="TrackSequenceSwitch">
+																				<ObjectRef Name="Courage1" ID="{D66BBB1A-34F9-4A29-8B31-558F7C1A4958}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
+																			</Reference>
+																		</ReferenceList>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Drumset2" ID="{1DF70BC7-0C5D-4A86-A9A4-4AA0E7431F8D}" ShortID="829616714">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="3"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="Courage2" ID="{C0D67781-F1C5-40C9-9207-648D673C3D3C}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="DrumChanger" ID="{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{3F3FEE41-F9E7-4B8E-B739-60E2E5DDD996}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ChildrenList>
+																		<MusicTransition Name="Transition" ID="{163ED8A3-5542-42A3-90A3-D052531CA200}">
+																			<TransitionInfo/>
+																		</MusicTransition>
+																	</ChildrenList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Drumset2" ID="{BBDB2015-8AB8-4A62-8985-71ED040584BA}">
+															<Language>SFX</Language>
+															<AudioFile>Drumset2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="109027379"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{523D9EB2-4C8F-4928-9FF0-F7261699CB41}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="Drumset2" ID="{D739DA41-2C7B-4FA9-93EE-4B579075F218}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="64000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																								<Property Name="PlayAt" Type="Real64" Value="8000"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="Drumset2" ID="{BBDB2015-8AB8-4A62-8985-71ED040584BA}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																		<ReferenceList>
+																			<Reference Name="TrackSequenceSwitch">
+																				<ObjectRef Name="Courage2" ID="{C0D67781-F1C5-40C9-9207-648D673C3D3C}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
+																			</Reference>
+																		</ReferenceList>
 																	</MusicTrackSequence>
 																</Local>
 															</Reference>
