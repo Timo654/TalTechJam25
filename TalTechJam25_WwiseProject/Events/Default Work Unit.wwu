@@ -3,7 +3,21 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{DD922BD6-87E4-4777-B03A-FDD74AF8B072}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Music" ID="{8BDB5DB9-BEDD-4658-85F4-13D54CE464CD}" ShortID="643978840"/>
+				<Folder Name="Music" ID="{8BDB5DB9-BEDD-4658-85F4-13D54CE464CD}" ShortID="643978840">
+					<ChildrenList>
+						<Event Name="Play_MusicSwitch" ID="{EFDE5E7D-7007-4C3C-8323-8302D081B73B}">
+							<ChildrenList>
+								<Action Name="" ID="{94E1296B-9E68-48F9-B1CD-1185504F9E37}" ShortID="737714734">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MusicSwitch" ID="{5F25889A-C1C0-4E2B-900D-42DCFC165C3A}" WorkUnitID="{901B515D-9334-4460-8F5F-EC731E0B065D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 				<Folder Name="SFX" ID="{361F1474-61B2-417B-A862-B3F712E3EB14}" ShortID="183455253">
 					<ChildrenList>
 						<Event Name="Play_fire_hit_ambient_test" ID="{D5AE24D5-C1DA-4329-96FD-6322B8294558}">
@@ -23,6 +37,72 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="enemy_hit_test" ID="{23911B7D-BA14-4984-A51A-328ADFC482E3}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_pre_courage_sfx" ID="{2015275B-EA91-4D58-A6BB-0625752FCC44}">
+							<ChildrenList>
+								<Action Name="" ID="{39FA175E-C933-4C7B-A124-E7C1DC37891B}" ShortID="303440277">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="pre_courage_sfx" ID="{382FA66E-2180-441A-8EB7-DC350BA22F99}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_lamp_hit_sfx" ID="{BDE7E11C-1CCF-4330-A752-C25CB01A7153}">
+							<ChildrenList>
+								<Action Name="" ID="{0E49B4F8-4A8C-4AB4-8340-C9ED85FF39E5}" ShortID="1070198390">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="lamp_hit_sfx" ID="{5459CC19-CD4A-4310-9600-8B31B425027D}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_wooden_bench_hit_sfx" ID="{11CE917E-634C-4EAA-BE0C-10BCFE83B288}">
+							<ChildrenList>
+								<Action Name="" ID="{51830790-F620-4933-AFE1-436596B70F55}" ShortID="171046247">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="wooden_bench_hit_sfx" ID="{788201DA-61C7-47B6-8AE7-843667053A17}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_courage_drop_sfx" ID="{5E6F5CD7-C4D4-48CB-B8D4-5F28EABCE691}">
+							<ChildrenList>
+								<Action Name="" ID="{1B25E854-C470-42B3-8FE1-30C294F92477}" ShortID="485868040">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="courage_drop_sfx" ID="{0710804F-75E1-4266-BE0D-859BFCC56C09}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_rubbish_bin_hit_sfx" ID="{BBED3390-F5BA-46B0-9A20-7DB3759FEEB7}">
+							<ChildrenList>
+								<Action Name="" ID="{3CF60CED-9E1D-4AC0-8D8C-89BE1E32BAF4}" ShortID="129421778">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="rubbish_bin_hit_sfx" ID="{A80DE248-4265-4ACF-AA95-6FF7B3780C6B}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_courage_obtain_sfx" ID="{DE247F0F-74E4-44EE-9CB7-CE551371E8C4}">
+							<ChildrenList>
+								<Action Name="" ID="{6E4022C5-ED4B-449B-B45A-F5A13327FE5B}" ShortID="674456610">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="courage_obtain_sfx" ID="{DEB90E13-60B2-484B-B76E-F18CFAC83296}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -60,6 +140,28 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="hover_mouse_sfx" ID="{4E64F89E-0EE1-4AD1-B76F-5407D1B54426}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_game_start_button_sfx" ID="{54578216-5319-4034-8479-FC9201075DDD}">
+							<ChildrenList>
+								<Action Name="" ID="{71E1D42D-DC7D-43DC-8746-D00B7F89368D}" ShortID="284081490">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="game_start_button_sfx" ID="{26F9F0DF-5F39-4B3F-886E-06E4DE9F7B86}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_button_click_main_new" ID="{B4101F69-8818-4E1F-8088-7329E84E3FD7}">
+							<ChildrenList>
+								<Action Name="" ID="{7DCB7CA2-8B67-4ECF-A6E6-A6256FFE513A}" ShortID="471357030">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="button_click_main_new" ID="{9D25B785-7AE7-4EB9-92BC-FA60D9197D36}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

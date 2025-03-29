@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{45B75290-1BD9-0385-12D3-C1FB5C1F2268}",
+    "Hash": "{73A0AC25-E56C-98B8-A49D-EEE9102DD6CA}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -85,9 +85,63 @@
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Master_volume",
       "GUID": "{39F01C3D-6D69-4616-B1F2-33510B068D62}"
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "863136109",
+      "Name": "DrumChanger",
+      "ObjectPath": "\\Switches\\Default Work Unit\\DrumChanger",
+      "GUID": "{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}",
+      "Switches": [
+       {
+        "Id": "481047188",
+        "Name": "Courage1",
+        "ObjectPath": "\\Switches\\Default Work Unit\\DrumChanger\\Courage1",
+        "GUID": "{D66BBB1A-34F9-4A29-8B31-558F7C1A4958}"
+       },
+       {
+        "Id": "481047191",
+        "Name": "Courage2",
+        "ObjectPath": "\\Switches\\Default Work Unit\\DrumChanger\\Courage2",
+        "GUID": "{C0D67781-F1C5-40C9-9207-648D673C3D3C}"
+       }
+      ]
+     },
+     {
+      "Id": "2011614756",
+      "Name": "MusicChanger",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MusicChanger",
+      "GUID": "{F5BB506C-2DF3-45B1-8C0A-6CCB0A64BCEB}",
+      "Switches": [
+       {
+        "Id": "2201105581",
+        "Name": "Credits",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicChanger\\Credits",
+        "GUID": "{E583C7EC-0801-44FE-8A0B-24B648A33DCC}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicChanger\\Menu",
+        "GUID": "{72F2F132-B40D-45D4-A1CA-1A2E80CD3B29}"
+       },
+       {
+        "Id": "3055903945",
+        "Name": "GameMain1",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicChanger\\GameMain1",
+        "GUID": "{8227F546-7B31-4C0C-A1F6-B1B05BE9E05D}"
+       },
+       {
+        "Id": "3055903946",
+        "Name": "GameMain2",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicChanger\\GameMain2",
+        "GUID": "{B112BD6C-212A-4156-A9E4-3DEF50B73BCC}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{C91386B5-19F8-A8CE-F4EE-7F5ED81F0817}"
+  "FileHash": "{95FA7946-D998-ACA0-62C2-C27495400D91}"
  }
 }

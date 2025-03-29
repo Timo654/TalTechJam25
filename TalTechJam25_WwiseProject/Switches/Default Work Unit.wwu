@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}" SchemaVersion="123">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="MusicChanger" ID="{F5BB506C-2DF3-45B1-8C0A-6CCB0A64BCEB}">
+					<ChildrenList>
+						<Switch Name="Menu" ID="{72F2F132-B40D-45D4-A1CA-1A2E80CD3B29}"/>
+						<Switch Name="Credits" ID="{E583C7EC-0801-44FE-8A0B-24B648A33DCC}"/>
+						<Switch Name="GameMain1" ID="{8227F546-7B31-4C0C-A1F6-B1B05BE9E05D}"/>
+						<Switch Name="GameMain2" ID="{B112BD6C-212A-4156-A9E4-3DEF50B73BCC}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="DrumChanger" ID="{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}">
+					<ChildrenList>
+						<Switch Name="Courage1" ID="{D66BBB1A-34F9-4A29-8B31-558F7C1A4958}"/>
+						<Switch Name="Courage2" ID="{C0D67781-F1C5-40C9-9207-648D673C3D3C}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

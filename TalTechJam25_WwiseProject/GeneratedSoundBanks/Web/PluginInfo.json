@@ -4,6 +4,41 @@
   "BasePlatform": "Web",
   "PluginLibs": [
    {
+    "LibName": "Wwise Parametric EQ",
+    "LibId": "6881283",
+    "Type": "Effect",
+    "DLL": "AkParametricEQ",
+    "StaticLib": "AkParametricEQFX"
+   },
+   {
+    "LibName": "Wwise Compressor",
+    "LibId": "7077891",
+    "Type": "Effect",
+    "DLL": "AkCompressor",
+    "StaticLib": "AkCompressorFX"
+   },
+   {
+    "LibName": "Wwise Expander",
+    "LibId": "7143427",
+    "Type": "Effect",
+    "DLL": "AkExpander",
+    "StaticLib": "AkExpanderFX"
+   },
+   {
+    "LibName": "Wwise Peak Limiter",
+    "LibId": "7208963",
+    "Type": "Effect",
+    "DLL": "AkPeakLimiter",
+    "StaticLib": "AkPeakLimiterFX"
+   },
+   {
+    "LibName": "Wwise RoomVerb",
+    "LibId": "7733251",
+    "Type": "Effect",
+    "DLL": "AkRoomVerb",
+    "StaticLib": "AkRoomVerbFX"
+   },
+   {
     "LibName": "System",
     "LibId": "11403271",
     "Type": "AudioDevice"
@@ -14,6 +49,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{153FC485-16FD-C456-638C-A1C40A8E5AD6}"
+  "FileHash": "{5EEF4124-F5C9-EACE-8A31-F8CCCB012B6F}"
  }
 }

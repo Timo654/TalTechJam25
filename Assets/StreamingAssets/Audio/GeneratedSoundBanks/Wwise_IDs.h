@@ -15,10 +15,47 @@ namespace AK
     {
         static const AkUniqueID PLAY_BACK_BUTTON_SFX = 3386456026U;
         static const AkUniqueID PLAY_BUTTON_CLICK_MAIN = 1531308565U;
+        static const AkUniqueID PLAY_BUTTON_CLICK_MAIN_NEW = 10764666U;
+        static const AkUniqueID PLAY_COURAGE_DROP_SFX = 4224063566U;
+        static const AkUniqueID PLAY_COURAGE_OBTAIN_SFX = 2730508926U;
         static const AkUniqueID PLAY_ENEMY_HIT_TEST = 1291546063U;
         static const AkUniqueID PLAY_FIRE_HIT_AMBIENT_TEST = 1077075440U;
+        static const AkUniqueID PLAY_GAME_START_BUTTON_SFX = 2194780196U;
         static const AkUniqueID PLAY_HOVER_MOUSE_SFX = 713846344U;
+        static const AkUniqueID PLAY_LAMP_HIT_SFX = 1137826710U;
+        static const AkUniqueID PLAY_MUSICSWITCH = 3117137027U;
+        static const AkUniqueID PLAY_PRE_COURAGE_SFX = 1894117360U;
+        static const AkUniqueID PLAY_RUBBISH_BIN_HIT_SFX = 3520789391U;
+        static const AkUniqueID PLAY_WOODEN_BENCH_HIT_SFX = 1201208953U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace DRUMCHANGER
+        {
+            static const AkUniqueID GROUP = 863136109U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID COURAGE1 = 481047188U;
+                static const AkUniqueID COURAGE2 = 481047191U;
+            } // namespace SWITCH
+        } // namespace DRUMCHANGER
+
+        namespace MUSICCHANGER
+        {
+            static const AkUniqueID GROUP = 2011614756U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CREDITS = 2201105581U;
+                static const AkUniqueID GAMEMAIN1 = 3055903945U;
+                static const AkUniqueID GAMEMAIN2 = 3055903946U;
+                static const AkUniqueID MENU = 2607556080U;
+            } // namespace SWITCH
+        } // namespace MUSICCHANGER
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {

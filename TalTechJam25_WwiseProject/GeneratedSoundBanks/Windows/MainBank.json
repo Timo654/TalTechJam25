@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{15AF9294-C212-4B43-83AE-FEB6EA153484}",
     "Language": "SFX",
-    "Hash": "{0ECBB3D9-483B-74B8-259F-F4D777227689}",
+    "Hash": "{9D2A4815-CFA7-550F-872C-B774230D8370}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainBank",
     "ShortName": "MainBank",
     "Path": "MainBank.bnk",
@@ -24,12 +24,68 @@
       "CachePath": "94/{9417E5A7-F3FA-DF5D-7034-8F0C6E5EBA4E}.wem"
      },
      {
+      "Id": "59614920",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wood, Break, Logs, Impact, Debris SND56856.wav",
+      "CachePath": "2D/{2D55F962-EC7D-2329-8AEB-A94A4A998D30}.wem"
+     },
+     {
+      "Id": "70246689",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Lamp hit.wav",
+      "CachePath": "B2/{B20FA2A6-C287-FA8C-2DE0-538E4C878133}.wem"
+     },
+     {
+      "Id": "93865244",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wood, Crash & Debris, Hard Impacts, Metal Details, Wood Break SND53109.wav",
+      "CachePath": "E8/{E82CCE65-5CB6-313A-85D6-20BD802D052D}.wem"
+     },
+     {
       "Id": "152334766",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "StepsWood2.wav",
       "CachePath": "0E/{0EA70A8F-AA01-284C-49A2-002718754828}.wem"
+     },
+     {
+      "Id": "268774127",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "CourageDrop.wav",
+      "CachePath": "33/{332F9C1B-1ECB-B204-170B-8E9816B94920}.wem"
+     },
+     {
+      "Id": "313572889",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "TaltechCredits.wav",
+      "CachePath": "CA/{CA82ECA2-F02B-C1CB-A0EF-D5E4355ED5AD}.wem"
+     },
+     {
+      "Id": "380671784",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "NewClick.wav",
+      "CachePath": "0E/{0EFA9E1B-5AF0-11BF-5C7E-26E44F56E894}.wem"
+     },
+     {
+      "Id": "723807366",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameStartButton.wav",
+      "CachePath": "CB/{CB101E04-8E08-358E-2890-24502706F894}.wem"
      },
      {
       "Id": "797319761",
@@ -48,14 +104,124 @@
       "CachePath": "A2/{A2016406-5CC6-E03F-7D9C-06A06C9EF445}.wem"
      },
      {
+      "Id": "837333872",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wood, Break, Ukulele, Thin, Smash 01 SND30370.wav",
+      "CachePath": "FA/{FAB26A38-EE5C-7455-CE11-446F65269A84}.wem"
+     },
+     {
+      "Id": "933114952",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wood, Break, Ukulele, Thin, Smash 02 SND30369.wav",
+      "CachePath": "F6/{F63D48AF-3B7C-73F8-F686-3BABAC420402}.wem"
+     },
+     {
+      "Id": "942121859",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "CourageObtain.wav",
+      "CachePath": "D9/{D909266F-6ECE-24E4-7044-AB3A438608F3}.wem"
+     },
+     {
+      "Id": "950094142",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "TaltechMenuTheme.wav",
+      "CachePath": "37/{37874F21-C3CB-CBE8-F016-8E948CCF1A76}.wem"
+     },
+     {
       "Id": "1029377040",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Back.wav",
       "CachePath": "CF/{CF2BC049-1B04-D369-1C47-20B4B7A8B2DF}.wem"
+     },
+     {
+      "Id": "1063358857",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PreTransitionCourageSFX.wav",
+      "CachePath": "8D/{8D3836EF-8D36-C33F-806E-56CE69C57F15}.wem"
      }
     ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "183688505",
+       "Name": "Peak Limiter (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\SFX\\courage_drop_sfx\\[Effect Slot [0]: (Peak Limiter)]\\Peak Limiter (Custom)",
+       "GUID": "{CEEC7A64-025F-44FD-8CA3-86B0F313BBA9}",
+       "LibName": "Wwise Peak Limiter",
+       "LibId": "7208963"
+      },
+      {
+       "Id": "268940815",
+       "Name": "Compressor (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\SFX\\rubbish_bin_hit_sfx\\[Effect Slot [0]: (Compressor)]\\Compressor (Custom)",
+       "GUID": "{9BC8BCC4-6DDA-42C3-AE52-25E25F5DF1B4}",
+       "LibName": "Wwise Compressor",
+       "LibId": "7077891"
+      },
+      {
+       "Id": "430768027",
+       "Name": "Expander (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\UI\\game_start_button_sfx\\[Effect Slot [1]: (Expander)]\\Expander (Custom)",
+       "GUID": "{CA04B289-2E27-44EA-899E-DC291E404518}",
+       "LibName": "Wwise Expander",
+       "LibId": "7143427"
+      },
+      {
+       "Id": "575264795",
+       "Name": "Hall_Guns (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\SFX\\wooden_bench_hit_sfx\\[Effect Slot [0]: (RoomVerb)]\\Hall_Guns (Custom)",
+       "GUID": "{E26BDE85-D6BA-48FA-BDCB-C900C48C4A75}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "782873648",
+       "Name": "RoomVerb (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\SFX\\rubbish_bin_hit_sfx\\[Effect Slot [1]: (RoomVerb)]\\RoomVerb (Custom)",
+       "GUID": "{139E0AF2-222C-4935-A32B-95C6B2CC62ED}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "845066072",
+       "Name": "RoomVerb (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\UI\\game_start_button_sfx\\[Effect Slot [0]: (RoomVerb)]\\RoomVerb (Custom)",
+       "GUID": "{4A93212B-192E-45B6-AA8B-37D2FE51D94A}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ],
+     "ShareSets": [
+      {
+       "Id": "3604890626",
+       "Name": "High_Pass_60Hz",
+       "ObjectPath": "\\Effects\\Factory Effects\\Parametric EQ\\High Pass Filters\\High_Pass_60Hz",
+       "GUID": "{F9627628-0B10-4272-BC30-D4C20423CB38}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "4113267698",
+       "Name": "Hall_Guns",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Halls\\Hall_Guns",
+       "GUID": "{B35D266A-CE6E-40A1-B197-14C12F9C21B1}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "3386456026",
@@ -86,6 +252,55 @@
       ]
      },
      {
+      "Id": "10764666",
+      "Name": "Play_button_click_main_new",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Play_button_click_main_new",
+      "GUID": "{B4101F69-8818-4E1F-8088-7329E84E3FD7}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.9117225",
+      "DurationMax": "0.9117225",
+      "MediaRefs": [
+       {
+        "Id": "380671784"
+       }
+      ]
+     },
+     {
+      "Id": "4224063566",
+      "Name": "Play_courage_drop_sfx",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_courage_drop_sfx",
+      "GUID": "{5E6F5CD7-C4D4-48CB-B8D4-5F28EABCE691}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.033009",
+      "DurationMax": "3.033009",
+      "MediaRefs": [
+       {
+        "Id": "268774127"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "183688505"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2730508926",
+      "Name": "Play_courage_obtain_sfx",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_courage_obtain_sfx",
+      "GUID": "{DE247F0F-74E4-44EE-9CB7-CE551371E8C4}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.033009",
+      "DurationMax": "3.033009",
+      "MediaRefs": [
+       {
+        "Id": "942121859"
+       }
+      ]
+     },
+     {
       "Id": "1291546063",
       "Name": "Play_enemy_hit_test",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_enemy_hit_test",
@@ -112,6 +327,30 @@
       ]
      },
      {
+      "Id": "2194780196",
+      "Name": "Play_game_start_button_sfx",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Play_game_start_button_sfx",
+      "GUID": "{54578216-5319-4034-8479-FC9201075DDD}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.4045942",
+      "DurationMax": "2.4045942",
+      "MediaRefs": [
+       {
+        "Id": "723807366"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "430768027"
+        },
+        {
+         "Id": "845066072"
+        }
+       ]
+      }
+     },
+     {
       "Id": "713846344",
       "Name": "Play_hover_mouse_sfx",
       "ObjectPath": "\\Events\\Default Work Unit\\UI\\Play_hover_mouse_sfx",
@@ -124,6 +363,130 @@
         "Id": "152334766"
        }
       ]
+     },
+     {
+      "Id": "1137826710",
+      "Name": "Play_lamp_hit_sfx",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_lamp_hit_sfx",
+      "GUID": "{BDE7E11C-1CCF-4330-A752-C25CB01A7153}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8512891",
+      "DurationMax": "0.9835391",
+      "MediaRefs": [
+       {
+        "Id": "70246689"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3604890626"
+        },
+        {
+         "Id": "4113267698"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3117137027",
+      "Name": "Play_MusicSwitch",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_MusicSwitch",
+      "GUID": "{EFDE5E7D-7007-4C3C-8323-8302D081B73B}",
+      "DurationType": "Infinite",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2011614756",
+         "Id": "2201105581",
+         "GUID": "{E583C7EC-0801-44FE-8A0B-24B648A33DCC}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "313572889"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2011614756",
+         "Id": "2607556080",
+         "GUID": "{72F2F132-B40D-45D4-A1CA-1A2E80CD3B29}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "950094142"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "1894117360",
+      "Name": "Play_pre_courage_sfx",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_pre_courage_sfx",
+      "GUID": "{2015275B-EA91-4D58-A6BB-0625752FCC44}",
+      "DurationType": "OneShot",
+      "DurationMin": "4",
+      "DurationMax": "4",
+      "MediaRefs": [
+       {
+        "Id": "1063358857"
+       }
+      ]
+     },
+     {
+      "Id": "3520789391",
+      "Name": "Play_rubbish_bin_hit_sfx",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_rubbish_bin_hit_sfx",
+      "GUID": "{BBED3390-F5BA-46B0-9A20-7DB3759FEEB7}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.75878143",
+      "DurationMax": "0.75878143",
+      "MediaRefs": [
+       {
+        "Id": "93865244"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "268940815"
+        },
+        {
+         "Id": "782873648"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "1201208953",
+      "Name": "Play_wooden_bench_hit_sfx",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_wooden_bench_hit_sfx",
+      "GUID": "{11CE917E-634C-4EAA-BE0C-10BCFE83B288}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.4834075",
+      "DurationMax": "0.82714236",
+      "MediaRefs": [
+       {
+        "Id": "59614920"
+       },
+       {
+        "Id": "837333872"
+       },
+       {
+        "Id": "933114952"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "575264795"
+        }
+       ]
+      }
      }
     ],
     "Busses": [
@@ -177,9 +540,43 @@
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Master_volume",
       "GUID": "{39F01C3D-6D69-4616-B1F2-33510B068D62}"
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2011614756",
+      "Name": "MusicChanger",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MusicChanger",
+      "GUID": "{F5BB506C-2DF3-45B1-8C0A-6CCB0A64BCEB}",
+      "Switches": [
+       {
+        "Id": "2201105581",
+        "Name": "Credits",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicChanger\\Credits",
+        "GUID": "{E583C7EC-0801-44FE-8A0B-24B648A33DCC}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicChanger\\Menu",
+        "GUID": "{72F2F132-B40D-45D4-A1CA-1A2E80CD3B29}"
+       },
+       {
+        "Id": "3055903945",
+        "Name": "GameMain1",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicChanger\\GameMain1",
+        "GUID": "{8227F546-7B31-4C0C-A1F6-B1B05BE9E05D}"
+       },
+       {
+        "Id": "3055903946",
+        "Name": "GameMain2",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicChanger\\GameMain2",
+        "GUID": "{B112BD6C-212A-4156-A9E4-3DEF50B73BCC}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{C535CC82-304C-BD1B-BF78-E42C8E4F1E8A}"
+  "FileHash": "{52E9B126-F02E-1AB2-FAE3-D7940CCF8312}"
  }
 }

@@ -57,7 +57,7 @@
 								<ActiveSource Name="fireSound" ID="{4AB1C0F5-45A1-4B05-B2F6-6D30DF267ABC}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<RandomSequenceContainer Name="BenchHit" ID="{788201DA-61C7-47B6-8AE7-843667053A17}" ShortID="854564946">
+						<RandomSequenceContainer Name="wooden_bench_hit_sfx" ID="{788201DA-61C7-47B6-8AE7-843667053A17}" ShortID="854564946">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Pitch" Type="int32">
@@ -260,7 +260,7 @@
 								</ObjectList>
 							</ObjectLists>
 						</RandomSequenceContainer>
-						<Sound Name="Lamp hit" ID="{5459CC19-CD4A-4310-9600-8B31B425027D}" ShortID="135427880">
+						<Sound Name="lamp_hit_sfx" ID="{5459CC19-CD4A-4310-9600-8B31B425027D}" ShortID="135427880">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Pitch" Type="int32">
@@ -335,7 +335,7 @@
 								<ActiveSource Name="Lamp hit" ID="{C32ABF10-D35E-40DD-AD56-7C477585B2DE}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="BinHit" ID="{A80DE248-4265-4ACF-AA95-6FF7B3780C6B}" ShortID="1022442002">
+						<Sound Name="rubbish_bin_hit_sfx" ID="{A80DE248-4265-4ACF-AA95-6FF7B3780C6B}" ShortID="1022442002">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 							</PropertyList>
@@ -408,6 +408,131 @@
 								<ActiveSource Name="Wood, Crash &amp; Debris, Hard Impacts, Metal Details, Wood Break SND53109" ID="{DF628959-5FD8-4ED2-96A8-9CA2EDDCA6E7}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="courage_obtain_sfx" ID="{DEB90E13-60B2-484B-B76E-F18CFAC83296}" ShortID="334534417">
+							<PropertyList>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{D4532251-D45F-4DE5-8D0C-5958E3C4DDE7}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CourageObtain" ID="{08E35349-C440-4AC1-8CAB-42351DC8F78A}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.95760945100764"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.466990965948575"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>CourageObtain.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="942121859"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{4E7300FA-BDFE-4318-B301-46585E760679}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="68.6546463245492"/>
+										<Property Name="PanY" Type="Real64" Value="65.9763313609467"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="CourageObtain" ID="{08E35349-C440-4AC1-8CAB-42351DC8F78A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="courage_drop_sfx" ID="{0710804F-75E1-4266-BE0D-859BFCC56C09}" ShortID="892955162">
+							<PropertyList>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{D4532251-D45F-4DE5-8D0C-5958E3C4DDE7}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CourageDrop" ID="{DB5F196E-4628-40A0-B2BF-3E14A2962F51}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="3.01111883252259"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.466990965948575"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>CourageDrop.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="268774127"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{E2EDA6D6-3E2F-4D98-B01A-AB3F7037124E}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="-72.3994452149792"/>
+										<Property Name="PanY" Type="Real64" Value="65.9763313609467"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{ADF2067E-F80D-486B-940F-21177BA509B9}" ShortID="126298652">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Peak Limiter (Custom)" ID="{CEEC7A64-025F-44FD-8CA3-86B0F313BBA9}" ShortID="183688505" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+																<PropertyList>
+																	<Property Name="Ratio" Type="Real32" Value="1"/>
+																	<Property Name="Threshold" Type="Real32" Value="-12.5"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="CourageDrop" ID="{DB5F196E-4628-40A0-B2BF-3E14A2962F51}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="pre_courage_sfx" ID="{382FA66E-2180-441A-8EB7-DC350BA22F99}" ShortID="749912662">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{D4532251-D45F-4DE5-8D0C-5958E3C4DDE7}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PreTransitionCourageSFX" ID="{C8464CD2-0A5B-4DE3-A007-BF56079C20EE}">
+									<Language>SFX</Language>
+									<AudioFile>PreTransitionCourageSFX.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1063358857"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PreTransitionCourageSFX" ID="{C8464CD2-0A5B-4DE3-A007-BF56079C20EE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{A4FE66D0-0BCE-4AB6-9DF4-3B928AF2ACC4}" ShortID="979635429">
@@ -476,6 +601,119 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="StepsWood2" ID="{6F561761-4D32-4EA3-95EC-6E1B8C54DE35}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="game_start_button_sfx" ID="{26F9F0DF-5F39-4B3F-886E-06E4DE9F7B86}" ShortID="7843197">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-180</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="UI" ID="{ABD228B2-97D7-4ACC-9B42-192C90C53EFA}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GameStartButton" ID="{EDBDB6ED-8D58-46A2-81D4-CEE7827B59B4}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.024180101470205"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.00755628170943905"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>GameStartButton.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="723807366"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{A75A2712-4761-4B14-BD76-BA61050467A1}" ShortID="353635811">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="RoomVerb (Custom)" ID="{4A93212B-192E-45B6-AA8B-37D2FE51D94A}" ShortID="845066072" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<PropertyList>
+																	<Property Name="DryLevel" Type="Real32" Value="-2.3"/>
+																	<Property Name="ERLevel" Type="Real32" Value="-96"/>
+																	<Property Name="ReverbLevel" Type="Real32" Value="-28"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{9BDFEA83-F65B-4F77-81D0-0B961DEB1001}" ShortID="922054866">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Expander (Custom)" ID="{CA04B289-2E27-44EA-899E-DC291E404518}" ShortID="430768027" PluginName="Wwise Expander" CompanyID="0" PluginID="109" PluginType="3">
+																<PropertyList>
+																	<Property Name="OutputGain" Type="Real32" Value="1.6"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="GameStartButton" ID="{EDBDB6ED-8D58-46A2-81D4-CEE7827B59B4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="button_click_main_new" ID="{9D25B785-7AE7-4EB9-92BC-FA60D9197D36}" ShortID="70194682">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>160</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="UI" ID="{ABD228B2-97D7-4ACC-9B42-192C90C53EFA}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="NewClick" ID="{6E3777A3-C1EB-46EB-B985-A43B9CDDA4C7}">
+									<Language>SFX</Language>
+									<AudioFile>NewClick.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="380671784"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="NewClick" ID="{6E3777A3-C1EB-46EB-B985-A43B9CDDA4C7}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
