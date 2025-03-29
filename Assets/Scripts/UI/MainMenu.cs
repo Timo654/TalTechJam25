@@ -29,7 +29,7 @@ public class MainMenu : MonoBehaviour
 
     public void OnPlayPressed()
     {
-        LevelChanger.Instance.FadeToLevel("Gameplay");
+        LevelChanger.Instance.FadeToLevel("Opening");
     }
 
     public void OnQuitPressed()

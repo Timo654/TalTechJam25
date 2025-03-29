@@ -1,55 +1,35 @@
-using DG.Tweening;
-using TMPro;
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UI;
+using UnityEngine.InputSystem.Utilities;
 
 public class OpeningScript : MonoBehaviour
 {
-    [SerializeField] private Image openingImage;
-    //[SerializeField] EventReference openingAudio;
-    private InputAction skipOpening;
+    [SerializeField] GameObject skipText;
     private bool hasEnded = false;
-    // Start is called before the first frame update
-    void Awake()
-    {
-        //var playerControls = new PlayerControls();
-        // TODO - wtf I do with this
-        //skipOpening = playerControls.UI.SkipOpening;
-    }
 
-    private void OnEnable()
-    {
-        skipOpening.Enable();
-        skipOpening.performed += OnSkipOpening;
-    }
-    private void OnDisable()
-    {
-        skipOpening.Disable();
-        skipOpening.performed += OnSkipOpening;
-    }
+    IDisposable listener;
+
     private void Start()
     {
-        //AudioManager.Instance.PlaySound(); // opening audio
+        if (SaveManager.Instance.gameData.hasClearedOnce) // TODO - display in UI as well
+        {
+            listener = InputSystem.onAnyButtonPress.CallOnce(OnSkipOpening);
+        }
+        skipText.SetActive(SaveManager.Instance.gameData.hasClearedOnce);
+        //AudioManager.Instance.SetSwitch(WWiseEvents.Instance.GameMusic1);
         LevelChanger.Instance.FadeIn();
-        // TODO - play an animation instead and call an end function when done
-
-        //openingImage.DOFade(1f, 20f).SetEase(Ease.InOutSine).SetUpdate(true).OnComplete(()=>LoadNextLevel());
     }
 
-    private void OnSkipOpening(InputAction.CallbackContext context)
+    private void OnSkipOpening(InputControl control)
     {
-        if (!hasEnded)
-        {
-            LoadNextLevel();
-        }
+        LoadNextLevel();
     }
 
     void LoadNextLevel()
     {
-        openingImage.DOKill();
+        if (hasEnded) return;
         hasEnded = true;
-
         LevelChanger.Instance.FadeToLevel("Gameplay");
     }
 }

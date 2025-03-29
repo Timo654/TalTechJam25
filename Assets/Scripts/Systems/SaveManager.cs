@@ -95,11 +95,7 @@ public class SystemData
 public class GameData
 {
     public int version = 2;
-    public int money = 0;
-    public uint currentBall = 0;
-    public uint currentBody = 0;
-    public uint currentTrack = 0;
-    public uint currentLevel = 0;
+    public bool hasClearedOnce = false;
 }
 
 [Serializable]

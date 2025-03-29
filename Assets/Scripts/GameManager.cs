@@ -83,6 +83,7 @@ public class GameManager : MonoBehaviour
                 break;
             }
         }
+        SaveManager.Instance.gameData.hasClearedOnce = true;
         LevelChanger.Instance.FadeToLevel("Ending");
     }
 }
