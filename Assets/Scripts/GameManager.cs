@@ -80,9 +80,26 @@ public class GameManager : MonoBehaviour
             if (ending.endingType == endingType)
             {
                 SaveManager.Instance.runtimeData.currentEnding = ending;
+
+                switch (endingType)
+                {
+                    case EndingType.Good:
+                        SaveManager.Instance.gameData.f_goodCleared = true;
+                        break;
+                    case EndingType.Bad:
+                        SaveManager.Instance.gameData.f_trashCleared = true;
+                        break;
+                    case EndingType.Neutral:
+                        SaveManager.Instance.gameData.f_neutralCleared = true;
+                        break;
+                    case EndingType.Pacifist:
+                        SaveManager.Instance.gameData.f_pacifistCleared = true;
+                        break;
+                }
                 break;
             }
         }
+        SaveManager.Instance.gameData.f_hasClearedOnce = true;
         LevelChanger.Instance.FadeToLevel("Ending");
     }
 }

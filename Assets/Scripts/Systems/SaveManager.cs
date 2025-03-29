@@ -95,11 +95,11 @@ public class SystemData
 public class GameData
 {
     public int version = 2;
-    public int money = 0;
-    public uint currentBall = 0;
-    public uint currentBody = 0;
-    public uint currentTrack = 0;
-    public uint currentLevel = 0;
+    public bool f_hasClearedOnce = false;
+    public bool f_neutralCleared = false;
+    public bool f_pacifistCleared = false;
+    public bool f_goodCleared = false;
+    public bool f_trashCleared = false;
 }
 
 [Serializable]

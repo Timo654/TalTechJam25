@@ -16,5 +16,6 @@ public enum EndingType
 {
     Good,
     Neutral,
-    Bad
+    Bad,
+    Pacifist
 }
