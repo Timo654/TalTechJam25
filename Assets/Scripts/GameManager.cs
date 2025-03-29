@@ -14,15 +14,17 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
-        LevelChanger.OnFadeInFinished += StartGame;
+        //LevelChanger.OnFadeInFinished += StartGame;
         GameActive += SetActive;
         ChaosCounter.SendEndScore += EndGame;
+        TutorialScreen.OnTutorialClosed += StartGame;
     }
     private void OnDisable()
     {
-        LevelChanger.OnFadeInFinished -= StartGame;
+        //LevelChanger.OnFadeInFinished -= StartGame;
         GameActive -= SetActive;
         ChaosCounter.SendEndScore -= EndGame;
+        TutorialScreen.OnTutorialClosed -= StartGame;
     }
 
     private void SetActive(bool val)
