@@ -82,7 +82,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -141,32 +141,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -174,20 +148,20 @@ TextureImporter:
       name: impact_people_2_sprites_0
       rect:
         serializedVersion: 2
-        x: 38
-        y: 100
-        width: 10
-        height: 12
+        x: 0
+        y: 0
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 073c6a6f2d20062d0800000000000000
-      internalID: -3287624622875950224
+      spriteID: 801c2f503b38a4e4c95c37bf49e2a456
+      internalID: 572721715
       vertices: []
       indices: 
       edges: []
@@ -196,20 +170,20 @@ TextureImporter:
       name: impact_people_2_sprites_1
       rect:
         serializedVersion: 2
-        x: 173
-        y: 94
-        width: 19
-        height: 25
+        x: 140
+        y: 0
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0ad2063a083f7cd70800000000000000
-      internalID: 9063480508928765344
+      spriteID: d80e8c71ae2f3f248b0915941bec0d03
+      internalID: 525363426
       vertices: []
       indices: 
       edges: []
@@ -218,20 +192,20 @@ TextureImporter:
       name: impact_people_2_sprites_2
       rect:
         serializedVersion: 2
-        x: 221
-        y: 40
-        width: 40
-        height: 65
+        x: 280
+        y: 0
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: eba5a15017005e1c0800000000000000
-      internalID: -4475170169305802050
+      spriteID: 3f6bfae494b01d04aad48b88d561df51
+      internalID: 2140727265
       vertices: []
       indices: 
       edges: []
@@ -240,284 +214,20 @@ TextureImporter:
       name: impact_people_2_sprites_3
       rect:
         serializedVersion: 2
-        x: 272
-        y: 46
-        width: 34
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f31d49d7fc9be69f0800000000000000
-      internalID: -473236610011049665
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: impact_people_2_sprites_4
-      rect:
-        serializedVersion: 2
-        x: 305
-        y: 85
-        width: 35
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e2029b25bd5491d70800000000000000
-      internalID: 9014312937446776878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: impact_people_2_sprites_5
-      rect:
-        serializedVersion: 2
-        x: 351
-        y: 32
-        width: 57
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 73a23041c81e1cc90800000000000000
-      internalID: -7151186741540214217
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: impact_people_2_sprites_6
-      rect:
-        serializedVersion: 2
-        x: 453
-        y: 94
-        width: 19
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 13412281b333b28f0800000000000000
-      internalID: -564300999403891663
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: impact_people_2_sprites_7
-      rect:
-        serializedVersion: 2
-        x: 501
-        y: 40
-        width: 39
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6af8af055a92a6ae0800000000000000
-      internalID: -1555384931298144346
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: impact_people_2_sprites_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 66
-        width: 11
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 903aea2ef70fa2760800000000000000
-      internalID: 7434018566983033609
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: impact_people_2_sprites_9
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 62
-        width: 19
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b7895d01aae9b0f00800000000000000
-      internalID: 1084134588576798843
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: impact_people_2_sprites_10
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 54
-        width: 26
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 557cb7c1d71cbaf50800000000000000
-      internalID: 6893816397713622869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: impact_people_2_sprites_11
-      rect:
-        serializedVersion: 2
-        x: 412
-        y: 54
-        width: 26
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 553f9aee4cae08dc0800000000000000
-      internalID: -3638650367376755883
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: impact_people_2_sprites_12
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 21
-        width: 15
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 12248ae3995b7fc10800000000000000
-      internalID: 2087336622095352353
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: impact_people_2_sprites_13
-      rect:
-        serializedVersion: 2
-        x: 177
-        y: 8
-        width: 30
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f75efcdfef157f660800000000000000
-      internalID: 7419489066737984895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: impact_people_2_sprites_14
-      rect:
-        serializedVersion: 2
-        x: 308
+        x: 420
         y: 0
-        width: 47
-        height: 61
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: da9d2354b6772f1e0800000000000000
-      internalID: -2165537168205620819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: impact_people_2_sprites_15
-      rect:
-        serializedVersion: 2
-        x: 457
-        y: 8
-        width: 30
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 01ce03fe946857740800000000000000
-      internalID: 5149169401071725584
+      spriteID: 2301f0504ab7b2a41b21fd97def0ceb3
+      internalID: 737357526
       vertices: []
       indices: 
       edges: []
@@ -526,7 +236,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 453bd446b34e2044e84f0fb116a65a2d
     internalID: 0
     vertices: []
     indices: 
@@ -536,22 +246,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      impact_people_2_sprites_0: -3287624622875950224
-      impact_people_2_sprites_1: 9063480508928765344
-      impact_people_2_sprites_10: 6893816397713622869
-      impact_people_2_sprites_11: -3638650367376755883
-      impact_people_2_sprites_12: 2087336622095352353
-      impact_people_2_sprites_13: 7419489066737984895
-      impact_people_2_sprites_14: -2165537168205620819
-      impact_people_2_sprites_15: 5149169401071725584
-      impact_people_2_sprites_2: -4475170169305802050
-      impact_people_2_sprites_3: -473236610011049665
-      impact_people_2_sprites_4: 9014312937446776878
-      impact_people_2_sprites_5: -7151186741540214217
-      impact_people_2_sprites_6: -564300999403891663
-      impact_people_2_sprites_7: -1555384931298144346
-      impact_people_2_sprites_8: 7434018566983033609
-      impact_people_2_sprites_9: 1084134588576798843
+      impact_people_2_sprites_0: 572721715
+      impact_people_2_sprites_1: 525363426
+      impact_people_2_sprites_2: 2140727265
+      impact_people_2_sprites_3: 737357526
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

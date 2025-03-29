@@ -141,10 +141,10 @@ TextureImporter:
       name: boom_2_sprites_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 43
-        width: 73
-        height: 58
+        x: 0
+        y: 0
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +163,10 @@ TextureImporter:
       name: boom_2_sprites_1
       rect:
         serializedVersion: 2
-        x: 167
-        y: 28
-        width: 96
-        height: 90
+        x: 140
+        y: 0
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,10 +185,10 @@ TextureImporter:
       name: boom_2_sprites_2
       rect:
         serializedVersion: 2
-        x: 285
-        y: 3
-        width: 129
-        height: 136
+        x: 280
+        y: 0
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,55 +203,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: boom_2_sprites_3
-      rect:
-        serializedVersion: 2
-        x: 398
-        y: 81
-        width: 10
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1922e93ac4b710490800000000000000
-      internalID: -7781803112026725743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boom_2_sprites_4
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 24
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 837a2c5e1a8b96930800000000000000
-      internalID: 4137040738200495928
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 11ca444417d6d5649a42792427412489
     internalID: 0
     vertices: []
     indices: 
@@ -264,8 +220,6 @@ TextureImporter:
       boom_2_sprites_0: -7288675575975141506
       boom_2_sprites_1: -1242923264494009628
       boom_2_sprites_2: 8505236297957311851
-      boom_2_sprites_3: -7781803112026725743
-      boom_2_sprites_4: 4137040738200495928
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

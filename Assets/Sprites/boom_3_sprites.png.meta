@@ -138,10 +138,10 @@ TextureImporter:
       name: boom_3_sprites_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 37
-        width: 71
-        height: 62
+        x: 0
+        y: 0
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,10 +160,10 @@ TextureImporter:
       name: boom_3_sprites_1
       rect:
         serializedVersion: 2
-        x: 170
-        y: 30
-        width: 81
-        height: 82
+        x: 140
+        y: 0
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,10 +182,10 @@ TextureImporter:
       name: boom_3_sprites_2
       rect:
         serializedVersion: 2
-        x: 290
-        y: 65
-        width: 9
-        height: 8
+        x: 280
+        y: 0
+        width: 140
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,33 +200,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: boom_3_sprites_3
-      rect:
-        serializedVersion: 2
-        x: 296
-        y: 11
-        width: 117
-        height: 127
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c2854c5c2fe128670800000000000000
-      internalID: 8539421871496779820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 16792f216b5778a4e8d1c224bbea08bf
     internalID: 0
     vertices: []
     indices: 
@@ -239,7 +217,6 @@ TextureImporter:
       boom_3_sprites_0: 6064325587458281634
       boom_3_sprites_1: -634467080488675562
       boom_3_sprites_2: 4642503181200780507
-      boom_3_sprites_3: 8539421871496779820
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -140,8 +140,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 34
-        height: 42
+        width: 104
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,10 +160,10 @@ TextureImporter:
       name: impact_2_sprites_1
       rect:
         serializedVersion: 2
-        x: 49
-        y: 23
-        width: 19
-        height: 49
+        x: 104
+        y: 0
+        width: 104
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,55 +178,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: impact_2_sprites_2
-      rect:
-        serializedVersion: 2
-        x: 121
-        y: 0
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 020eef9fb926ce980800000000000000
-      internalID: -8508317173956026336
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: impact_2_sprites_3
-      rect:
-        serializedVersion: 2
-        x: 182
-        y: 23
-        width: 27
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 86c1b1d85f27c00f0800000000000000
-      internalID: -1149417405926400920
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 83a07e7f555677b41853c568756b05fd
     internalID: 0
     vertices: []
     indices: 
@@ -238,8 +194,6 @@ TextureImporter:
     nameFileIdTable:
       impact_2_sprites_0: 6683818627205053487
       impact_2_sprites_1: -5096575708820462267
-      impact_2_sprites_2: -8508317173956026336
-      impact_2_sprites_3: -1149417405926400920
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
