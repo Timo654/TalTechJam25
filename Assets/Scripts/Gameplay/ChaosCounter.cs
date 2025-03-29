@@ -40,7 +40,7 @@ public class ChaosCounter : MonoBehaviour
     }
 
 
-    private void CountEntity(EntityType type, ItemType _)
+    private void CountEntity(EntityType type, ItemType _, int __)
     {
         switch (type)
         {

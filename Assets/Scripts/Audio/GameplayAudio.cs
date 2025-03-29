@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class GameplayAudio : MonoBehaviour
 {
+    [SerializeField] GameObject[] audioDirections; // L, M, R
     private void Start()
     {
         // start music here
@@ -23,24 +24,25 @@ public class GameplayAudio : MonoBehaviour
         // TODO
     }
 
-    private void PlayAudio(EntityType _, ItemType type)
+    private void PlayAudio(EntityType _, ItemType type, int laneID)
     {
+        Debug.Log(type);
         switch (type)
         {
             case ItemType.Pedestrian:
                 break;
             case ItemType.Trashcan:
-                AudioManager.Instance.PlaySound(WWiseEvents.Instance.BinHit);
+                AudioManager.Instance.PlaySound(WWiseEvents.Instance.BinHit, audioDirections[laneID]);
                 break;
             case ItemType.Scooter:
                 break;
             case ItemType.StreetLamp:
-                AudioManager.Instance.PlaySound(WWiseEvents.Instance.PostHit);
+                AudioManager.Instance.PlaySound(WWiseEvents.Instance.PostHit, audioDirections[laneID]);
                 break;
             case ItemType.TrafficSign:
                 break;
             case ItemType.Bench:
-                AudioManager.Instance.PlaySound(WWiseEvents.Instance.BenchHit);
+                AudioManager.Instance.PlaySound(WWiseEvents.Instance.BenchHit, audioDirections[laneID]);
                 break;
         }
     }

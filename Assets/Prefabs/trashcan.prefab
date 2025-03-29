@@ -181,6 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityType: 1
+  itemType: 1
   movementSpeed: 10
 --- !u!95 &2151380906236633908
 Animator:
