@@ -49,13 +49,6 @@ public class MainMenu : MonoBehaviour
 
     public void OnCreditsPressed()
     {
-        // TODO - disable menu cg
-        UICommon.FadeInCG(creditsMenuCG, 0.2f);
+        LevelChanger.Instance.FadeToLevel("Credits");
     }
-
-    public void OnLeaveCredits()
-    {
-        UICommon.FadeOutCG(creditsMenuCG, 0.2f);
-    }
-
 }
