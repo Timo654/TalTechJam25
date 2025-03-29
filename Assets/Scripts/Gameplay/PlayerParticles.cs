@@ -26,9 +26,12 @@ public class PlayerParticles : MonoBehaviour
             case EntityType.Scooter:
             case EntityType.Pedestrian:
                 // good entity
+                m_particleSystem.startColor = Color.white;
                 break;
             case EntityType.Trash:
                 // bad entity
+                Color color = new Color(0.5f,0f , 1f);
+                m_particleSystem.startColor = color;
                 break;
         }
         m_particleSystem.Play();
