@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 665230923
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -959393633, guid: 11b6e1dc58b60a74282287b5b2b5bda9, type: 3}
+  m_Sprite: {fileID: -2239546983446599902, guid: 78b0ab94ccb32e748b13d0d1bdf89fa6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 2376694190383346873}
   - component: {fileID: 2151380906236633908}
   m_Layer: 0
-  m_Name: Pedestrian
+  m_Name: PedestrianTemp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,7 +181,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entityType: 0
-  itemType: 0
   movementSpeed: 15
 --- !u!95 &2151380906236633908
 Animator:
