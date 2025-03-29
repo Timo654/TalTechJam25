@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{15AF9294-C212-4B43-83AE-FEB6EA153484}",
     "Language": "SFX",
-    "Hash": "{9D2A4815-CFA7-550F-872C-B774230D8370}",
+    "Hash": "{005CF31B-157C-CFDC-2B73-6AFB4DEE0788}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainBank",
     "ShortName": "MainBank",
     "Path": "MainBank.bnk",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "CourageDrop.wav",
-      "CachePath": "33/{332F9C1B-1ECB-B204-170B-8E9816B94920}.wem"
+      "CachePath": "07/{073FD70C-D08B-748A-49F2-7987FB43EF4E}.wem"
      },
      {
       "Id": "313572889",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "GameStartButton.wav",
-      "CachePath": "CB/{CB101E04-8E08-358E-2890-24502706F894}.wem"
+      "CachePath": "F5/{F5A6EF7D-CFF7-5471-BD67-C35A7A9D4358}.wem"
      },
      {
       "Id": "797319761",
@@ -125,7 +125,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "CourageObtain.wav",
-      "CachePath": "D9/{D909266F-6ECE-24E4-7044-AB3A438608F3}.wem"
+      "CachePath": "98/{98F3EC6D-BD83-8E8E-7FD6-0178A51BA94C}.wem"
      },
      {
       "Id": "950094142",
@@ -577,6 +577,6 @@
     ]
    }
   ],
-  "FileHash": "{B74F3B3A-551A-13E7-F3E6-5C9C8B259DD8}"
+  "FileHash": "{2D77997B-B81A-B66C-F4ED-2BC86CEFCF32}"
  }
 }

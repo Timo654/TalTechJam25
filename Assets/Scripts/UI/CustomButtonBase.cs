@@ -49,6 +49,10 @@ public abstract class CustomButtonBase : MonoBehaviour, ISelectHandler, IDeselec
             case ButtonType.Normal:
                 AudioManager.Instance.PlaySound(WWiseEvents.Instance.ButtonClick);
                 break;
+            case ButtonType.Boom:
+                AudioManager.Instance.PlaySound(WWiseEvents.Instance.ButtonClick);
+                AudioManager.Instance.PlaySound(WWiseEvents.Instance.GameStartClick);
+                break;
             case ButtonType.Back:
                 AudioManager.Instance.PlaySound(WWiseEvents.Instance.ButtonBack);
                 break;
@@ -141,5 +145,6 @@ public abstract class CustomButtonBase : MonoBehaviour, ISelectHandler, IDeselec
 public enum ButtonType
 {
     Normal,
-    Back
+    Back,
+    Boom
 }
