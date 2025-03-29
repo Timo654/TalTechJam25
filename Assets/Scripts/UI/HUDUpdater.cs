@@ -1,16 +1,26 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.Windows;
 
 public class HUDUpdater : MonoBehaviour
 {
+    private float scoreCounterSpeed = 100f;
     private TextMeshProUGUI m_scoreText;
     private TextMeshProUGUI m_timerText;
-
+    private float visualScore;
+    private int targetScore;
     private void Awake()
     {
-        m_scoreText = transform.GetChild(0).GetComponent<TextMeshProUGUI>();
-        m_timerText = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+        m_scoreText = transform.GetChild(0).GetChild(1).GetComponent<TextMeshProUGUI>();
+        m_timerText = transform.GetChild(1).GetChild(1).GetComponent<TextMeshProUGUI>();
+    }
+
+    private void Update()
+    {
+        if (targetScore != visualScore)
+        {
+            visualScore = Mathf.MoveTowards(visualScore, targetScore, scoreCounterSpeed * Time.deltaTime);
+            m_scoreText.text = $"{$"{Mathf.RoundToInt(visualScore):0000}"}";
+        }
     }
     private void OnEnable()
     {
@@ -29,12 +39,12 @@ public class HUDUpdater : MonoBehaviour
     {
         int minutes = time / 60;
         int seconds = time % 60;
-        m_timerText.text = $"Time: {minutes:D2}:{seconds:D2}";
+        m_timerText.text = $"{minutes:D2}:{seconds:D2}";
     }
 
     private void UpdateScoreUI(int score)
     {
-        m_scoreText.text = $"Score: {score}";
+        targetScore = score;
     }
 }
 
