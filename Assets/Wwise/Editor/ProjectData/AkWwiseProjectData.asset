@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d5c87e189aefe04597a0738b241d60ca
     GuidInternal: 
-    m_lastTime: -8584583398544591727
+    m_lastTime: -8584583342334050973
     List:
     - name: MainBank
       guid: 9492af1512c2434b83aefeb6ea153484
@@ -574,7 +574,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: b237b0cb81fdd24280bc14337cab956c
     GuidInternal: 
-    m_lastTime: -8584583398544581729
+    m_lastTime: -8584583342333941723
     List:
     - name: DrumChanger
       guid: a2fa3697d4dfe646b8efcd802db59949
@@ -623,6 +623,22 @@ MonoBehaviour:
         - ElementName: Courage2
           ObjectType: 10
           guid: 8177d6c0c5f1c9409207648d673c3d3c
+      - name: NoCourage
+        guid: 8608246a9b9b7947a1eae0393e46b4e4
+        id: 290397464
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b237b0cb81fdd24280bc14337cab956c
+        - ElementName: DrumChanger
+          ObjectType: 11
+          guid: a2fa3697d4dfe646b8efcd802db59949
+        - ElementName: NoCourage
+          ObjectType: 10
+          guid: 8608246a9b9b7947a1eae0393e46b4e4
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -723,7 +739,7 @@ MonoBehaviour:
     m_lastTime: -8584584332699988291
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0200000005000000060000000700000008000000090000000a0000000c0000000d0000000e0000000f00000010000000120000001500000018000000190000001b000000
+  ExpandedWaapiItemIds: 0200000005000000060000000700000008000000090000000a0000000c0000000d0000000e0000000f00000010000000120000001500000018000000190000001b0000003300000034000000360000002702000028020000290200002a020000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
