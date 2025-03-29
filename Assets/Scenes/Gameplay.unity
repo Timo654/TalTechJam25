@@ -861,15 +861,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollSpeed: 8
   roadParts:
-  - {fileID: 1619069507}
-  - {fileID: 1481146204}
-  - {fileID: 1827774948}
-  - {fileID: 1860574852}
-  - {fileID: 479036474}
-  - {fileID: 1351513101}
-  - {fileID: 1431681011}
-  - {fileID: 1039036703}
-  - {fileID: 650594308}
+  - roadPart: {fileID: 1619069507}
+    spriteHeight: 32
+  - roadPart: {fileID: 1481146204}
+    spriteHeight: 32
+  - roadPart: {fileID: 1827774948}
+    spriteHeight: 32
+  - roadPart: {fileID: 1860574852}
+    spriteHeight: 32
+  - roadPart: {fileID: 479036474}
+    spriteHeight: 32
+  - roadPart: {fileID: 1351513101}
+    spriteHeight: 32
+  - roadPart: {fileID: 1431681011}
+    spriteHeight: 32
+  - roadPart: {fileID: 1039036703}
+    spriteHeight: 32
+  - roadPart: {fileID: 650594308}
+    spriteHeight: 32
 --- !u!1001 &1001399549
 PrefabInstance:
   m_ObjectHideFlags: 0

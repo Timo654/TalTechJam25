@@ -457,13 +457,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Programming\nTimo Jairus\nNathan Andreas Lillipuu\n\nArt\nMaria Pruuden\nMarlen
+  m_text: "Programming\nTimo Jairus\nNathan-Andreas Lillipuu\n\nArt\nMaria Pruuden\nMarlen
     Enok\n\nAudio\nTimur Nizamov\n\nPowered by Wwise \n\xA9 2006 \u2013 2025 \nAudiokinetic
     Inc. \nAll rights reserved.\n\nThanks for playing!\n(and insult us for making
     it)\n\nDid you find all the endings?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 64ea42d1681ff3a43927c149f8da842b, type: 2}
+  m_sharedMaterial: {fileID: -750838846202380595, guid: 64ea42d1681ff3a43927c149f8da842b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -487,8 +487,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 44
+  m_fontSizeBase: 44
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -557,7 +557,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -750838846202380595, guid: 64ea42d1681ff3a43927c149f8da842b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
