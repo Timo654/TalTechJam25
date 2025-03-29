@@ -17,7 +17,7 @@ public class PedSpawner : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(2f);
-            Debug.Log("spawned ped");
+            //Debug.Log("spawned ped");
             var gameObj = Instantiate(entityPrefabs[Random.Range(0, entityPrefabs.Length)], transform); // todo weighted chances
             // Set position and rotation
             gameObj.transform.localPosition = new Vector3(

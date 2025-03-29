@@ -28,7 +28,7 @@ public class EntityScript : MonoBehaviour
         var dot = Vector3.Dot(Camera.main.transform.forward, vect);
         if (dot < 0)
         {
-            Debug.Log("off screen, destroying...");
+            //Debug.Log("off screen, destroying...");
             Destroy(gameObject);
         }
     }

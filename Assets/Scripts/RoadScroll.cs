@@ -22,7 +22,7 @@ public class RoadScroll : MonoBehaviour
             // If the road part moves out of view, reposition it to the top
             if (newPos.y < -spriteHeight)
             {
-                Debug.Log($"moved {roadPart.name}, spriteHeight {spriteHeight}");
+                //Debug.Log($"moved {roadPart.name}, spriteHeight {spriteHeight}");
                 newPos.y += spriteHeight * countPerLane; // Stack the parts vertically
             }
 
