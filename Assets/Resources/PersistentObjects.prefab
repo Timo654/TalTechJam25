@@ -222,28 +222,28 @@ MonoBehaviour:
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 5d64f924c2a9bc946a20cbc3edf39167, type: 2}
   <GameMusic2>k__BackingField:
     idInternal: 0
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: a598f42bfdbd9e1439c932bf856a38cd, type: 2}
   <NoDrum>k__BackingField:
     idInternal: 0
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: f5cf2584a0b448b4791ee18f37be3de2, type: 2}
   <Drumset1>k__BackingField:
     idInternal: 0
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 2eb134005c2b12840a8e28a03099ace8, type: 2}
   <Drumset2>k__BackingField:
     idInternal: 0
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: a8a083e42be5cd6449637bff528f6362, type: 2}

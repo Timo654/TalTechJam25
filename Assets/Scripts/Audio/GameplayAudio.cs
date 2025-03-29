@@ -4,7 +4,7 @@ public class GameplayAudio : MonoBehaviour
 {
     private void Start()
     {
-        // start music here
+        AudioManager.Instance.SetSwitch(WWiseEvents.Instance.GameMusic1);
     }
     private void OnEnable()
     {

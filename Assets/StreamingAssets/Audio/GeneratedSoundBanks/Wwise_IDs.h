@@ -39,6 +39,7 @@ namespace AK
             {
                 static const AkUniqueID COURAGE1 = 481047188U;
                 static const AkUniqueID COURAGE2 = 481047191U;
+                static const AkUniqueID NOCOURAGE = 290397464U;
             } // namespace SWITCH
         } // namespace DRUMCHANGER
 

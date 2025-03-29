@@ -94,6 +94,12 @@
       "GUID": "{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}",
       "Switches": [
        {
+        "Id": "290397464",
+        "Name": "NoCourage",
+        "ObjectPath": "\\Switches\\Default Work Unit\\DrumChanger\\NoCourage",
+        "GUID": "{6A240886-9B9B-4779-A1EA-E0393E46B4E4}"
+       },
+       {
         "Id": "481047188",
         "Name": "Courage1",
         "ObjectPath": "\\Switches\\Default Work Unit\\DrumChanger\\Courage1",
@@ -142,6 +148,6 @@
     ]
    }
   ],
-  "FileHash": "{5961E825-8377-87DD-A745-8C8F446D49FF}"
+  "FileHash": "{118F34F9-29A2-980C-B05D-D3302F71F3F4}"
  }
 }

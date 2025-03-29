@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{15AF9294-C212-4B43-83AE-FEB6EA153484}",
     "Language": "SFX",
-    "Hash": "{2D3EA071-9296-1B9C-51D6-258DA43CF17E}",
+    "Hash": "{0208B3D5-B2F6-2C29-D215-BFE2CEC18BAB}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainBank",
     "ShortName": "MainBank",
     "Path": "MainBank.bnk",
@@ -78,6 +78,22 @@
       "Location": "Memory",
       "ShortName": "NewClick.wav",
       "CachePath": "0E/{0EFA9E1B-5AF0-11BF-5C7E-26E44F56E894}.wem"
+     },
+     {
+      "Id": "686805704",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameplayMusicSecondPartNoDrum.wav",
+      "CachePath": "BE/{BE68728E-2DA8-D781-C9D7-231278903F4B}.wem"
+     },
+     {
+      "Id": "687490700",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameplayMusicFirstPartNoDrum.wav",
+      "CachePath": "76/{768FEB6C-2109-5EDF-F30D-77301023CF1D}.wem"
      },
      {
       "Id": "723807366",
@@ -420,6 +436,84 @@
           "Id": "950094142"
          }
         ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2011614756",
+         "Id": "3055903945",
+         "GUID": "{8227F546-7B31-4C0C-A1F6-B1B05BE9E05D}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "687490700"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2011614756",
+         "Id": "3055903946",
+         "GUID": "{B112BD6C-212A-4156-A9E4-3DEF50B73BCC}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "686805704"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2011614756",
+         "Id": "2201105581",
+         "GUID": "{E583C7EC-0801-44FE-8A0B-24B648A33DCC}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "313572889"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2011614756",
+         "Id": "2607556080",
+         "GUID": "{72F2F132-B40D-45D4-A1CA-1A2E80CD3B29}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "950094142"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2011614756",
+         "Id": "3055903945",
+         "GUID": "{8227F546-7B31-4C0C-A1F6-B1B05BE9E05D}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "687490700"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2011614756",
+         "Id": "3055903946",
+         "GUID": "{B112BD6C-212A-4156-A9E4-3DEF50B73BCC}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "686805704"
+         }
+        ]
        }
       ]
      },
@@ -577,6 +671,6 @@
     ]
    }
   ],
-  "FileHash": "{6A2FA510-E601-7677-0EA3-896BC4B8BE08}"
+  "FileHash": "{05B41D3C-1017-AB0A-A6DC-813D2F46FDD5}"
  }
 }
