@@ -19,8 +19,18 @@ public class PlayerParticles : MonoBehaviour
         EntityScript.EntityAttacked -= PlayParticles;
     }
 
-    private void PlayParticles(EntityType _, ItemType __, int ___)
+    private void PlayParticles(EntityType entityType, ItemType __, int ___)
     {
+        switch (entityType)
+        {
+            case EntityType.Scooter:
+            case EntityType.Pedestrian:
+                // good entity
+                break;
+            case EntityType.Trash:
+                // bad entity
+                break;
+        }
         m_particleSystem.Play();
     }
 }
