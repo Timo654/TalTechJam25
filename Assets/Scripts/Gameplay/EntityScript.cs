@@ -13,6 +13,8 @@ public class EntityScript : MonoBehaviour
     private void Awake()
     {
         animator = transform.GetComponent<Animator>();
+        SpriteRenderer spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        spriteRenderer.flipX = Random.value > 0.5f;
     }
 
     private void OnEnable()
