@@ -14,6 +14,20 @@ public class EntityScript : MonoBehaviour
         animator = transform.GetComponent<Animator>();
     }
 
+    private void OnEnable()
+    {
+        GameManager.BoostSpeed += IncreaseSpeed;
+    }
+    private void OnDisable()
+    {
+        GameManager.BoostSpeed -= IncreaseSpeed;
+    }
+
+    private void IncreaseSpeed(float increment)
+    {
+        movementSpeed += increment;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log(collision.gameObject.name);
@@ -55,5 +69,6 @@ public class EntityScript : MonoBehaviour
 public enum EntityType
 {
     Pedestrian,
-    Trash
+    Trash,
+    Scooter
 }

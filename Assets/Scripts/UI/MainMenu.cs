@@ -1,4 +1,3 @@
-using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -40,44 +39,23 @@ public class MainMenu : MonoBehaviour
     public void OnOptionsPressed()
     {
         // TODO - disable menu cg
-        FadeInCG(optionsMenuCG, 0.2f);
+        UICommon.FadeInCG(optionsMenuCG, 0.2f);
     }
 
     public void OnLeaveSettings()
     {
-        FadeOutCG(optionsMenuCG, 0.2f);
+        UICommon.FadeOutCG(optionsMenuCG, 0.2f);
     }
 
     public void OnCreditsPressed()
     {
         // TODO - disable menu cg
-        FadeInCG(creditsMenuCG, 0.2f);
+        UICommon.FadeInCG(creditsMenuCG, 0.2f);
     }
 
     public void OnLeaveCredits()
     {
-        FadeOutCG(creditsMenuCG, 0.2f);
-    }
-
-    private bool FadeInCG(CanvasGroup canvasGroup, float duration)
-    {
-        if (canvasGroup.alpha > 0f) return false; // already fading in
-        canvasGroup.DOKill(); // if fading out still
-        canvasGroup.blocksRaycasts = true;
-        canvasGroup.DOFade(1f, duration).OnComplete(() => canvasGroup.interactable = true); // maybe make it interactable mid transition idk
-
-        return true;
-    }
-
-    private bool FadeOutCG(CanvasGroup canvasGroup, float duration)
-    {
-        if (canvasGroup.alpha < 1f) return false; // already fading out
-        canvasGroup.DOKill(); // if fading in still
-        canvasGroup.blocksRaycasts = false;
-        canvasGroup.interactable = false;
-        canvasGroup.DOFade(0f, duration); // maybe make it interactable mid transition idk
-
-        return true;
+        UICommon.FadeOutCG(creditsMenuCG, 0.2f);
     }
 
 }
