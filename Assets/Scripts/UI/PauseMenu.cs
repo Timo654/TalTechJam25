@@ -28,13 +28,11 @@ public class PauseMenu : MonoBehaviour
     }
     public void OnRestart()
     {
-        Debug.Log("TODO!!");
-        //LevelChanger.Instance.FadeToLevel(SceneManager.GetActiveScene().name);
+        LevelChanger.Instance.FadeToLevel(SceneManager.GetActiveScene().name);
     }
     public void OnQuit()
     {
-        Debug.Log("TODO!!");
-        //LevelChanger.Instance.FadeToLevel("MainMenu");
+        LevelChanger.Instance.FadeToLevel("MainMenu");
     }
 
     public void OnOptions()

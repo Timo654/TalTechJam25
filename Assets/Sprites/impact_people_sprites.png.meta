@@ -135,6 +135,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -459,7 +485,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      impact_people_sprites_0: 1551900793912344435
+      impact_people_sprites_1: 9105492490845410720
+      impact_people_sprites_10: -3210760992277157983
+      impact_people_sprites_11: -808030943383346447
+      impact_people_sprites_12: -1819718056299235360
+      impact_people_sprites_13: 7078728444057034046
+      impact_people_sprites_2: -8963274099557718573
+      impact_people_sprites_3: 9130165376597494194
+      impact_people_sprites_4: -2392414797650517454
+      impact_people_sprites_5: -2122077792046661918
+      impact_people_sprites_6: -7279315617423277306
+      impact_people_sprites_7: 8462635485861741534
+      impact_people_sprites_8: -5984358361502513995
+      impact_people_sprites_9: -2394249239287683294
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
