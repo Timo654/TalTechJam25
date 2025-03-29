@@ -485,6 +485,18 @@
 									</ChildrenList>
 								</MusicPlaylistContainer>
 								<MusicPlaylistContainer Name="GameTrack1" ID="{C75C3CE4-F235-464B-804B-976A50631BE2}" ShortID="912356771">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
@@ -530,7 +542,7 @@
 									<ChildrenList>
 										<MusicSegment Name="GameplayMusicFirstPartNoDrum" ID="{1E5040FB-7005-4AA0-ADE4-5B5B22AAE0CA}" ShortID="305248117">
 											<PropertyList>
-												<Property Name="EndPosition" Type="Real64" Value="72000"/>
+												<Property Name="EndPosition" Type="Real64" Value="73637.3557955374"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
 														<Value>1</Value>
@@ -603,58 +615,6 @@
 														</ObjectList>
 													</ObjectLists>
 												</MusicTrack>
-												<MusicTrack Name="Drumset1" ID="{31EAE382-7DBC-472B-9EE4-B5154CC619B3}" ShortID="1060573271">
-													<ReferenceList>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
-														</Reference>
-														<Reference Name="TransitionRoot">
-															<Custom>
-																<MusicTransition Name="Root" ID="{993AF227-ECDB-47FF-AFCC-9BCDE2A65611}">
-																	<PropertyList>
-																		<Property Name="IsFolder" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<TransitionInfo/>
-																</MusicTransition>
-															</Custom>
-														</Reference>
-													</ReferenceList>
-													<ObjectLists>
-														<ObjectList Name="Sequences">
-															<Reference>
-																<Local>
-																	<MusicTrackSequence Name="" ID="{53445D6F-71BC-470D-8DDF-58ECDD7C1D07}"/>
-																</Local>
-															</Reference>
-														</ObjectList>
-													</ObjectLists>
-												</MusicTrack>
-												<MusicTrack Name="Drumset2" ID="{2ED3A4EA-EAD9-486E-8E4D-5F1D9BDE9E36}" ShortID="449854400">
-													<ReferenceList>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
-														</Reference>
-														<Reference Name="TransitionRoot">
-															<Custom>
-																<MusicTransition Name="Root" ID="{4C60A1CB-8DE4-4668-BE44-04BDC7492F1A}">
-																	<PropertyList>
-																		<Property Name="IsFolder" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<TransitionInfo/>
-																</MusicTransition>
-															</Custom>
-														</Reference>
-													</ReferenceList>
-													<ObjectLists>
-														<ObjectList Name="Sequences">
-															<Reference>
-																<Local>
-																	<MusicTrackSequence Name="" ID="{6A8E8E35-141D-43E9-9420-7AB36D92A4B2}"/>
-																</Local>
-															</Reference>
-														</ObjectList>
-													</ObjectLists>
-												</MusicTrack>
 											</ChildrenList>
 											<ObjectLists>
 												<ObjectList Name="Cues">
@@ -679,6 +639,18 @@
 									</ChildrenList>
 								</MusicPlaylistContainer>
 								<MusicPlaylistContainer Name="GameTrack2" ID="{374638D5-636E-4518-A019-D1661C884969}" ShortID="282594525">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
@@ -689,12 +661,10 @@
 										<Reference Name="PlaylistRoot">
 											<Custom>
 												<MusicPlaylistItem Name="" ID="{96CE36B1-630C-471F-86A9-CF29B30F6371}" ShortID="668614525">
-													<PropertyList>
-														<Property Name="LoopCount" Type="int16" Value="0"/>
-													</PropertyList>
 													<ChildrenList>
 														<MusicPlaylistItem Name="" ID="{0E26875F-17A3-43E8-8ED2-676D7E9F8556}" ShortID="138816773">
 															<PropertyList>
+																<Property Name="LoopCount" Type="int16" Value="0"/>
 																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 															</PropertyList>
 															<ReferenceList>
@@ -726,7 +696,7 @@
 									<ChildrenList>
 										<MusicSegment Name="GameplayMusicSecondPartNoDrum" ID="{ACBC14DA-4BA7-4C9D-BEFD-C7E795BA6F2A}" ShortID="1068283260">
 											<PropertyList>
-												<Property Name="EndPosition" Type="Real64" Value="64000"/>
+												<Property Name="EndPosition" Type="Real64" Value="79439.6887159533"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
 														<Value>1</Value>
@@ -794,58 +764,6 @@
 																			</ObjectList>
 																		</ObjectLists>
 																	</MusicTrackSequence>
-																</Local>
-															</Reference>
-														</ObjectList>
-													</ObjectLists>
-												</MusicTrack>
-												<MusicTrack Name="Drumset1" ID="{8D3706B8-E8D3-4958-AEDE-7140CB2F722D}" ShortID="475283678">
-													<ReferenceList>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
-														</Reference>
-														<Reference Name="TransitionRoot">
-															<Custom>
-																<MusicTransition Name="Root" ID="{D7697F03-198D-452D-AF24-F96C5374E26E}">
-																	<PropertyList>
-																		<Property Name="IsFolder" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<TransitionInfo/>
-																</MusicTransition>
-															</Custom>
-														</Reference>
-													</ReferenceList>
-													<ObjectLists>
-														<ObjectList Name="Sequences">
-															<Reference>
-																<Local>
-																	<MusicTrackSequence Name="" ID="{904D5CD0-5E62-4459-9678-CCF462E559AC}"/>
-																</Local>
-															</Reference>
-														</ObjectList>
-													</ObjectLists>
-												</MusicTrack>
-												<MusicTrack Name="Drumset2" ID="{4FF8F65F-218E-4520-93DE-AE90C8D2C8C6}" ShortID="631039246">
-													<ReferenceList>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
-														</Reference>
-														<Reference Name="TransitionRoot">
-															<Custom>
-																<MusicTransition Name="Root" ID="{CC02D471-5B2E-4982-A33E-EDD6511A28EA}">
-																	<PropertyList>
-																		<Property Name="IsFolder" Type="bool" Value="True"/>
-																	</PropertyList>
-																	<TransitionInfo/>
-																</MusicTransition>
-															</Custom>
-														</Reference>
-													</ReferenceList>
-													<ObjectLists>
-														<ObjectList Name="Sequences">
-															<Reference>
-																<Local>
-																	<MusicTrackSequence Name="" ID="{A05C493B-4979-4E86-9122-63589B5A50F9}"/>
 																</Local>
 															</Reference>
 														</ObjectList>
@@ -948,6 +866,19 @@
 													<ObjectList Name="EntryPath">
 														<Reference>
 															<ObjectRef Name="GameMain2" ID="{B112BD6C-212A-4156-A9E4-3DEF50B73BCC}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MultiSwitchEntry>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MultiSwitchEntry Name="" ID="{B587C334-91A6-44EC-A03C-CFF87EB16216}">
+												<ObjectLists>
+													<ObjectList Name="EntryPath">
+														<Reference>
+															<ObjectRef Name="MusicChanger" ID="{F5BB506C-2DF3-45B1-8C0A-6CCB0A64BCEB}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
 														</Reference>
 													</ObjectList>
 												</ObjectLists>
