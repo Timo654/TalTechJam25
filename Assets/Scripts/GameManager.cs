@@ -69,6 +69,7 @@ public class GameManager : MonoBehaviour
             BoostSpeed?.Invoke(5f);
             currentPhase++; // enter phase 2, which is faster
             // SWITCH TO PHASE 2 THEME HERE
+            AudioManager.Instance.SetSwitch(WWiseEvents.Instance.GameMusic2);
         }
     }
 
