@@ -6,10 +6,18 @@ public class WWiseEvents : MonoBehaviour
     [field: SerializeField] public AK.Wwise.Event TestSound { get; private set; }
     [field: SerializeField] public AK.Wwise.Event WrongSound { get; private set; }
 
+    [field: SerializeField] public AK.Wwise.Event PostHit { get; private set; }
+    [field: SerializeField] public AK.Wwise.Event BenchHit { get; private set; }
+    [field: SerializeField] public AK.Wwise.Event BinHit { get; private set; }
+    [field: SerializeField] public AK.Wwise.Event PedHit { get; private set; }
+    [field: SerializeField] public AK.Wwise.Event GetCourage { get; private set; }
+    [field: SerializeField] public AK.Wwise.Event LooseCourage { get; private set; }
+
     [field: Header("UI")]
     [field: SerializeField] public AK.Wwise.Event ButtonClick { get; private set; }
     [field: SerializeField] public AK.Wwise.Event ButtonHover { get; private set; }
     [field: SerializeField] public AK.Wwise.Event ButtonBack { get; private set; }
+    [field: SerializeField] public AK.Wwise.Event GameStartClick { get; private set; }
 
     [field: Header("Music")]
     [field: SerializeField] public AK.Wwise.Event MenuMusic { get; private set; }

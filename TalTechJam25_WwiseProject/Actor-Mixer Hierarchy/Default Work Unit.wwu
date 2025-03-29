@@ -57,6 +57,357 @@
 								<ActiveSource Name="fireSound" ID="{4AB1C0F5-45A1-4B05-B2F6-6D30DF267ABC}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="BenchHit" ID="{788201DA-61C7-47B6-8AE7-843667053A17}" ShortID="854564946">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F57C8854-0686-4933-AB41-5EF4EA4BE7BD}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{D4532251-D45F-4DE5-8D0C-5958E3C4DDE7}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="WoodSmash1" ID="{2DDB0713-DEDE-4E7D-B1CA-2F2B77712A83}" ShortID="246105640">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-120</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood, Break, Ukulele, Thin, Smash 01 SND30370" ID="{50D48F09-26F2-4B14-B26E-51FFB546DC49}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.687552083333333"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Wood, Break, Ukulele, Thin, Smash 01 SND30370.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="837333872"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood, Break, Ukulele, Thin, Smash 01 SND30370" ID="{50D48F09-26F2-4B14-B26E-51FFB546DC49}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="WoodSmash2" ID="{A78F584F-BE7E-4B57-83EC-65B3EFB603F1}" ShortID="654137598">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-220</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood, Break, Ukulele, Thin, Smash 02 SND30369" ID="{A334E8B3-E0FF-4EA5-8FE1-6EE4247832A9}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.231642489553561"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0077102420546048"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Wood, Break, Ukulele, Thin, Smash 02 SND30369.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="933114952"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood, Break, Ukulele, Thin, Smash 02 SND30369" ID="{A334E8B3-E0FF-4EA5-8FE1-6EE4247832A9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="WoodSmash3" ID="{BD5B1902-BC28-489C-9BE4-CC2E497D18ED}" ShortID="692357969">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-80</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood, Break, Logs, Impact, Debris SND56856" ID="{B8CDBAC5-B2D7-4476-87B1-CFBEFF93988E}">
+											<PropertyList>
+												<Property Name="MarkerInputMode" Type="int16" Value="2"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.02641294967042"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.501515766357618"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Wood, Break, Logs, Impact, Debris SND56856.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="59614920"/>
+											</MediaIDList>
+											<ObjectLists>
+												<ObjectList Name="Markers">
+													<Reference>
+														<Local>
+															<Marker Name="" ID="{E83A3E7E-F0A7-484F-8AF0-76EEF8CAB79A}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<Marker Name="" ID="{33370D7A-4AFA-4536-BB50-1050B05B5E76}">
+																<PropertyList>
+																	<Property Name="Time" Type="Real64" Value="1.18285416666667"/>
+																</PropertyList>
+															</Marker>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<Marker Name="" ID="{E87D6FA9-27A4-48F7-9926-3F34FB14B5B0}">
+																<PropertyList>
+																	<Property Name="Time" Type="Real64" Value="2.28403125"/>
+																</PropertyList>
+															</Marker>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood, Break, Logs, Impact, Debris SND56856" ID="{B8CDBAC5-B2D7-4476-87B1-CFBEFF93988E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{09B04A53-DF24-40DB-888B-2D71E493A29C}" ShortID="637358655">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom CreatedFrom="{B35D266A-CE6E-40A1-B197-14C12F9C21B1}">
+															<Effect Name="Hall_Guns (Custom)" ID="{E26BDE85-D6BA-48FA-BDCB-C900C48C4A75}" ShortID="575264795" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<PropertyList>
+																	<Property Name="DecayTime" Type="Real32" Value="1.9"/>
+																	<Property Name="Density" Type="Real32" Value="24"/>
+																	<Property Name="Diffusion" Type="Real32" Value="31"/>
+																	<Property Name="DryLevel" Type="Real32" Value="-1.3"/>
+																	<Property Name="ERLevel" Type="Real32" Value="-37"/>
+																	<Property Name="ERPattern" Type="int32" Value="12"/>
+																	<Property Name="Filter1Freq" Type="Real32" Value="590"/>
+																	<Property Name="Filter1Gain" Type="Real32" Value="1"/>
+																	<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+																	<Property Name="Filter2Freq" Type="Real32" Value="9860"/>
+																	<Property Name="Filter2Gain" Type="Real32" Value="-2.5"/>
+																	<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+																	<Property Name="Filter3Gain" Type="Real32" Value="1"/>
+																	<Property Name="HFDamping" Type="Real32" Value="3"/>
+																	<Property Name="PreDelay" Type="Real32" Value="27"/>
+																	<Property Name="Quality" Type="int32" Value="10"/>
+																	<Property Name="ReverbLevel" Type="Real32" Value="-39"/>
+																	<Property Name="RoomShape" Type="Real32" Value="14"/>
+																	<Property Name="RoomSize" Type="Real32" Value="45"/>
+																	<Property Name="StereoWidth" Type="Real32" Value="54"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
+						<Sound Name="Lamp hit" ID="{5459CC19-CD4A-4310-9600-8B31B425027D}" ShortID="135427880">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D6BCEC04-8BFC-4F20-B355-3FD11CAC7361}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{D4532251-D45F-4DE5-8D0C-5958E3C4DDE7}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lamp hit" ID="{C32ABF10-D35E-40DD-AD56-7C477585B2DE}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.795903535698861"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.532716279894714"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.40895004827611"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Lamp hit.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="70246689"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{573AA042-10C2-4BEC-8271-F5C91A263C57}" ShortID="7063263">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+														<ObjectRef Name="Hall_Guns" ID="{B35D266A-CE6E-40A1-B197-14C12F9C21B1}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{A136770C-53A1-4E19-8D74-92426772B9D2}" ShortID="431394601">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<ObjectRef Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Lamp hit" ID="{C32ABF10-D35E-40DD-AD56-7C477585B2DE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="BinHit" ID="{A80DE248-4265-4ACF-AA95-6FF7B3780C6B}" ShortID="1022442002">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{D4532251-D45F-4DE5-8D0C-5958E3C4DDE7}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Wood, Crash &amp; Debris, Hard Impacts, Metal Details, Wood Break SND53109" ID="{DF628959-5FD8-4ED2-96A8-9CA2EDDCA6E7}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.440052051027257"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.19883346255764"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Wood, Crash &amp; Debris, Hard Impacts, Metal Details, Wood Break SND53109.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="93865244"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{93E23A74-095D-43FF-9EA5-3D056BDEC271}" ShortID="447861754">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Compressor (Custom)" ID="{9BC8BCC4-6DDA-42C3-AE52-25E25F5DF1B4}" ShortID="268940815" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+																<PropertyList>
+																	<Property Name="AttackTime" Type="Real32" Value="0.28"/>
+																	<Property Name="Ratio" Type="Real32" Value="3"/>
+																	<Property Name="ReleaseTime" Type="Real32" Value="0.38"/>
+																	<Property Name="Threshold" Type="Real32" Value="-21.1"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{85283008-BCD0-4B21-868B-FC7AC151D092}" ShortID="544063986">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="RoomVerb (Custom)" ID="{139E0AF2-222C-4935-A32B-95C6B2CC62ED}" ShortID="782873648" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<PropertyList>
+																	<Property Name="DryLevel" Type="Real32" Value="-3.3"/>
+																	<Property Name="ERLevel" Type="Real32" Value="-31"/>
+																	<Property Name="ReverbLevel" Type="Real32" Value="-32"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Wood, Crash &amp; Debris, Hard Impacts, Metal Details, Wood Break SND53109" ID="{DF628959-5FD8-4ED2-96A8-9CA2EDDCA6E7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{A4FE66D0-0BCE-4AB6-9DF4-3B928AF2ACC4}" ShortID="979635429">
