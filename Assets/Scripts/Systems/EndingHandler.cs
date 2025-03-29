@@ -54,6 +54,6 @@ public class EndingHandler : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(4f); // TODO - maybe adjust ending timing or load from data
         running = false;
-        LevelChanger.Instance.FadeToLevel("MainMenu"); // TODO - credits?
+        LevelChanger.Instance.FadeToLevel("Credits");
     }
 }
