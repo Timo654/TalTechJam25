@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3fe3663d14313ff46a879fb4dd895c94
+guid: 132c06ee1b8585949aab9558d4412e87
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5172981082200280501
-    second: tree_3_0
+      213: 5599919013376082543
+    second: intro cutscene individual frame6_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tree_3_0
+      name: intro cutscene individual frame6_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 82
-        height: 50
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b42f2a50d11e538b0800000000000000
-      internalID: -5172981082200280501
+      spriteID: f62cc3b4ca8e6bd40800000000000000
+      internalID: 5599919013376082543
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tree_3_0: -5172981082200280501
+      intro cutscene individual frame6_0: 5599919013376082543
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
