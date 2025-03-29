@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 2ddf3224e9080184bb4f314930afc788
+guid: 11b6e1dc58b60a74282287b5b2b5bda9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1277496849123441335
-    second: street_lamp_0
+      213: 186249940332606317
+    second: pedestrian 1_0
   - first:
-      213: -8891771450213074746
-    second: street_lamp_1
-  - first:
-      213: 3485894368399098820
-    second: street_lamp_2
+      213: 4229350806114200041
+    second: pedestrian 1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 25
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -132,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: street_lamp_0
+      name: pedestrian 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 53
-        height: 137
+        width: 107
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,20 +144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2564762b457e6784da5b0e5b1a9ec889
-      internalID: 79422318
+      spriteID: 15e1b2e051376a44b80ee67381340f48
+      internalID: -959393633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: street_lamp_1
+      name: pedestrian 1_1
       rect:
         serializedVersion: 2
-        x: 53
+        x: 107
         y: 0
-        width: 53
-        height: 137
+        width: 107
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42aabc498ee258e44a73b92e247835a9
-      internalID: 1603195082
+      spriteID: 8b80aee996d6fc343b1bb0f15bfa8dd7
+      internalID: -1418060477
       vertices: []
       indices: 
       edges: []
@@ -179,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 60679ed166a38e04697846271d6a1dea
+    spriteID: be4ee6c1bd0fea842a25c4982f569df8
     internalID: 0
     vertices: []
     indices: 
@@ -189,8 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      street_lamp_0: 79422318
-      street_lamp_1: 1603195082
+      pedestrian 1_0: -959393633
+      pedestrian 1_1: -1418060477
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

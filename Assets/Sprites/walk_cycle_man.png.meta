@@ -140,8 +140,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 95
-        height: 112
+        width: 93
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,10 +160,10 @@ TextureImporter:
       name: walk_cycle_man_1
       rect:
         serializedVersion: 2
-        x: 95
+        x: 93
         y: 0
-        width: 95
-        height: 112
+        width: 93
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,10 +182,10 @@ TextureImporter:
       name: walk_cycle_man_2
       rect:
         serializedVersion: 2
-        x: 190
+        x: 186
         y: 0
-        width: 95
-        height: 112
+        width: 93
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,10 +204,10 @@ TextureImporter:
       name: walk_cycle_man_3
       rect:
         serializedVersion: 2
-        x: 285
+        x: 279
         y: 0
-        width: 95
-        height: 112
+        width: 93
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
