@@ -488,7 +488,7 @@
 									<PropertyList>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
-												<Value>1</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
@@ -545,12 +545,7 @@
 												<Property Name="EndPosition" Type="Real64" Value="80000"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
+														<Value>3</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -585,7 +580,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="GameplayMusicFirstPartNoDrum" ID="{C5B4CB2F-83B5-49DB-B52F-428E523056CB}">
+														<AudioFileSource Name="GameplayMusicFirstPartNoDrum" ID="{AEEA9829-B8D5-4BD5-AC41-2E91FFA0A1A1}">
 															<Language>SFX</Language>
 															<AudioFile>GameplayMusicFirstPartNoDrum.wav</AudioFile>
 															<MediaIDList>
@@ -602,13 +597,13 @@
 																			<ObjectList Name="Clips">
 																				<Reference>
 																					<Local>
-																						<MusicClip Name="GameplayMusicFirstPartNoDrum" ID="{C0C824C6-20DF-421F-AB42-AF20BFE94DE2}">
+																						<MusicClip Name="GameplayMusicFirstPartNoDrum" ID="{EB96B038-5A1F-4198-B262-2AB8249F9D2C}">
 																							<PropertyList>
 																								<Property Name="EndTrimOffset" Type="Real64" Value="72000"/>
 																								<Property Name="FadeInMode" Type="int16" Value="0"/>
 																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																							</PropertyList>
-																							<AudioSourceRef Name="GameplayMusicFirstPartNoDrum" ID="{C5B4CB2F-83B5-49DB-B52F-428E523056CB}"/>
+																							<AudioSourceRef Name="GameplayMusicFirstPartNoDrum" ID="{AEEA9829-B8D5-4BD5-AC41-2E91FFA0A1A1}"/>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -625,11 +620,14 @@
 														<Property Name="MusicTrackType" Type="int16" Value="3"/>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+														</Reference>
 														<Reference Name="DefaultSwitchOrState">
 															<ObjectRef Name="Courage1" ID="{D66BBB1A-34F9-4A29-8B31-558F7C1A4958}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+															<ObjectRef Name="Music" ID="{81701AD9-7D91-405A-9B7A-074139308337}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
 															<ObjectRef Name="DrumChanger" ID="{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
@@ -697,11 +695,14 @@
 														<Property Name="MusicTrackType" Type="int16" Value="3"/>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+														</Reference>
 														<Reference Name="DefaultSwitchOrState">
 															<ObjectRef Name="Courage2" ID="{C0D67781-F1C5-40C9-9207-648D673C3D3C}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+															<ObjectRef Name="Music" ID="{81701AD9-7D91-405A-9B7A-074139308337}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
 															<ObjectRef Name="DrumChanger" ID="{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
@@ -942,10 +943,34 @@
 									</ChildrenList>
 								</MusicPlaylistContainer>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="DrumChanger" ID="{C27D9736-0012-4E35-870B-D795A85450E3}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="NoDrum" ID="{60A978B9-55F6-4721-89CA-5F7A3F8E343F}"/>
+										<CustomState Name="" ID="{36F60ACC-717E-424B-A4DF-FF5212DFFA35}" ShortID="689802060"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Drumset2" ID="{AA3B72F1-F1B4-48DC-9887-F1FC6443B634}"/>
+										<CustomState Name="" ID="{A998BEB0-3188-4E64-A9C5-198501F504B7}" ShortID="1069076524"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Drumset1" ID="{FB85C180-FDD6-4960-8F18-E139E6322A2C}"/>
+										<CustomState Name="" ID="{B1AEF429-1FFA-45AD-B6CD-9F8959D6A566}" ShortID="155697696"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists>
 								<ObjectList Name="Arguments">
 									<Reference>
 										<ObjectRef Name="MusicChanger" ID="{F5BB506C-2DF3-45B1-8C0A-6CCB0A64BCEB}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="DrumChanger" ID="{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
 									</Reference>
 								</ObjectList>
 								<ObjectList Name="Entries">
@@ -961,6 +986,9 @@
 													<ObjectList Name="EntryPath">
 														<Reference>
 															<ObjectRef Name="Credits" ID="{E583C7EC-0801-44FE-8A0B-24B648A33DCC}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="DrumChanger" ID="{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
 														</Reference>
 													</ObjectList>
 												</ObjectLists>
@@ -980,6 +1008,9 @@
 														<Reference>
 															<ObjectRef Name="Menu" ID="{72F2F132-B40D-45D4-A1CA-1A2E80CD3B29}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
 														</Reference>
+														<Reference>
+															<ObjectRef Name="DrumChanger" ID="{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
+														</Reference>
 													</ObjectList>
 												</ObjectLists>
 											</MultiSwitchEntry>
@@ -997,6 +1028,9 @@
 													<ObjectList Name="EntryPath">
 														<Reference>
 															<ObjectRef Name="GameMain1" ID="{8227F546-7B31-4C0C-A1F6-B1B05BE9E05D}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
+														</Reference>
+														<Reference>
+															<ObjectRef Name="DrumChanger" ID="{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
 														</Reference>
 													</ObjectList>
 												</ObjectLists>
@@ -1016,18 +1050,8 @@
 														<Reference>
 															<ObjectRef Name="GameMain2" ID="{B112BD6C-212A-4156-A9E4-3DEF50B73BCC}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
 														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MultiSwitchEntry>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MultiSwitchEntry Name="" ID="{B587C334-91A6-44EC-A03C-CFF87EB16216}">
-												<ObjectLists>
-													<ObjectList Name="EntryPath">
 														<Reference>
-															<ObjectRef Name="MusicChanger" ID="{F5BB506C-2DF3-45B1-8C0A-6CCB0A64BCEB}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
+															<ObjectRef Name="DrumChanger" ID="{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
 														</Reference>
 													</ObjectList>
 												</ObjectLists>

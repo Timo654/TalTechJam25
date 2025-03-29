@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0B534113-818F-441E-B4A0-988B2FD78130}" SchemaVersion="123">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{0B534113-818F-441E-B4A0-988B2FD78130}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0B534113-818F-441E-B4A0-988B2FD78130}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="DrumChanger" ID="{C27D9736-0012-4E35-870B-D795A85450E3}">
+					<ChildrenList>
+						<State Name="None" ID="{F3FE99D7-E847-430B-8E79-E83E09872559}"/>
+						<State Name="Drumset1" ID="{FB85C180-FDD6-4960-8F18-E139E6322A2C}"/>
+						<State Name="Drumset2" ID="{AA3B72F1-F1B4-48DC-9887-F1FC6443B634}"/>
+						<State Name="NoDrum" ID="{60A978B9-55F6-4721-89CA-5F7A3F8E343F}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
