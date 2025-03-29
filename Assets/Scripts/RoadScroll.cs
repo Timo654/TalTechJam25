@@ -28,15 +28,19 @@ public class RoadScroll : MonoBehaviour
     {
         foreach (RoadObject roadObj in roadParts)
         {
+            foreach (Transform roadPart in roadObj.roadParent.transform)
+            {
+                roadPart.transform.localPosition += scrollSpeed * Time.fixedDeltaTime * new Vector3(0, -1, 0);
+                // If the road part moves out of view, reposition it to the top
+                if (roadPart.transform.localPosition.y < -roadObj.spriteHeight)
+                {
+                    //Debug.Log($"moved {roadPart.name}, spriteHeight {spriteHeight}");
+                    roadPart.transform.localPosition = new Vector3(roadPart.transform.localPosition.x, roadPart.transform.localPosition.y + roadObj.spriteHeight * countPerLane, roadPart.transform.localPosition.z); // Stack the parts vertically
+                }
+            }
             // Update the local position based on scroll speed
 
-            roadObj.roadPart.transform.localPosition += scrollSpeed * Time.fixedDeltaTime * new Vector3(0, -1, 0);
-            // If the road part moves out of view, reposition it to the top
-            if (roadObj.roadPart.transform.localPosition.y < -roadObj.spriteHeight)
-            {
-                //Debug.Log($"moved {roadPart.name}, spriteHeight {spriteHeight}");
-                roadObj.roadPart.transform.localPosition = new Vector3(roadObj.roadPart.transform.localPosition.x, roadObj.roadPart.transform.localPosition.y + roadObj.spriteHeight * countPerLane, roadObj.roadPart.transform.localPosition.z); // Stack the parts vertically
-            }
+
         }
     }
 }
@@ -45,6 +49,6 @@ public class RoadScroll : MonoBehaviour
 [Serializable]
 public struct RoadObject
 {
-    public GameObject roadPart;
+    public GameObject roadParent;
     public float spriteHeight;
 }

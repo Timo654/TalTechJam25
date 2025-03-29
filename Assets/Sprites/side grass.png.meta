@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cacdbc6fdcb1cc849be5ef63f316f3fe
+guid: 913717f28584b324aa968facc8cf05a6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4098823163760067679
-    second: house_1_0
+      213: -9106313484018071798
+    second: side grass_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,9 +40,9 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: house_1_0
+      name: side grass_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 144
-        height: 211
+        width: 45
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ab30fe8c0e0e17c0800000000000000
-      internalID: -4098823163760067679
+      spriteID: a07c0c33220ef9180800000000000000
+      internalID: -9106313484018071798
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      house_1_0: -4098823163760067679
+      side grass_0: -9106313484018071798
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
