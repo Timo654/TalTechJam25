@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ed4594bd9fe7e49a736dbead7b416c, type: 3}
+  m_Name: GoodEnding
+  m_EditorClassIdentifier: 
+  endingType: 0
+  endingSprite: {fileID: -1922320232825502070, guid: ca364c58b43ed364ebaa77a0e7f413b4, type: 3}
+  endingText: the trail of destruction
+  endingSprite2: {fileID: -1952069927907668444, guid: ca364c58b43ed364ebaa77a0e7f413b4, type: 3}

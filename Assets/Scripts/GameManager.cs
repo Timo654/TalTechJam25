@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private EndingData[] endings;
     public static event Action<bool> GameActive;
     public static event Action<int> OnGameTimeChanged;
     public static event Action<float> BoostSpeed;
@@ -10,15 +11,18 @@ public class GameManager : MonoBehaviour
     private float currentTime = 60f;
     private int lastTimeValue;
     private int currentPhase = 0;
+
     private void OnEnable()
     {
         LevelChanger.OnFadeInFinished += StartGame;
         GameActive += SetActive;
+        ChaosCounter.SendEndScore += EndGame;
     }
     private void OnDisable()
     {
         LevelChanger.OnFadeInFinished -= StartGame;
         GameActive -= SetActive;
+        ChaosCounter.SendEndScore -= EndGame;
     }
 
     private void SetActive(bool val)
@@ -47,6 +51,7 @@ public class GameManager : MonoBehaviour
         if (!gameActive) return;
         if (currentTime <= 0)
         {
+            GameActive?.Invoke(false);
             //EndGame();
         }
         else
@@ -62,17 +67,22 @@ public class GameManager : MonoBehaviour
 
         if (currentPhase == 0 && currentTime < 30f)
         {
-            //BoostSpeed?.Invoke(5f);
+            BoostSpeed?.Invoke(5f);
             currentPhase++; // enter phase 2, which is faster
             // SWITCH TO PHASE 2 THEME HERE
         }
     }
 
-    private void EndGame()
+    private void EndGame(EndingType endingType)
     {
-        // TODO - handle all the different endings etc etc
-        GameActive?.Invoke(false);
-        Debug.Log("TODO - game end");
-        LevelChanger.Instance.FadeToLevel("MainMenu");
+        foreach (EndingData ending in endings)
+        {
+            if (ending.endingType == endingType)
+            {
+                SaveManager.Instance.runtimeData.currentEnding = ending;
+                break;
+            }
+        }
+        LevelChanger.Instance.FadeToLevel("Ending");
     }
 }
