@@ -5,7 +5,8 @@ using Random = UnityEngine.Random;
 public class EntityScript : MonoBehaviour
 {
     [SerializeField] private EntityType entityType;
-    public static event Action<EntityType> EntityAttacked;
+    [SerializeField] private ItemType itemType;
+    public static event Action<EntityType, ItemType> EntityAttacked;
     private Animator animator;
     // TODO - use an event to change the speed
     public float movementSpeed = 10f;
@@ -36,7 +37,7 @@ public class EntityScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         animator.SetTrigger("Destroy");
-        EntityAttacked?.Invoke(entityType);
+        EntityAttacked?.Invoke(entityType, itemType);
         float xPosToUse = 0f;
         switch (transform.localPosition.x)
         {
@@ -75,4 +76,15 @@ public enum EntityType
     Pedestrian,
     Trash,
     Scooter
+}
+
+// similar but more precise
+public enum ItemType
+{
+    Pedestrian,
+    Trashcan,
+    Scooter,
+    StreetLamp,
+    TrafficSign,
+    Bench
 }

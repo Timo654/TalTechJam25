@@ -4,10 +4,11 @@ using UnityEngine;
 public class ChaosCounter : MonoBehaviour
 {
     public static event Action<EndingType> SendEndScore;
+    public static event Action<uint> UpdateStreak;
     private uint pedsBullied = 0;
     private uint trashDestroyed = 0;
     private uint scootersDestroyed = 0;
-
+    private uint currentStreak;
     private void OnEnable()
     {
         EntityScript.EntityAttacked += CountEntity;
@@ -39,23 +40,27 @@ public class ChaosCounter : MonoBehaviour
     }
 
 
-    private void CountEntity(EntityType type)
+    private void CountEntity(EntityType type, ItemType _)
     {
         switch (type)
         {
             case EntityType.Pedestrian:
                 pedsBullied++;
+                currentStreak++;
                 break;
             case EntityType.Trash:
                 trashDestroyed++;
+                currentStreak = 0;
                 break;
             case EntityType.Scooter:
                 scootersDestroyed++;
+                currentStreak++;
                 break;
             default:
                 Debug.LogWarning($"Unknown entity {type}");
                 break;
         }
+        UpdateStreak?.Invoke(currentStreak);
         //Debug.Log($"PEDS BULLIED {pedsBullied}, TRASH DESTROYED {trashDestroyed}");
     }
 }
