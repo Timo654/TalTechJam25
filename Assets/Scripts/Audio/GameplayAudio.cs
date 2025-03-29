@@ -5,6 +5,7 @@ public class GameplayAudio : MonoBehaviour
     [SerializeField] GameObject[] audioDirections; // L, M, R
     private void Start()
     {
+        AudioManager.Instance.PlaySound(WWiseEvents.Instance.PlaySwitcher);
         AudioManager.Instance.SetSwitch(WWiseEvents.Instance.GameMusic1);
     }
     private void OnEnable()
