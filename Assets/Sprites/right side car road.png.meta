@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cacdbc6fdcb1cc849be5ef63f316f3fe
+guid: 12dba27684731514791e5b650bf956ab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4098823163760067679
-    second: house_1_0
+      213: 4819298476984389884
+    second: right side car road_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,9 +40,9 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: house_1_0
+      name: right side car road_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 144
-        height: 211
+        width: 45
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ab30fe8c0e0e17c0800000000000000
-      internalID: -4098823163760067679
+      spriteID: cf05c3b5e6691e240800000000000000
+      internalID: 4819298476984389884
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      house_1_0: -4098823163760067679
+      right side car road_0: 4819298476984389884
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
