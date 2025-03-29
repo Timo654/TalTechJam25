@@ -8,7 +8,9 @@ public class MainMenu : MonoBehaviour
     private GameObject lastSelect;
     void Start()
     {
-        AudioManager.Instance.PlaySound() // PLAY MENU MUSIC
+        //AudioManager.Instance.PlaySound() // PLAY MENU MUSIC
+        AudioManager.Instance.PlaySound(WWiseEvents.Instance.PlaySwitcher);
+        AudioManager.Instance.SetSwitch(WWiseEvents.Instance.MenuMusic);
         LevelChanger.Instance.FadeIn();
     }
 

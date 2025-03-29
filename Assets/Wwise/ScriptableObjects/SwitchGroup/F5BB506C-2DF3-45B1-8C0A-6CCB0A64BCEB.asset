@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e737a5784f65d4db70273654f3495d, type: 3}
+  m_Name: F5BB506C-2DF3-45B1-8C0A-6CCB0A64BCEB
+  m_EditorClassIdentifier: 
+  objectName: MusicChanger
+  id: 2011614756
+  guid: F5BB506C-2DF3-45B1-8C0A-6CCB0A64BCEB

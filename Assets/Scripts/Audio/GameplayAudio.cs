@@ -30,14 +30,17 @@ public class GameplayAudio : MonoBehaviour
             case ItemType.Pedestrian:
                 break;
             case ItemType.Trashcan:
+                AudioManager.Instance.PlaySound(WWiseEvents.Instance.BinHit);
                 break;
             case ItemType.Scooter:
                 break;
             case ItemType.StreetLamp:
+                AudioManager.Instance.PlaySound(WWiseEvents.Instance.PostHit);
                 break;
             case ItemType.TrafficSign:
                 break;
             case ItemType.Bench:
+                AudioManager.Instance.PlaySound(WWiseEvents.Instance.BenchHit);
                 break;
         }
     }

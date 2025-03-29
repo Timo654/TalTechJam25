@@ -18,7 +18,8 @@ public class CreditsHandler : MonoBehaviour
 
     private void Start()
     {
-        // play credits audio
+        // AudioManager.Instance.PlaySound(WWiseEvents.Instance.PlaySwitcher);
+        AudioManager.Instance.SetSwitch(WWiseEvents.Instance.CreditsMusic);
         LevelChanger.Instance.FadeIn();
     }
     public void OnCreditsEnd()

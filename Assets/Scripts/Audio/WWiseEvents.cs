@@ -20,7 +20,6 @@ public class WWiseEvents : MonoBehaviour
     [field: SerializeField] public AK.Wwise.Event GameStartClick { get; private set; }
 
     [field: Header("Music")]
-    [field: SerializeField] public AK.Wwise.Event MenuMusic { get; private set; }
     [field: SerializeField] public AK.Wwise.Event PlaySwitcher { get; private set; }
 
     [field: Header("Switches")]

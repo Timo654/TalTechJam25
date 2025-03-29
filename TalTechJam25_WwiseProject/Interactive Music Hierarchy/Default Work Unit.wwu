@@ -62,7 +62,6 @@
 												<MusicTransition Name="Transition" ID="{9DB20566-C033-4052-9DDB-35E07681B009}">
 													<PropertyList>
 														<Property Name="DestinationContextType" Type="int16" Value="2"/>
-														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 														<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 														<Property Name="SourceContextType" Type="int16" Value="2"/>
 													</PropertyList>
