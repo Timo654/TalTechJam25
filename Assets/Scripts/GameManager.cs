@@ -38,7 +38,6 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         LevelChanger.Instance.FadeIn();
-        // PLAY GAMEPLAY MUSIC HERE
     }
     private void StartGame()
     {
