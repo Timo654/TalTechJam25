@@ -2,13 +2,24 @@ using UnityEngine;
 
 public class RoadScroll : MonoBehaviour
 {
-    public float scrollSpeed = 2f; // Speed of scrolling
+    public float scrollSpeed = 5f; // Speed of scrolling
     public GameObject[] roadParts; // Array holding road sprites
     private float spriteHeight = 32f; // Height of one road sprite, actual is 34.5f but i wanted overlap
     private int countPerLane = 3;
-    void Awake()
+
+    private void OnEnable()
     {
-        
+        GameManager.BoostSpeed += IncreaseSpeed;
+    }
+
+    private void OnDisable()
+    {
+        GameManager.BoostSpeed -= IncreaseSpeed;
+    }
+
+    private void IncreaseSpeed(float increment)
+    {
+        scrollSpeed += increment;
     }
 
     void FixedUpdate()
