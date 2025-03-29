@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EntityScript : MonoBehaviour
 {
@@ -15,10 +16,22 @@ public class EntityScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("triggerered");
         Debug.Log(collision.gameObject.name);
         animator.SetTrigger("Destroy");
         EntityAttacked?.Invoke(entityType);
+        float xPosToUse = 0f;
+        switch (transform.localPosition.x)
+        {
+            case 0f:
+                if (Random.value < 0.5f) xPosToUse = -3.5f;
+                else xPosToUse = 4f;
+                break;
+            default:
+                // use 0f
+                break;
+        }
+        transform.localPosition = new Vector3(xPosToUse, transform.localPosition.y, transform.localPosition.z);
+
     }
 
     private void Update()
@@ -28,7 +41,7 @@ public class EntityScript : MonoBehaviour
         var dot = Vector3.Dot(Camera.main.transform.forward, vect);
         if (dot < 0)
         {
-            Debug.Log("off screen, destroying...");
+            //Debug.Log("off screen, destroying...");
             Destroy(gameObject);
         }
     }
