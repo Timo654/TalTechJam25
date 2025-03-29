@@ -11,7 +11,7 @@ public class WWiseEvents : MonoBehaviour
     [field: SerializeField] public AK.Wwise.Event BinHit { get; private set; }
     [field: SerializeField] public AK.Wwise.Event PedHit { get; private set; }
     [field: SerializeField] public AK.Wwise.Event GetCourage { get; private set; }
-    [field: SerializeField] public AK.Wwise.Event LooseCourage { get; private set; }
+    [field: SerializeField] public AK.Wwise.Event LoseCourage { get; private set; }
 
     [field: Header("UI")]
     [field: SerializeField] public AK.Wwise.Event ButtonClick { get; private set; }

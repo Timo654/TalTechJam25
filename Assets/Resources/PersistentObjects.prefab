@@ -91,6 +91,7 @@ MonoBehaviour:
     currentLevel: 0
   runtimeData:
     previousSceneName: 
+    currentEnding: {fileID: 0}
 --- !u!1 &5016839012092585960
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,10 +161,34 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 97de2d1eaf067e5408a77b6b5b5fcd99, type: 2}
+  <PostHit>k__BackingField:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3c8e76d23e6195947aad8cc8e7fdb439, type: 2}
+  <BenchHit>k__BackingField:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6cc33851626cc9947b476a5a6a25f310, type: 2}
+  <BinHit>k__BackingField:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c6c02a35061f4bc45a42614033464be7, type: 2}
+  <PedHit>k__BackingField:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  <GetCourage>k__BackingField:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9ceb3a973f245d34b81b0118bbe509bb, type: 2}
+  <LoseCourage>k__BackingField:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 23f73bde15ace1a44a78fb2ce35d84e4, type: 2}
   <ButtonClick>k__BackingField:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9cd7a76bcbbb34d439e4591242ca320f, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 4cc82ee3963f9474ea9aa69d9e5a912b, type: 2}
   <ButtonHover>k__BackingField:
     idInternal: 0
     valueGuidInternal: 
@@ -172,7 +197,11 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 2d521ef6b6c46874680cada0cd76e5ea, type: 2}
+  <GameStartClick>k__BackingField:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6c74579b4e512ed47a5d8902c8d4d144, type: 2}
   <MenuMusic>k__BackingField:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c24aec78fb92d444995e71fe9ab56724, type: 2}

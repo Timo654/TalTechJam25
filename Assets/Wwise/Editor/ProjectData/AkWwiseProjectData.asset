@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: d5c87e189aefe04597a0738b241d60ca
     GuidInternal: 
-    m_lastTime: -8584584332700013855
+    m_lastTime: -8584583419460366936
     List:
     - name: MainBank
       guid: 9492af1512c2434b83aefeb6ea153484
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: d62b92dde4877747b03afdd74af8b072
     GuidInternal: 
-    m_lastTime: -8584584332700663849
+    m_lastTime: -8584583419717254138
     List:
     - name: Music
       guid: b95ddb8bddbe584685f413d54ce464cd
@@ -204,6 +204,66 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.68750566
       minDuration: 0.68750566
+    - name: Play_button_click_main_new
+      guid: 691f10b418881f4e80887329e84e3fd7
+      id: 10764666
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: UI
+        ObjectType: 4
+        guid: a888da91ef63464083bf78b63914ca4d
+      - ElementName: Play_button_click_main_new
+        ObjectType: 3
+        guid: 691f10b418881f4e80887329e84e3fd7
+      Path: Events\Default Work Unit\UI\Play_button_click_main_new
+      maxAttenuation: 0
+      maxDuration: 0.9117225
+      minDuration: 0.9117225
+    - name: Play_courage_drop_sfx
+      guid: d75c6f5ed4c4cb48b8d45f28eabce691
+      id: 4224063566
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 74141f36b2617b41a862b3f712e3eb14
+      - ElementName: Play_courage_drop_sfx
+        ObjectType: 3
+        guid: d75c6f5ed4c4cb48b8d45f28eabce691
+      Path: Events\Default Work Unit\SFX\Play_courage_drop_sfx
+      maxAttenuation: 0
+      maxDuration: 3.033009
+      minDuration: 3.033009
+    - name: Play_courage_obtain_sfx
+      guid: 0f7f24dee474ee449cb7ce551371e8c4
+      id: 2730508926
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 74141f36b2617b41a862b3f712e3eb14
+      - ElementName: Play_courage_obtain_sfx
+        ObjectType: 3
+        guid: 0f7f24dee474ee449cb7ce551371e8c4
+      Path: Events\Default Work Unit\SFX\Play_courage_obtain_sfx
+      maxAttenuation: 0
+      maxDuration: 3.033009
+      minDuration: 3.033009
     - name: Play_enemy_hit_test
       guid: d41915b7a2685943920f63bce8bfd97a
       id: 1291546063
@@ -244,6 +304,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_game_start_button_sfx
+      guid: 16825754195334408479fc9201075ddd
+      id: 2194780196
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: UI
+        ObjectType: 4
+        guid: a888da91ef63464083bf78b63914ca4d
+      - ElementName: Play_game_start_button_sfx
+        ObjectType: 3
+        guid: 16825754195334408479fc9201075ddd
+      Path: Events\Default Work Unit\UI\Play_game_start_button_sfx
+      maxAttenuation: 0
+      maxDuration: 2.4045942
+      minDuration: 2.4045942
     - name: Play_hover_mouse_sfx
       guid: 37790e2b076d254e9e4377a4692c4d1b
       id: 713846344
@@ -264,6 +344,106 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.43750566
       minDuration: 0.43750566
+    - name: Play_lamp_hit_sfx
+      guid: 1ce1e7bdcf1c3043a752c25cb01a7153
+      id: 1137826710
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 74141f36b2617b41a862b3f712e3eb14
+      - ElementName: Play_lamp_hit_sfx
+        ObjectType: 3
+        guid: 1ce1e7bdcf1c3043a752c25cb01a7153
+      Path: Events\Default Work Unit\SFX\Play_lamp_hit_sfx
+      maxAttenuation: 0
+      maxDuration: 0.9835391
+      minDuration: 0.8512891
+    - name: Play_MusicSwitch
+      guid: 7d5edeef07703c4c83238302d081b73b
+      id: 3117137027
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: Music
+        ObjectType: 4
+        guid: b95ddb8bddbe584685f413d54ce464cd
+      - ElementName: Play_MusicSwitch
+        ObjectType: 3
+        guid: 7d5edeef07703c4c83238302d081b73b
+      Path: Events\Default Work Unit\Music\Play_MusicSwitch
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_pre_courage_sfx
+      guid: 5b27152091ea584da6bb0625752fcc44
+      id: 1894117360
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 74141f36b2617b41a862b3f712e3eb14
+      - ElementName: Play_pre_courage_sfx
+        ObjectType: 3
+        guid: 5b27152091ea584da6bb0625752fcc44
+      Path: Events\Default Work Unit\SFX\Play_pre_courage_sfx
+      maxAttenuation: 0
+      maxDuration: 4
+      minDuration: 4
+    - name: Play_rubbish_bin_hit_sfx
+      guid: 9033edbbbaf5b0469a207db3759feeb7
+      id: 3520789391
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 74141f36b2617b41a862b3f712e3eb14
+      - ElementName: Play_rubbish_bin_hit_sfx
+        ObjectType: 3
+        guid: 9033edbbbaf5b0469a207db3759feeb7
+      Path: Events\Default Work Unit\SFX\Play_rubbish_bin_hit_sfx
+      maxAttenuation: 0
+      maxDuration: 0.75878143
+      minDuration: 0.75878143
+    - name: Play_wooden_bench_hit_sfx
+      guid: 7e91ce114c63aa4ebe0c10bcfe83b288
+      id: 1201208953
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 74141f36b2617b41a862b3f712e3eb14
+      - ElementName: Play_wooden_bench_hit_sfx
+        ObjectType: 3
+        guid: 7e91ce114c63aa4ebe0c10bcfe83b288
+      Path: Events\Default Work Unit\SFX\Play_wooden_bench_hit_sfx
+      maxAttenuation: 0
+      maxDuration: 0.82714236
+      minDuration: 0.4834075
     - name: SFX
       guid: 74141f36b2617b41a862b3f712e3eb14
       id: 393239870
@@ -394,8 +574,140 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: b237b0cb81fdd24280bc14337cab956c
     GuidInternal: 
-    m_lastTime: -8584584332700002811
-    List: []
+    m_lastTime: -8584583420590142682
+    List:
+    - name: DrumChanger
+      guid: a2fa3697d4dfe646b8efcd802db59949
+      id: 863136109
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b237b0cb81fdd24280bc14337cab956c
+      - ElementName: DrumChanger
+        ObjectType: 11
+        guid: a2fa3697d4dfe646b8efcd802db59949
+      Path: Switches\Default Work Unit\DrumChanger
+      values:
+      - name: Courage1
+        guid: 1abb6bd6f934294a8b31558f7c1a4958
+        id: 481047188
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b237b0cb81fdd24280bc14337cab956c
+        - ElementName: DrumChanger
+          ObjectType: 11
+          guid: a2fa3697d4dfe646b8efcd802db59949
+        - ElementName: Courage1
+          ObjectType: 10
+          guid: 1abb6bd6f934294a8b31558f7c1a4958
+      - name: Courage2
+        guid: 8177d6c0c5f1c9409207648d673c3d3c
+        id: 481047191
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b237b0cb81fdd24280bc14337cab956c
+        - ElementName: DrumChanger
+          ObjectType: 11
+          guid: a2fa3697d4dfe646b8efcd802db59949
+        - ElementName: Courage2
+          ObjectType: 10
+          guid: 8177d6c0c5f1c9409207648d673c3d3c
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: MusicChanger
+      guid: 6c50bbf5f32db1458c0a6ccb0a64bceb
+      id: 2011614756
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b237b0cb81fdd24280bc14337cab956c
+      - ElementName: MusicChanger
+        ObjectType: 11
+        guid: 6c50bbf5f32db1458c0a6ccb0a64bceb
+      Path: Switches\Default Work Unit\MusicChanger
+      values:
+      - name: Credits
+        guid: ecc783e50108fe448a0b24b648a33dcc
+        id: 2201105581
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b237b0cb81fdd24280bc14337cab956c
+        - ElementName: MusicChanger
+          ObjectType: 11
+          guid: 6c50bbf5f32db1458c0a6ccb0a64bceb
+        - ElementName: Credits
+          ObjectType: 10
+          guid: ecc783e50108fe448a0b24b648a33dcc
+      - name: GameMain1
+        guid: 46f52782317b0c4ca1f6b1b05be9e05d
+        id: 3055903945
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b237b0cb81fdd24280bc14337cab956c
+        - ElementName: MusicChanger
+          ObjectType: 11
+          guid: 6c50bbf5f32db1458c0a6ccb0a64bceb
+        - ElementName: GameMain1
+          ObjectType: 10
+          guid: 46f52782317b0c4ca1f6b1b05be9e05d
+      - name: GameMain2
+        guid: 6cbd12b12a215641a9e43def50b73bcc
+        id: 3055903946
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b237b0cb81fdd24280bc14337cab956c
+        - ElementName: MusicChanger
+          ObjectType: 11
+          guid: 6c50bbf5f32db1458c0a6ccb0a64bceb
+        - ElementName: GameMain2
+          ObjectType: 10
+          guid: 6cbd12b12a215641a9e43def50b73bcc
+      - name: Menu
+        guid: 32f1f2720db4d445a1ca1a2e80cd3b29
+        id: 2607556080
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b237b0cb81fdd24280bc14337cab956c
+        - ElementName: MusicChanger
+          ObjectType: 11
+          guid: 6c50bbf5f32db1458c0a6ccb0a64bceb
+        - ElementName: Menu
+          ObjectType: 10
+          guid: 32f1f2720db4d445a1ca1a2e80cd3b29
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -411,7 +723,7 @@ MonoBehaviour:
     m_lastTime: -8584584332699988291
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0200000005000000060000000700000008000000090000000a0000000c0000000d0000000e0000000f00000015000000
+  ExpandedWaapiItemIds: 0200000005000000060000000700000008000000090000000a0000000c0000000d0000000e0000000f0000001500000018000000190000001b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
