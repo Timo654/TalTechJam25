@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: GameMain1
   id: 3055903945
   guid: 8227F546-7B31-4C0C-A1F6-B1B05BE9E05D
-  WwiseSwitchGroupReference: {fileID: 0}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: f44e54275653ead48a72ae9f9957dd34, type: 2}

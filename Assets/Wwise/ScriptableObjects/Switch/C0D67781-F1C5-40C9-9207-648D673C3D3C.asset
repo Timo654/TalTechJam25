@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Courage2
   id: 481047191
   guid: C0D67781-F1C5-40C9-9207-648D673C3D3C
-  WwiseSwitchGroupReference: {fileID: 0}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 7259190f488b3a34a80e28720a0d113c, type: 2}
