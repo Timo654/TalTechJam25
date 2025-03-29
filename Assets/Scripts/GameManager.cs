@@ -52,7 +52,6 @@ public class GameManager : MonoBehaviour
         if (currentTime <= 0)
         {
             GameActive?.Invoke(false);
-            //EndGame();
         }
         else
         {

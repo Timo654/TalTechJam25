@@ -28,9 +28,13 @@ public class EntityScript : MonoBehaviour
         movementSpeed += increment;
     }
 
+    public void ConfigOnSpawn(float increment) 
+    {
+        IncreaseSpeed(increment);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.name);
         animator.SetTrigger("Destroy");
         EntityAttacked?.Invoke(entityType);
         float xPosToUse = 0f;

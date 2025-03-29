@@ -859,7 +859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f17784edc40e4546af46480ff1664f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 5
+  scrollSpeed: 8
   roadParts:
   - {fileID: 1619069507}
   - {fileID: 1481146204}

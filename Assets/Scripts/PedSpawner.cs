@@ -6,10 +6,26 @@ public class PedSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] entityPrefabs; // TODO - weighted chances
     private float[] randomLanes = { -3.5f, 0f, 4f };
+    private float boostIncrement = 0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         StartCoroutine(DelaySpawner());
+    }
+
+    private void OnEnable()
+    {
+        GameManager.BoostSpeed += IncrementBoost;
+    }
+
+    private void OnDisable()
+    {
+        GameManager.BoostSpeed -= IncrementBoost;
+    }
+
+    private void IncrementBoost(float increment)
+    {
+        boostIncrement += increment;
     }
 
     private IEnumerator DelaySpawner()
@@ -25,6 +41,7 @@ public class PedSpawner : MonoBehaviour
                 Mathf.Abs(transform.position.y) + 25f,
                 0f
             );
+            gameObj.GetComponent<EntityScript>().ConfigOnSpawn(boostIncrement);
             gameObj.transform.localRotation = Quaternion.Euler(-50f, 0f, 0f);
             var sr = gameObj.GetComponentInChildren<SpriteRenderer>();
             sr.color = new Color(1, 1, 1, 0);

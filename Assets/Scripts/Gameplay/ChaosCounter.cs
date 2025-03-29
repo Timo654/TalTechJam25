@@ -25,7 +25,7 @@ public class ChaosCounter : MonoBehaviour
         if (!active)
         {
             EndingType currentEnd;
-            if (trashDestroyed == 0 && pedsBullied + scootersDestroyed > 20)
+            if (trashDestroyed == 0 && pedsBullied + scootersDestroyed >= 15)
             {
                 currentEnd = EndingType.Good;
             }
