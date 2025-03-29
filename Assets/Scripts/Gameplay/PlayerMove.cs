@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    public static event Action<int> OnLaneChanged;
     [SerializeField] private Transform[] lanes; // left to right if you dont respect this it will explode probably
     private int currentLane = 1; // middle
     private void OnEnable()
@@ -26,7 +28,6 @@ public class PlayerMove : MonoBehaviour
             currentLane++;
             if (currentLane >= lanes.Length) currentLane = lanes.Length - 1;
         }
-
         // id 0 = -1, id 1 = 0 id 2 = +1, why the fuck does it not want to work with a cleaner solutionm
         switch (currentLane)
         {
@@ -40,5 +41,6 @@ public class PlayerMove : MonoBehaviour
                 transform.localPosition = new Vector3(lanes[currentLane].position.x + 1.5f, transform.localPosition.y, transform.localPosition.z);
                 break;
         }
+        OnLaneChanged?.Invoke(currentLane);
     }
 }

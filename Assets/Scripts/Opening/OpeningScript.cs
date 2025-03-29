@@ -12,11 +12,11 @@ public class OpeningScript : MonoBehaviour
 
     private void Start()
     {
-        if (SaveManager.Instance.gameData.hasClearedOnce) // TODO - display in UI as well
+        if (SaveManager.Instance.gameData.f_hasClearedOnce) // TODO - display in UI as well
         {
             listener = InputSystem.onAnyButtonPress.CallOnce(OnSkipOpening);
         }
-        skipText.SetActive(SaveManager.Instance.gameData.hasClearedOnce);
+        skipText.SetActive(SaveManager.Instance.gameData.f_hasClearedOnce);
         //AudioManager.Instance.SetSwitch(WWiseEvents.Instance.GameMusic1);
         LevelChanger.Instance.FadeIn();
     }
