@@ -48,7 +48,7 @@ public class EntityScript : MonoBehaviour
             case 0f:
                 if (Random.value < 0.5f) xPosToUse = -3.5f;
                 else xPosToUse = 4f;
-                laneID = 2;
+                laneID = 1;
                 break;
             case 3f:
                 laneID = 2;
