@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private GameObject tutorialScreen;
     [SerializeField] private EndingData[] endings;
     public static event Action<bool> GameActive;
     public static event Action<int> OnGameTimeChanged;
@@ -35,6 +36,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Time.timeScale = 0f;
+        tutorialScreen.SetActive(true);
     }
 
     private void Start()
