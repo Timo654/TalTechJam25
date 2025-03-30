@@ -99,7 +99,16 @@
 															<ObjectRef Name="MainMenu" ID="{8B37C727-E5C4-454D-8C89-3DCD0744A714}" WorkUnitID="{901B515D-9334-4460-8F5F-EC731E0B065D}"/>
 														</Reference>
 													</ReferenceList>
-													<TransitionInfo/>
+													<TransitionInfo>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{E7633C27-3657-4BBC-8172-9C314A1BF07A}">
+																<PropertyList>
+																	<Property Name="FadeCurve" Type="int16" Value="1"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+													</TransitionInfo>
 												</MusicTransition>
 												<MusicTransition Name="Transition" ID="{CBB5ADAB-3519-492E-9EA0-1ED5906A5DE0}">
 													<PropertyList>
@@ -120,6 +129,8 @@
 												<MusicTransition Name="Transition" ID="{1A192EFA-6269-41E9-8528-590D4D3186DB}">
 													<PropertyList>
 														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 														<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 														<Property Name="SourceContextType" Type="int16" Value="2"/>
 													</PropertyList>
@@ -131,7 +142,25 @@
 															<ObjectRef Name="GameTrack1" ID="{C75C3CE4-F235-464B-804B-976A50631BE2}" WorkUnitID="{901B515D-9334-4460-8F5F-EC731E0B065D}"/>
 														</Reference>
 													</ReferenceList>
-													<TransitionInfo/>
+													<TransitionInfo>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{F5CDE204-39E6-48B2-9110-6062AD6642CB}">
+																<PropertyList>
+																	<Property Name="FadeOffset" Type="Real64" Value="0.5"/>
+																	<Property Name="FadeTime" Type="Real64" Value="1"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+														<DestinationFadeIn>
+															<MusicFade Name="Destination Fade-in" ID="{B66144A7-CEC8-4CAD-B599-69B158532A39}">
+																<PropertyList>
+																	<Property Name="FadeOffset" Type="Real64" Value="-0.5"/>
+																	<Property Name="FadeTime" Type="Real64" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</DestinationFadeIn>
+													</TransitionInfo>
 												</MusicTransition>
 												<MusicTransition Name="Transition" ID="{85F8E021-4E0B-42D3-A423-6886944E69D9}">
 													<PropertyList>
@@ -152,6 +181,7 @@
 												<MusicTransition Name="Transition" ID="{946D45B0-FC2C-4ACA-95D6-A4F50B71201E}">
 													<PropertyList>
 														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 														<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 														<Property Name="SourceContextType" Type="int16" Value="2"/>
 													</PropertyList>
@@ -163,7 +193,18 @@
 															<ObjectRef Name="GameTrack2" ID="{374638D5-636E-4518-A019-D1661C884969}" WorkUnitID="{901B515D-9334-4460-8F5F-EC731E0B065D}"/>
 														</Reference>
 													</ReferenceList>
-													<TransitionInfo/>
+													<TransitionInfo>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{97C282DD-C7A0-4974-958C-766375826E54}">
+																<PropertyList>
+																	<Property Name="FadeCurve" Type="int16" Value="2"/>
+																	<Property Name="FadeOffset" Type="Real64" Value="0.1"/>
+																	<Property Name="FadeTime" Type="Real64" Value="0.75"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+													</TransitionInfo>
 												</MusicTransition>
 												<MusicTransition Name="Transition" ID="{ED531FBA-9FB9-43E4-BD31-E7E2498D0CF9}">
 													<PropertyList>
@@ -216,6 +257,7 @@
 												<MusicTransition Name="Transition" ID="{500C2DE7-26D2-49C9-AA74-13AD49E98FD1}">
 													<PropertyList>
 														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 														<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 														<Property Name="SourceContextType" Type="int16" Value="2"/>
 													</PropertyList>
@@ -227,7 +269,16 @@
 															<ObjectRef Name="GameTrack1" ID="{C75C3CE4-F235-464B-804B-976A50631BE2}" WorkUnitID="{901B515D-9334-4460-8F5F-EC731E0B065D}"/>
 														</Reference>
 													</ReferenceList>
-													<TransitionInfo/>
+													<TransitionInfo>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{DD54428D-3EBB-42BE-8DBE-474F830AC9B7}">
+																<PropertyList>
+																	<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+													</TransitionInfo>
 												</MusicTransition>
 											</ChildrenList>
 											<TransitionInfo/>
@@ -566,10 +617,12 @@
 										<Reference Name="PlaylistRoot">
 											<Custom>
 												<MusicPlaylistItem Name="" ID="{FDB4C2A6-BB35-4A64-BFC3-4B7BECB23FD3}" ShortID="697508208">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+													</PropertyList>
 													<ChildrenList>
 														<MusicPlaylistItem Name="" ID="{03B240C4-0981-45F1-AFE2-5EA0C5F3DA2C}" ShortID="534335253">
 															<PropertyList>
-																<Property Name="LoopCount" Type="int16" Value="0"/>
 																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 															</PropertyList>
 															<ReferenceList>
@@ -982,8 +1035,9 @@
 														<Local>
 															<MusicCue Name="" ID="{63293BCC-57AC-46DB-9DDE-176B5B7FF3CB}">
 																<PropertyList>
+																	<Property Name="Color" Type="int16" Value="17"/>
 																	<Property Name="CueType" Type="int16" Value="2"/>
-																	<Property Name="TimeMs" Type="Real64" Value="8000"/>
+																	<Property Name="OverrideColor" Type="bool" Value="True"/>
 																</PropertyList>
 															</MusicCue>
 														</Local>

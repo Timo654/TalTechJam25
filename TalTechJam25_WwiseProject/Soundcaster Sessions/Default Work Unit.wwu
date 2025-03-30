@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D8601C75-2F68-41D9-B746-D6B8EF9342D6}" SchemaVersion="123">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{D8601C75-2F68-41D9-B746-D6B8EF9342D6}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D8601C75-2F68-41D9-B746-D6B8EF9342D6}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="TaltechSoundCaster" ID="{E11DF11D-C910-4FD9-8DB2-CA0D0B6B7987}">
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="GameMain2" ID="{B112BD6C-212A-4156-A9E4-3DEF50B73BCC}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
