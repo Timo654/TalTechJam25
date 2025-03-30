@@ -42,6 +42,7 @@ public class HUDUpdater : MonoBehaviour
 
     private void UpdateLivesUI(int lives)
     {
+        if (m_lifeText == null) return;
         m_lifeText.text = lives.ToString();
     }
 
