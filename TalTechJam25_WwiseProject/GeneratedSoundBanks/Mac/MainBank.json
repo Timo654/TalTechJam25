@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{15AF9294-C212-4B43-83AE-FEB6EA153484}",
     "Language": "SFX",
-    "Hash": "{8D86A520-DA8F-BF4D-943E-4BB5D125C9C1}",
+    "Hash": "{C7EE46E5-6DE9-06C8-1451-A081AF916382}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainBank",
     "ShortName": "MainBank",
     "Path": "MainBank.bnk",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PlasticHit.wav",
-      "CachePath": "C6/{C6106255-BB67-CDED-4312-0AB8D18C2DD4}.wem"
+      "CachePath": "2A/{2AAAEF79-B76C-F2E5-6E7F-DD673D9AEFA1}.wem"
      },
      {
       "Id": "152334766",
@@ -117,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Punch2.wav",
-      "CachePath": "AE/{AE9DD1FB-2E2A-5A2E-8136-36F655FC15FF}.wem"
+      "CachePath": "C4/{C4539C6D-5B0E-E482-0B31-8F3EA5F55B72}.wem"
      },
      {
       "Id": "472580317",
@@ -125,7 +125,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Punch1.wav",
-      "CachePath": "16/{16165EE1-995F-C303-6D63-D51742500367}.wem"
+      "CachePath": "23/{239CD93D-819B-04C7-1E3A-6794928655CA}.wem"
      },
      {
       "Id": "484762871",
@@ -133,7 +133,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "ScooterHit.wav",
-      "CachePath": "4A/{4AE70F52-1843-2EF0-1CA2-E3E7B8364EC6}.wem"
+      "CachePath": "DC/{DCBC15FB-4813-1B55-F6BC-46EF8FABA824}.wem"
      },
      {
       "Id": "563626813",
@@ -141,7 +141,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "LaneSwitch.wav",
-      "CachePath": "50/{50A56CF7-AF91-21E4-3151-18896E38E1C3}.wem"
+      "CachePath": "9B/{9B6E783F-B94B-B93D-2574-6B4DC6D74D3F}.wem"
      },
      {
       "Id": "686805704",
@@ -197,7 +197,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PlasticHit2.wav",
-      "CachePath": "83/{83AE4B9A-EAA9-89B8-EFE7-43D76F914E66}.wem"
+      "CachePath": "99/{9958F1F1-4666-547A-9592-3EED69092C02}.wem"
      },
      {
       "Id": "933114952",
@@ -1089,6 +1089,6 @@
     ]
    }
   ],
-  "FileHash": "{108616B5-E0E9-3C4F-37B2-0563F771FB64}"
+  "FileHash": "{4B59825B-EDC1-558A-D4ED-B572404964D1}"
  }
 }

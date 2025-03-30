@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endingType: 1
   endingSprite: {fileID: -3385341560087889620, guid: c477d084d5f944349abd3bb365cb7eb2, type: 3}
-  endingText: an average day in town
+  endingText: 'An average day
+
+    in town.'
   endingSprite2: {fileID: 0}

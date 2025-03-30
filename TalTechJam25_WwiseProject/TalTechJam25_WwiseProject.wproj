@@ -3,6 +3,7 @@
 	<ProjectInfo>
 		<Project Name="TalTechJam25_WwiseProject" ID="{71648FD4-7A83-4890-B11C-0CC973698FEA}">
 			<Platforms>
+				<Platform Name="Android" ReferencePlatform="Android" ID="{91128AA6-B47A-429D-A81E-7C0E155870FA}" />
 				<Platform Name="Linux" ReferencePlatform="Linux" ID="{E1B36981-8D79-480B-8EA0-1A60397C9178}" />
 				<Platform Name="Mac" ReferencePlatform="Mac" ID="{18928AA7-5A51-4E7F-B82B-7C80C2FD3E2F}" />
 				<Platform Name="Web" ReferencePlatform="Web" ID="{C8C7E480-0D1A-4509-BCC1-FAF546FF9914}" />
@@ -17,6 +18,7 @@
 			<PropertyList>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
+						<Value Platform="Android"></Value>
 						<Value Platform="Web"></Value>
 						<Value Platform="Linux"></Value>
 						<Value Platform="Windows"></Value>
@@ -25,16 +27,27 @@
 				</Property>
 				<Property Name="ExternalSourcesOutputPath" Type="string">
 					<ValueList>
+						<Value Platform="Android">GeneratedSoundBanks\Android\</Value>
 						<Value Platform="Web">GeneratedSoundBanks\Web\</Value>
 						<Value Platform="Linux">GeneratedSoundBanks\Linux\</Value>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
 						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 					</ValueList>
 				</Property>
+				<Property Name="GlobalVoiceInstancesLimit" Type="int16">
+					<ValueList>
+						<Value Platform="Android">256</Value>
+						<Value Platform="Web">256</Value>
+						<Value Platform="Linux">256</Value>
+						<Value Platform="Windows">256</Value>
+						<Value Platform="Mac">256</Value>
+					</ValueList>
+				</Property>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" />
 				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True" /><Property Name="SoundBankHeaderFilePath" Type="string" Value="../../TalTechJam25/Assets/StreamingAssets/Audio/GeneratedSoundBanks" />
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
+						<Value Platform="Android">GeneratedSoundBanks\Android\</Value>
 						<Value Platform="Web">GeneratedSoundBanks\Web\</Value>
 						<Value Platform="Linux">GeneratedSoundBanks\Linux\</Value>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
@@ -43,6 +56,7 @@
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
 					<ValueList>
+						<Value Platform="Android"></Value>
 						<Value Platform="Web"></Value>
 						<Value Platform="Linux"></Value>
 						<Value Platform="Windows"></Value>
@@ -51,6 +65,7 @@
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdLines" Type="string">
 					<ValueList>
+						<Value Platform="Android"></Value>
 						<Value Platform="Web"></Value>
 						<Value Platform="Linux"></Value>
 						<Value Platform="Windows"></Value>
@@ -59,6 +74,7 @@
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdDescription" Type="string">
 					<ValueList>
+						<Value Platform="Android"></Value>
 						<Value Platform="Web"></Value>
 						<Value Platform="Linux"></Value>
 						<Value Platform="Windows"></Value>
@@ -67,10 +83,20 @@
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdLines" Type="string">
 					<ValueList>
+						<Value Platform="Android"></Value>
 						<Value Platform="Web"></Value>
 						<Value Platform="Linux"></Value>
 						<Value Platform="Windows"></Value>
 						<Value Platform="Mac"></Value>
+					</ValueList>
+				</Property>
+				<Property Name="VolumeThreshold" Type="Real64">
+					<ValueList>
+						<Value Platform="Android">-80</Value>
+						<Value Platform="Web">-80</Value>
+						<Value Platform="Linux">-80</Value>
+						<Value Platform="Windows">-80</Value>
+						<Value Platform="Mac">-80</Value>
 					</ValueList>
 				</Property>
 				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2024.1.3|Build=8749|VersionName=v2024.1.3|Config=Release" />
@@ -156,11 +182,6 @@
 						<Property Name="OverrideWavLoop" Type="bool">
 							<ValueList>
 								<Value>False</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:FileIDForAudioSource" Type="string">
-							<ValueList>
-								<Value></Value>
 							</ValueList>
 						</Property>
 						<Property Name="TrimBegin" Type="Real64">
@@ -554,76 +575,6 @@
 						<Property Name="ReflectionsVolume" Type="Real64">
 							<ValueList>
 								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:ActiveChannels" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:FileID" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:FileName" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:HandleStartTime" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:HandleStopTime" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:LibraryID" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:LibraryLocation" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:PlaybackSpeed" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:ProcessList" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:RenderedFileBitRate" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:RenderedFilePath" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:RenderedFileSampleRate" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:SelectionStartTime" Type="string">
-							<ValueList>
-								<Value></Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:SelectionStopTime" Type="string">
-							<ValueList>
-								<Value></Value>
 							</ValueList>
 						</Property>
 						<Property Name="SpeakerPanning" Type="int16">

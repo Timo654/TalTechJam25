@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endingType: 0
   endingSprite: {fileID: 3816416039095668933, guid: 85a530a407f90314e80593c86364a78f, type: 3}
-  endingText: cool guys don't look at explosions.
+  endingText: "Cool guys don't look \nat explosions."
   endingSprite2: {fileID: 0}

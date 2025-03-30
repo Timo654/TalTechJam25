@@ -8,6 +8,13 @@
   "CacheRoot": "../../../../TalTechJam25_WwiseProject/.cache",
   "Platforms": [
    {
+    "Name": "Android",
+    "GUID": "{91128AA6-B47A-429D-A81E-7C0E155870FA}",
+    "BasePlatform": "Android",
+    "BasePlatformGUID": "{A2D401DE-B8B6-4FEB-8142-137C34D507CA}",
+    "Path": "../../../../TalTechJam25_WwiseProject/GeneratedSoundBanks/Android"
+   },
+   {
     "Name": "Linux",
     "GUID": "{E1B36981-8D79-480B-8EA0-1A60397C9178}",
     "BasePlatform": "Linux",
@@ -45,6 +52,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{0FD5F021-AC9D-6BB2-2534-954B31905D60}"
+  "FileHash": "{734A73CE-4FA5-72D8-9145-647E0300C18F}"
  }
 }

@@ -26,6 +26,8 @@ public class InputHandler : MonoBehaviour
         PauseMenu.OnPauseGame += SetPaused;
         GameManager.GameActive += ToggleInput;
         CreditsHandler.AllowInput += ToggleInput;
+        SwipeControl.SwipeRight += MoveRight;
+        SwipeControl.SwipeLeft += MoveLeft;
     }
 
     private void OnDisable()
@@ -37,6 +39,18 @@ public class InputHandler : MonoBehaviour
         PauseMenu.OnPauseGame -= SetPaused;
         GameManager.GameActive -= ToggleInput;
         CreditsHandler.AllowInput -= ToggleInput;
+        SwipeControl.SwipeRight -= MoveRight;
+        SwipeControl.SwipeLeft -= MoveLeft;
+    }
+
+    private void MoveRight()
+    {
+        OnMoveInput?.Invoke(Vector2.right);
+    }
+
+    private void MoveLeft()
+    {
+        OnMoveInput?.Invoke(Vector2.left);
     }
 
     private void ToggleInput(bool obj)
