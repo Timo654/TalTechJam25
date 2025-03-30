@@ -3,6 +3,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class CreditsHandler : MonoBehaviour
 {
@@ -51,6 +52,11 @@ public class CreditsHandler : MonoBehaviour
     public void OnCreditsEnd()
     {
         creditsText.SetActive(false);
+        if (SaveManager.Instance.runtimeData.previousSceneName == "MainMenu")
+        {
+            LevelChanger.Instance.FadeToLevel("MainMenu");
+            return; 
+        }
         int endingCount = 0;
         if (SaveManager.Instance.gameData.f_pacifistCleared) endingCount++;
         if (SaveManager.Instance.gameData.f_goodCleared) endingCount++;
@@ -58,7 +64,7 @@ public class CreditsHandler : MonoBehaviour
         if (SaveManager.Instance.gameData.f_trashCleared) endingCount++;
         string endingText = string.Empty;
         if (endingCount == 4)
-            endingText = "Thank you. We have nothing more to teach you...";
+            endingText = "The Group congratulates you on your accomplishments.";
         else if (endingCount > 4)
             endingText = "You should not have been able to clear this many endings... Tell me your ways.";
         else if (endingCount < 4)
@@ -67,16 +73,15 @@ public class CreditsHandler : MonoBehaviour
             switch (endingCount)
             {
                 case 1:
-                    endingText += "one";
+                    endingText += "one ending out of four.";
                     break;
                 case 2:
-                    endingText += "two";
+                    endingText += "two endings out of four.";
                     break;
                 case 3:
-                    endingText += "three";
+                    endingText += "three endings out of four.";
                     break;
             }
-            endingText += " endings out of four.";
         }
         funnyText.text = funnyText.text.Replace("PLACEHOLDER_TEXT", endingText);
 

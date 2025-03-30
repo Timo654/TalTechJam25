@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -59,7 +60,7 @@ public class GameManager : MonoBehaviour
     {
         if (SaveManager.Instance.runtimeData.gameType == GameType.None)
             SaveManager.Instance.runtimeData.gameType = GameType.Normal; // use normal if unspecified
-
+        SaveManager.Instance.runtimeData.previousSceneName = SceneManager.GetActiveScene().name;
         gameType = SaveManager.Instance.runtimeData.gameType;
         switch (gameType)
         {
@@ -157,7 +158,7 @@ public class GameManager : MonoBehaviour
         boostCooldown = false;
     }
 
-    private void EndGame(EndingType endingType)
+    private void EndGame(EndingType endingType, int score)
     {
         foreach (EndingData ending in endings)
         {
@@ -183,6 +184,27 @@ public class GameManager : MonoBehaviour
                 break;
             }
         }
+
+        HighScoreType highScoreType = HighScoreType.None;
+
+        if (SaveManager.Instance.gameData.worstScore == 0 && SaveManager.Instance.gameData.bestScore == 0)
+        {
+            highScoreType = HighScoreType.First;
+        }
+
+        if (score < SaveManager.Instance.gameData.worstScore)
+        {
+            SaveManager.Instance.gameData.worstScore = score;
+            if (highScoreType != HighScoreType.First) highScoreType = HighScoreType.Worst;
+        }
+
+        if (score > SaveManager.Instance.gameData.bestScore)
+        {
+            SaveManager.Instance.gameData.bestScore = score;
+            if (highScoreType != HighScoreType.First) highScoreType = HighScoreType.Best;
+        }
+        SaveManager.Instance.runtimeData.highScoreType = highScoreType;
+        SaveManager.Instance.runtimeData.currentScore = score;
         SaveManager.Instance.gameData.f_hasClearedOnce = true;
         LevelChanger.Instance.FadeToLevel("Ending");
     }
@@ -194,4 +216,12 @@ public enum GameType
     None,
     Normal,
     Endless
+}
+
+public enum HighScoreType
+{
+    None,
+    Best,
+    Worst,
+    First
 }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class MainMenu : MonoBehaviour
     private GameObject lastSelect;
     void Start()
     {
+        SaveManager.Instance.runtimeData.previousSceneName = SceneManager.GetActiveScene().name;
         endlessButton.SetActive(SaveManager.Instance.gameData.f_hasClearedOnce);
         AudioManager.Instance.PlaySound(WWiseEvents.Instance.PlaySwitcher);
         AudioManager.Instance.SetSwitch(WWiseEvents.Instance.MenuMusic);
