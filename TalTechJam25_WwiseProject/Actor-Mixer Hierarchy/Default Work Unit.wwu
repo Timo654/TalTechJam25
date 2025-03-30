@@ -449,11 +449,6 @@
 						<Sound Name="courage_drop_sfx" ID="{0710804F-75E1-4266-BE0D-859BFCC56C09}" ShortID="892955162">
 							<PropertyList>
 								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-8</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">

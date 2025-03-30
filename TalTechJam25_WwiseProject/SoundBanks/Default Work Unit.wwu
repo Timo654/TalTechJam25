@@ -12,6 +12,7 @@
 						<ObjectRef Name="SFX" ID="{549DD944-30D0-4192-90BE-C95A812204DF}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music" ID="{8BDB5DB9-BEDD-4658-85F4-13D54CE464CD}" WorkUnitID="{DD922BD6-87E4-4777-B03A-FDD74AF8B072}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI" ID="{A4FE66D0-0BCE-4AB6-9DF4-3B928AF2ACC4}" WorkUnitID="{E2CE077E-5655-49F9-AFB2-6B0A8E11D219}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MusicSwitch" ID="{5F25889A-C1C0-4E2B-900D-42DCFC165C3A}" WorkUnitID="{901B515D-9334-4460-8F5F-EC731E0B065D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

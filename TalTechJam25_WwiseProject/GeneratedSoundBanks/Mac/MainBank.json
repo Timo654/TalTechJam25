@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{15AF9294-C212-4B43-83AE-FEB6EA153484}",
     "Language": "SFX",
-    "Hash": "{4619552B-AA25-05D3-C832-4EFBD86635EB}",
+    "Hash": "{7EB1F139-236C-0944-D745-5DD5548AF5D1}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainBank",
     "ShortName": "MainBank",
     "Path": "MainBank.bnk",
@@ -554,6 +554,70 @@
           "Id": "1064049400"
          }
         ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2011614756",
+         "Id": "2201105581",
+         "GUID": "{E583C7EC-0801-44FE-8A0B-24B648A33DCC}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "313572889"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2011614756",
+         "Id": "2607556080",
+         "GUID": "{72F2F132-B40D-45D4-A1CA-1A2E80CD3B29}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "950094142"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2011614756",
+         "Id": "3055903945",
+         "GUID": "{8227F546-7B31-4C0C-A1F6-B1B05BE9E05D}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "109027379"
+         },
+         {
+          "Id": "687490700"
+         },
+         {
+          "Id": "1064049400"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2011614756",
+         "Id": "3055903946",
+         "GUID": "{B112BD6C-212A-4156-A9E4-3DEF50B73BCC}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "109027379"
+         },
+         {
+          "Id": "686805704"
+         },
+         {
+          "Id": "1064049400"
+         }
+        ]
        }
       ]
      },
@@ -723,6 +787,6 @@
     ]
    }
   ],
-  "FileHash": "{8BA4ED15-FB7B-5FFE-A476-E687AC4B19D2}"
+  "FileHash": "{967EF88A-FBB9-269C-41D1-8EC7E32A8D1E}"
  }
 }

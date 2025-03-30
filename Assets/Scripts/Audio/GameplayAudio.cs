@@ -1,12 +1,17 @@
 using UnityEngine;
+using System.Collections;
 
 public class GameplayAudio : MonoBehaviour
 {
     [SerializeField] GameObject[] audioDirections; // L, M, R
+
+    uint endineStreak = 0;
+
     private void Start()
     {
         AudioManager.Instance.PlaySound(WWiseEvents.Instance.PlaySwitcher);
         AudioManager.Instance.SetSwitch(WWiseEvents.Instance.GameMusic1);
+
     }
     private void OnEnable()
     {
@@ -16,6 +21,10 @@ public class GameplayAudio : MonoBehaviour
 
     private void OnDisable()
     {
+
+        AudioManager.Instance.SetRTPCValue("Drumset1Mute", 0);
+        AudioManager.Instance.SetRTPCValue("Drumset2Mute", 0);
+        
         EntityScript.EntityAttacked -= PlayAudio;
         ChaosCounter.UpdateStreak -= HandleStreak;
     }
@@ -24,19 +33,37 @@ public class GameplayAudio : MonoBehaviour
     {
         if (currentStreak <= 5)
         {
+            if ((endineStreak != currentStreak) && (currentStreak == 0)) {
+                    
+                AudioManager.Instance.PlaySound(WWiseEvents.Instance.LoseCourage);
 
-            AudioManager.Instance.SetRTPCValue("Drumset1Mute", 0);
-            AudioManager.Instance.SetRTPCValue("Drumset2Mute", 0);
+                StartCoroutine(SoundWithDelay3(1.0f));
+
+            } else {
+
+                AudioManager.Instance.SetRTPCValue("Drumset1Mute", 0);
+                AudioManager.Instance.SetRTPCValue("Drumset2Mute", 0);
+
+            }
         }
-        else if (currentStreak > 5 && currentStreak <= 10) // Use && instead of "and"
-        {
-            AudioManager.Instance.SetRTPCValue("Drumset1Mute", 100);
-            AudioManager.Instance.SetRTPCValue("Drumset2Mute", 0);
+        else if (currentStreak > 5 && currentStreak <= 10) 
+        {   
+            if (currentStreak == 6) {
+                AudioManager.Instance.PlaySound(WWiseEvents.Instance.GetCourage);
+            }
+            endineStreak = currentStreak;
+
+            StartCoroutine(SoundWithDelay1(1.0f));
+
         } 
         else 
         {
-            AudioManager.Instance.SetRTPCValue("Drumset1Mute", 0);
-            AudioManager.Instance.SetRTPCValue("Drumset2Mute", 100);
+            if (currentStreak == 11) {
+                AudioManager.Instance.PlaySound(WWiseEvents.Instance.GetCourage);
+            }
+            endineStreak = currentStreak;
+
+            StartCoroutine(SoundWithDelay2(1.0f));
         }
     }
 
@@ -62,4 +89,30 @@ public class GameplayAudio : MonoBehaviour
                 break;
         }
     }
+
+
+    IEnumerator SoundWithDelay1(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        AudioManager.Instance.SetRTPCValue("Drumset1Mute", 100);
+        AudioManager.Instance.SetRTPCValue("Drumset2Mute", 0);
+    }
+
+    IEnumerator SoundWithDelay2(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        AudioManager.Instance.SetRTPCValue("Drumset1Mute", 0);
+        AudioManager.Instance.SetRTPCValue("Drumset2Mute", 100);
+    }
+
+    IEnumerator SoundWithDelay3(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        AudioManager.Instance.SetRTPCValue("Drumset1Mute", 0);
+        AudioManager.Instance.SetRTPCValue("Drumset2Mute", 0);
+    }
+    
 }
