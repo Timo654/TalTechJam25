@@ -382,8 +382,8 @@ MonoBehaviour:
         guid: 6459e071b3dddb4baab55afd034aaf3b
       Path: Events\Default Work Unit\SFX\Play_lane_switch_sfx
       maxAttenuation: 0
-      maxDuration: 0.43370673
-      minDuration: 0.38638875
+      maxDuration: 0.48122776
+      minDuration: 0.42872518
     - name: Play_MusicSwitch
       guid: 7d5edeef07703c4c83238302d081b73b
       id: 3117137027
@@ -570,7 +570,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 8221c26751d5bb4a95f7cbc40d660655
     GuidInternal: 
-    m_lastTime: -8584583030052106084
+    m_lastTime: -8584582971606649907
     List:
     - name: Drumset1Mute
       guid: c9feae283da4c543a06c09fe07bc3233
@@ -642,6 +642,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 6a5de5ffc6086642ac4a60059347b177
       Path: Game Parameters\Default Work Unit\SFX_volume
+    - name: SwooshTurnOff
+      guid: 93c09a6edae87442970aa8522256f11c
+      id: 3809104128
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8221c26751d5bb4a95f7cbc40d660655
+      - ElementName: SwooshTurnOff
+        ObjectType: 13
+        guid: 93c09a6edae87442970aa8522256f11c
+      Path: Game Parameters\Default Work Unit\SwooshTurnOff
     - name: UI_volume
       guid: 4a346d08dc9a1d4daf0467c1ffbb6580
       id: 1719345792
