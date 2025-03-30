@@ -22,7 +22,9 @@ public class GameplayAudio : MonoBehaviour
 
     private void HandleStreak(uint currentStreak)
     {
-        // TODO
+        if (currentStreak < 5) {
+            
+        }
     }
 
     private void PlayAudio(EntityType _, ItemType type, int laneID, int __)

@@ -11,13 +11,6 @@
 						<Switch Name="GameMain2" ID="{B112BD6C-212A-4156-A9E4-3DEF50B73BCC}"/>
 					</ChildrenList>
 				</SwitchGroup>
-				<SwitchGroup Name="DrumChanger" ID="{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}">
-					<ChildrenList>
-						<Switch Name="Courage1" ID="{D66BBB1A-34F9-4A29-8B31-558F7C1A4958}"/>
-						<Switch Name="Courage2" ID="{C0D67781-F1C5-40C9-9207-648D673C3D3C}"/>
-						<Switch Name="NoCourage" ID="{6A240886-9B9B-4779-A1EA-E0393E46B4E4}"/>
-					</ChildrenList>
-				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

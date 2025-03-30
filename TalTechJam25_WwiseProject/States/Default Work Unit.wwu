@@ -10,6 +10,44 @@
 						<State Name="Drumset2" ID="{AA3B72F1-F1B4-48DC-9887-F1FC6443B634}"/>
 						<State Name="NoDrum" ID="{60A978B9-55F6-4721-89CA-5F7A3F8E343F}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Drumset1" ID="{FB85C180-FDD6-4960-8F18-E139E6322A2C}"/>
+							<EndState Name="Drumset2" ID="{AA3B72F1-F1B4-48DC-9887-F1FC6443B634}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Drumset2" ID="{AA3B72F1-F1B4-48DC-9887-F1FC6443B634}"/>
+							<EndState Name="NoDrum" ID="{60A978B9-55F6-4721-89CA-5F7A3F8E343F}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Drumset2" ID="{AA3B72F1-F1B4-48DC-9887-F1FC6443B634}"/>
+							<EndState Name="Drumset1" ID="{FB85C180-FDD6-4960-8F18-E139E6322A2C}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="NoDrum" ID="{60A978B9-55F6-4721-89CA-5F7A3F8E343F}"/>
+							<EndState Name="Drumset1" ID="{FB85C180-FDD6-4960-8F18-E139E6322A2C}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Drumset1" ID="{FB85C180-FDD6-4960-8F18-E139E6322A2C}"/>
+							<EndState Name="NoDrum" ID="{60A978B9-55F6-4721-89CA-5F7A3F8E343F}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="NoDrum" ID="{60A978B9-55F6-4721-89CA-5F7A3F8E343F}"/>
+							<EndState Name="Drumset2" ID="{AA3B72F1-F1B4-48DC-9887-F1FC6443B634}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>

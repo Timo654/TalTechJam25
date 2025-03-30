@@ -30,10 +30,6 @@ public class WWiseEvents : MonoBehaviour
     [field: SerializeField] public AK.Wwise.Switch GameMusic1 { get; private set; }
     [field: SerializeField] public AK.Wwise.Switch GameMusic2 { get; private set; }
 
-    [field: SerializeField] public AK.Wwise.Switch NoDrum { get; private set; }
-    [field: SerializeField] public AK.Wwise.Switch Drumset1 { get; private set; }
-    [field: SerializeField] public AK.Wwise.Switch Drumset2 { get; private set; }
-
     public static WWiseEvents Instance { get; private set; }
 
     private void Awake()

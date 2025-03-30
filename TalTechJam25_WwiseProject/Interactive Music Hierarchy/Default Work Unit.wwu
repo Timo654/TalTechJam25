@@ -548,6 +548,11 @@
 														<Value>3</Value>
 													</ValueList>
 												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -616,21 +621,12 @@
 													</ObjectLists>
 												</MusicTrack>
 												<MusicTrack Name="Drumset1" ID="{318AD63D-9E02-43E3-AD88-51D44074E84E}" ShortID="473333484">
-													<PropertyList>
-														<Property Name="MusicTrackType" Type="int16" Value="3"/>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
 														</Reference>
-														<Reference Name="DefaultSwitchOrState">
-															<ObjectRef Name="Courage1" ID="{D66BBB1A-34F9-4A29-8B31-558F7C1A4958}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
-														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Music" ID="{81701AD9-7D91-405A-9B7A-074139308337}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
-														</Reference>
-														<Reference Name="SwitchGroupOrStateGroup">
-															<ObjectRef Name="DrumChanger" ID="{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
 														</Reference>
 														<Reference Name="TransitionRoot">
 															<Custom>
@@ -657,7 +653,69 @@
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
+													<StateInfo>
+														<StateGroupList>
+															<StateGroupInfo>
+																<StateGroupRef Name="DrumChanger" ID="{C27D9736-0012-4E35-870B-D795A85450E3}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="NoDrum" ID="{60A978B9-55F6-4721-89CA-5F7A3F8E343F}"/>
+																<CustomState Name="" ID="{0C0D8490-C570-46A8-9BC4-8EAC1435D075}" ShortID="311936043"/>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Drumset2" ID="{AA3B72F1-F1B4-48DC-9887-F1FC6443B634}"/>
+																<CustomState Name="" ID="{70463875-EA65-4F17-BEBA-2F63DC1B822B}" ShortID="362857135">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-108"/>
+																	</PropertyList>
+																</CustomState>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Drumset1" ID="{FB85C180-FDD6-4960-8F18-E139E6322A2C}"/>
+																<CustomState Name="" ID="{8845BB8F-43CF-4D89-AD48-5A0B6C20B4B1}" ShortID="484629004"/>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
 													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{6E2B000F-29C3-4833-946E-6135C5601DF6}" ShortID="963007628">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Volume"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="Drumset1Mute" ID="{28AEFEC9-A43D-43C5-A06C-09FE07BC3233}" WorkUnitID="{67C22182-D551-4ABB-95F7-CBC40D660655}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{E43B7591-A3C8-4BCE-A0D1-0AD38FF6BA4E}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
 														<ObjectList Name="Sequences">
 															<Reference>
 																<Local>
@@ -679,11 +737,7 @@
 																				</Reference>
 																			</ObjectList>
 																		</ObjectLists>
-																		<ReferenceList>
-																			<Reference Name="TrackSequenceSwitch">
-																				<ObjectRef Name="Courage1" ID="{D66BBB1A-34F9-4A29-8B31-558F7C1A4958}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
-																			</Reference>
-																		</ReferenceList>
+																		<ReferenceList/>
 																	</MusicTrackSequence>
 																</Local>
 															</Reference>
@@ -691,21 +745,12 @@
 													</ObjectLists>
 												</MusicTrack>
 												<MusicTrack Name="Drumset2" ID="{1DF70BC7-0C5D-4A86-A9A4-4AA0E7431F8D}" ShortID="829616714">
-													<PropertyList>
-														<Property Name="MusicTrackType" Type="int16" Value="3"/>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
 														</Reference>
-														<Reference Name="DefaultSwitchOrState">
-															<ObjectRef Name="Courage2" ID="{C0D67781-F1C5-40C9-9207-648D673C3D3C}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
-														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Music" ID="{81701AD9-7D91-405A-9B7A-074139308337}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
-														</Reference>
-														<Reference Name="SwitchGroupOrStateGroup">
-															<ObjectRef Name="DrumChanger" ID="{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
 														</Reference>
 														<Reference Name="TransitionRoot">
 															<Custom>
@@ -732,7 +777,69 @@
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
+													<StateInfo>
+														<StateGroupList>
+															<StateGroupInfo>
+																<StateGroupRef Name="DrumChanger" ID="{C27D9736-0012-4E35-870B-D795A85450E3}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="NoDrum" ID="{60A978B9-55F6-4721-89CA-5F7A3F8E343F}"/>
+																<CustomState Name="" ID="{AD5F7CC1-3F82-4B6C-88FD-EBA8C293F0A4}" ShortID="376105778"/>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Drumset2" ID="{AA3B72F1-F1B4-48DC-9887-F1FC6443B634}"/>
+																<CustomState Name="" ID="{EF3525ED-5398-4838-A6D3-586B8DA4855E}" ShortID="422111618"/>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Drumset1" ID="{FB85C180-FDD6-4960-8F18-E139E6322A2C}"/>
+																<CustomState Name="" ID="{6A66C9C2-5157-4493-8245-ABBF922DCA70}" ShortID="972147423">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-108"/>
+																	</PropertyList>
+																</CustomState>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
 													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{C0DDC178-3B4C-4A96-9493-5C9AEE92A1EB}" ShortID="197148662">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Volume"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="Drumset2Mute" ID="{0309D2B8-6A02-434E-B637-5CABFD142207}" WorkUnitID="{67C22182-D551-4ABB-95F7-CBC40D660655}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{3C9C1805-C74F-4E4D-9DD6-D736284A01DB}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
 														<ObjectList Name="Sequences">
 															<Reference>
 																<Local>
@@ -754,11 +861,7 @@
 																				</Reference>
 																			</ObjectList>
 																		</ObjectLists>
-																		<ReferenceList>
-																			<Reference Name="TrackSequenceSwitch">
-																				<ObjectRef Name="Courage2" ID="{C0D67781-F1C5-40C9-9207-648D673C3D3C}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
-																			</Reference>
-																		</ReferenceList>
+																		<ReferenceList/>
 																	</MusicTrackSequence>
 																</Local>
 															</Reference>
@@ -787,12 +890,33 @@
 											</ObjectLists>
 										</MusicSegment>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="DrumChanger" ID="{C27D9736-0012-4E35-870B-D795A85450E3}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="NoDrum" ID="{60A978B9-55F6-4721-89CA-5F7A3F8E343F}"/>
+												<CustomState Name="" ID="{041A2BC0-14D3-4FBA-9287-EEFACAFE0D32}" ShortID="454654372"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Drumset2" ID="{AA3B72F1-F1B4-48DC-9887-F1FC6443B634}"/>
+												<CustomState Name="" ID="{ADA56412-3BF4-4930-B499-6DF02FBACF66}" ShortID="951346521"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Drumset1" ID="{FB85C180-FDD6-4960-8F18-E139E6322A2C}"/>
+												<CustomState Name="" ID="{10F2A3AA-6C36-4EA8-B4CE-01AE573ED576}" ShortID="150144488"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</MusicPlaylistContainer>
 								<MusicPlaylistContainer Name="GameTrack2" ID="{374638D5-636E-4518-A019-D1661C884969}" ShortID="282594525">
 									<PropertyList>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
-												<Value>1</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
@@ -849,7 +973,7 @@
 												<Property Name="EndPosition" Type="Real64" Value="79439.6887159533"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
-														<Value>1</Value>
+														<Value>3</Value>
 													</ValueList>
 												</Property>
 												<Property Name="UseMaxSoundPerInstance" Type="bool">
@@ -919,6 +1043,244 @@
 														</ObjectList>
 													</ObjectLists>
 												</MusicTrack>
+												<MusicTrack Name="Drumset1" ID="{905248DB-ED83-45EB-9C98-4ABDE36CE08E}" ShortID="609169693">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Music" ID="{81701AD9-7D91-405A-9B7A-074139308337}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{91791089-DA50-488A-839F-50CE9622F561}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ChildrenList>
+																		<MusicTransition Name="Transition" ID="{3A115741-7ECB-4911-A9DF-24897C35FF7F}">
+																			<TransitionInfo/>
+																		</MusicTransition>
+																	</ChildrenList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Drumset1" ID="{6D0A321A-C074-453A-9777-A5FA7E06B438}">
+															<Language>SFX</Language>
+															<AudioFile>Drumset1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1064049400"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<StateInfo>
+														<StateGroupList>
+															<StateGroupInfo>
+																<StateGroupRef Name="DrumChanger" ID="{C27D9736-0012-4E35-870B-D795A85450E3}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="NoDrum" ID="{60A978B9-55F6-4721-89CA-5F7A3F8E343F}"/>
+																<CustomState Name="" ID="{3099E231-447F-4544-8145-25125A9AA968}" ShortID="1035328783"/>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Drumset2" ID="{AA3B72F1-F1B4-48DC-9887-F1FC6443B634}"/>
+																<CustomState Name="" ID="{1964CCC2-1A82-4D45-9F64-892BC4344197}" ShortID="1054861499"/>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Drumset1" ID="{FB85C180-FDD6-4960-8F18-E139E6322A2C}"/>
+																<CustomState Name="" ID="{109239D6-0E8D-4D80-883D-19AEBB25E15F}" ShortID="669706437"/>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{0D24B121-5A37-4E38-8441-E01F9D0B61AA}" ShortID="569930754">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Volume"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="Drumset1Mute" ID="{28AEFEC9-A43D-43C5-A06C-09FE07BC3233}" WorkUnitID="{67C22182-D551-4ABB-95F7-CBC40D660655}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{ACE7ED07-8E2E-4012-A5F6-E68E7EED7FAF}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{CA1F9FCF-779F-4374-8C99-7C0EE485F274}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="Drumset1" ID="{83FD1613-3A7F-445C-8211-6CEDAE69FEFC}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="64000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="Drumset1" ID="{6D0A321A-C074-453A-9777-A5FA7E06B438}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																		<ReferenceList/>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Drumset2" ID="{FEB4BC32-4C93-4DB5-B1B6-74E9E4DF703B}" ShortID="26003520">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Music" ID="{81701AD9-7D91-405A-9B7A-074139308337}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{D00AA83F-BEA2-4D78-B3C8-60C97C3D5CFC}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ChildrenList>
+																		<MusicTransition Name="Transition" ID="{2084FDFF-9766-4B53-AF75-B751737CB8B1}">
+																			<TransitionInfo/>
+																		</MusicTransition>
+																	</ChildrenList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Drumset2" ID="{20A532BA-7D64-471E-8C4B-4DBF40D4129C}">
+															<Language>SFX</Language>
+															<AudioFile>Drumset2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="109027379"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<StateInfo>
+														<StateGroupList>
+															<StateGroupInfo>
+																<StateGroupRef Name="DrumChanger" ID="{C27D9736-0012-4E35-870B-D795A85450E3}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="NoDrum" ID="{60A978B9-55F6-4721-89CA-5F7A3F8E343F}"/>
+																<CustomState Name="" ID="{0A2E4207-BEDE-4043-A7D6-2D22F5EBEDE9}" ShortID="696010952"/>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Drumset2" ID="{AA3B72F1-F1B4-48DC-9887-F1FC6443B634}"/>
+																<CustomState Name="" ID="{1115FE87-6358-4658-A9C5-8709A40212CF}" ShortID="933157707"/>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Drumset1" ID="{FB85C180-FDD6-4960-8F18-E139E6322A2C}"/>
+																<CustomState Name="" ID="{BE649143-B97B-4AC7-B212-7FA7DB11DA10}" ShortID="943198238"/>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{C4D1D7AA-1CAE-4B78-A493-508C709CA0F5}" ShortID="532404454">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Volume"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="Drumset2Mute" ID="{0309D2B8-6A02-434E-B637-5CABFD142207}" WorkUnitID="{67C22182-D551-4ABB-95F7-CBC40D660655}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{D93680A1-08D0-4769-9935-1991487E2DD4}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{5EA31AB9-1ECD-4878-B0B0-49482513FB67}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="Drumset2" ID="{2738E6AF-2DFA-45B0-9444-B27E8B6B487B}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="64000"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="Drumset2" ID="{20A532BA-7D64-471E-8C4B-4DBF40D4129C}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																		<ReferenceList/>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
 											</ChildrenList>
 											<ObjectLists>
 												<ObjectList Name="Cues">
@@ -941,6 +1303,27 @@
 											</ObjectLists>
 										</MusicSegment>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="DrumChanger" ID="{C27D9736-0012-4E35-870B-D795A85450E3}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="NoDrum" ID="{60A978B9-55F6-4721-89CA-5F7A3F8E343F}"/>
+												<CustomState Name="" ID="{3FED199A-B9EF-4C97-8BCA-C4CBC7B21183}" ShortID="826475855"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Drumset2" ID="{AA3B72F1-F1B4-48DC-9887-F1FC6443B634}"/>
+												<CustomState Name="" ID="{BF4E39C6-47E3-4E6D-AEC3-309BE6530B52}" ShortID="619286583"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Drumset1" ID="{FB85C180-FDD6-4960-8F18-E139E6322A2C}"/>
+												<CustomState Name="" ID="{497210EE-70BF-48C3-A0A1-176410359FC8}" ShortID="870294317"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</MusicPlaylistContainer>
 							</ChildrenList>
 							<StateInfo>
@@ -969,9 +1352,6 @@
 									<Reference>
 										<ObjectRef Name="MusicChanger" ID="{F5BB506C-2DF3-45B1-8C0A-6CCB0A64BCEB}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
 									</Reference>
-									<Reference>
-										<ObjectRef Name="DrumChanger" ID="{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
-									</Reference>
 								</ObjectList>
 								<ObjectList Name="Entries">
 									<Reference>
@@ -986,9 +1366,6 @@
 													<ObjectList Name="EntryPath">
 														<Reference>
 															<ObjectRef Name="Credits" ID="{E583C7EC-0801-44FE-8A0B-24B648A33DCC}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
-														</Reference>
-														<Reference>
-															<ObjectRef Name="DrumChanger" ID="{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
 														</Reference>
 													</ObjectList>
 												</ObjectLists>
@@ -1008,9 +1385,6 @@
 														<Reference>
 															<ObjectRef Name="Menu" ID="{72F2F132-B40D-45D4-A1CA-1A2E80CD3B29}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
 														</Reference>
-														<Reference>
-															<ObjectRef Name="DrumChanger" ID="{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
-														</Reference>
 													</ObjectList>
 												</ObjectLists>
 											</MultiSwitchEntry>
@@ -1029,9 +1403,6 @@
 														<Reference>
 															<ObjectRef Name="GameMain1" ID="{8227F546-7B31-4C0C-A1F6-B1B05BE9E05D}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
 														</Reference>
-														<Reference>
-															<ObjectRef Name="DrumChanger" ID="{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
-														</Reference>
 													</ObjectList>
 												</ObjectLists>
 											</MultiSwitchEntry>
@@ -1049,9 +1420,6 @@
 													<ObjectList Name="EntryPath">
 														<Reference>
 															<ObjectRef Name="GameMain2" ID="{B112BD6C-212A-4156-A9E4-3DEF50B73BCC}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
-														</Reference>
-														<Reference>
-															<ObjectRef Name="DrumChanger" ID="{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}" WorkUnitID="{CBB037B2-FD81-42D2-80BC-14337CAB956C}"/>
 														</Reference>
 													</ObjectList>
 												</ObjectLists>
