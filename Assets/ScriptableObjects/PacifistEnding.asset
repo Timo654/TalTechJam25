@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endingType: 3
   endingSprite: {fileID: -7864880197932380328, guid: cdcdbabf6ae197943b8381a329229c29, type: 3}
-  endingText: the chosen one
+  endingText: Peace be unto you.
   endingSprite2: {fileID: 0}

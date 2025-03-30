@@ -1383,6 +1383,10 @@ PrefabInstance:
       propertyPath: m_Alpha
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2132093151925287658, guid: 6dac01bbc6fad8143984fb42af967356, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2226306215696400625, guid: 6dac01bbc6fad8143984fb42af967356, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1744,6 +1748,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 54855697}
     m_Modifications:
+    - target: {fileID: 359614914888948343, guid: ce6d30950ccba344ba3ece681b928e74, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 359614914888948343, guid: ce6d30950ccba344ba3ece681b928e74, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 359614914888948343, guid: ce6d30950ccba344ba3ece681b928e74, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 359614914888948343, guid: ce6d30950ccba344ba3ece681b928e74, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2554404349811374704, guid: ce6d30950ccba344ba3ece681b928e74, type: 3}
       propertyPath: m_Name
       value: PlayButton

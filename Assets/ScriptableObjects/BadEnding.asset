@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endingType: 2
   endingSprite: {fileID: -2011814199348854934, guid: 04167dbb2f59a704891df13900d96eff, type: 3}
-  endingText: you will now be arrested :(
+  endingText: Destruction of public property
   endingSprite2: {fileID: 0}
