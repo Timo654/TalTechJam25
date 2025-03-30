@@ -19,7 +19,7 @@ public class PlayerParticles : MonoBehaviour
         EntityScript.EntityAttacked -= PlayParticles;
     }
 
-    private void PlayParticles(EntityType entityType, ItemType __, int ___)
+    private void PlayParticles(EntityType entityType, ItemType __, int ___, int hitLane)
     {
         switch (entityType)
         {

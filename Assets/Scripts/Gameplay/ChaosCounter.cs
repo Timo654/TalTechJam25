@@ -40,7 +40,7 @@ public class ChaosCounter : MonoBehaviour
     }
 
 
-    private void CountEntity(EntityType type, ItemType _, int __)
+    private void CountEntity(EntityType type, ItemType _, int __, int ___)
     {
         switch (type)
         {
@@ -63,6 +63,7 @@ public class ChaosCounter : MonoBehaviour
                 Debug.LogWarning($"Unknown entity {type}");
                 break;
         }
+        score += (int)currentStreak * 13;
         UpdateStreak?.Invoke(currentStreak);
         UpdateScore?.Invoke(score);
         //Debug.Log($"PEDS BULLIED {pedsBullied}, TRASH DESTROYED {trashDestroyed}");

@@ -25,9 +25,9 @@ public class GameplayAudio : MonoBehaviour
         // TODO
     }
 
-    private void PlayAudio(EntityType _, ItemType type, int laneID)
+    private void PlayAudio(EntityType _, ItemType type, int laneID, int __)
     {
-        Debug.Log(type);
+        //Debug.Log(type);
         switch (type)
         {
             case ItemType.Pedestrian:

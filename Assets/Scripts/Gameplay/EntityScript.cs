@@ -6,7 +6,7 @@ public class EntityScript : MonoBehaviour
 {
     [SerializeField] private EntityType entityType;
     [SerializeField] private ItemType itemType;
-    public static event Action<EntityType, ItemType, int> EntityAttacked; // last is lane id
+    public static event Action<EntityType, ItemType, int, int> EntityAttacked; // 3rd is lane id, 4th is lane that they get pushed to
     private Animator animator;
     // TODO - use an event to change the speed
     public float movementSpeed = 10f;
@@ -42,14 +42,23 @@ public class EntityScript : MonoBehaviour
         animator.SetTrigger("Destroy");
         float xPosToUse = 0f;
         int laneID = 0;
+        int forcedLane = 1;
         switch (transform.localPosition.x)
         {
             case -3f:
                 laneID = 0;
                 break;
             case 0f:
-                if (Random.value < 0.5f) xPosToUse = -3.5f;
-                else xPosToUse = 4f;
+                if (Random.value < 0.5f)
+                {
+                    xPosToUse = -3.5f;
+                    forcedLane = 0;
+                }
+                else
+                {
+                    xPosToUse = 4f;
+                    forcedLane = 2;
+                }
                 laneID = 1;
                 break;
             case 3f:
@@ -59,7 +68,7 @@ public class EntityScript : MonoBehaviour
                 // use 0f
                 break;
         }
-        EntityAttacked?.Invoke(entityType, itemType, laneID);
+        EntityAttacked?.Invoke(entityType, itemType, laneID, forcedLane);
         transform.localPosition = new Vector3(xPosToUse, transform.localPosition.y, transform.localPosition.z);
 
     }

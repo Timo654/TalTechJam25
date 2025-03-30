@@ -18,7 +18,7 @@ public class CameraShaker : MonoBehaviour
         EntityScript.EntityAttacked -= Shake;
     }
 
-    private void Shake(EntityType _, ItemType __, int ___)
+    private void Shake(EntityType _, ItemType __, int ___, int ____)
     {
         _animator.SetTrigger("Shake");
     }

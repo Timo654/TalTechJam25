@@ -560,8 +560,90 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 1341530b8f811e44b4a0988b2fd78130
     GuidInternal: 
-    m_lastTime: -8584584332700002811
-    List: []
+    m_lastTime: -8584583158115589642
+    List:
+    - name: DrumChanger
+      guid: 36977dc21200354e870bd795a85450e3
+      id: 863136109
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1341530b8f811e44b4a0988b2fd78130
+      - ElementName: DrumChanger
+        ObjectType: 9
+        guid: 36977dc21200354e870bd795a85450e3
+      Path: States\Default Work Unit\DrumChanger
+      values:
+      - name: Drumset1
+        guid: 80c185fbd6fd60498f18e139e6322a2c
+        id: 3983985464
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1341530b8f811e44b4a0988b2fd78130
+        - ElementName: DrumChanger
+          ObjectType: 9
+          guid: 36977dc21200354e870bd795a85450e3
+        - ElementName: Drumset1
+          ObjectType: 8
+          guid: 80c185fbd6fd60498f18e139e6322a2c
+      - name: Drumset2
+        guid: f1723baab4f1dc489887f1fc6443b634
+        id: 3983985467
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1341530b8f811e44b4a0988b2fd78130
+        - ElementName: DrumChanger
+          ObjectType: 9
+          guid: 36977dc21200354e870bd795a85450e3
+        - ElementName: Drumset2
+          ObjectType: 8
+          guid: f1723baab4f1dc489887f1fc6443b634
+      - name: NoDrum
+        guid: b978a960f655214789ca5f7a3f8e343f
+        id: 3388922324
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1341530b8f811e44b4a0988b2fd78130
+        - ElementName: DrumChanger
+          ObjectType: 9
+          guid: 36977dc21200354e870bd795a85450e3
+        - ElementName: NoDrum
+          ObjectType: 8
+          guid: b978a960f655214789ca5f7a3f8e343f
+      - name: None
+        guid: d799fef347e80b438e79e83e09872559
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1341530b8f811e44b4a0988b2fd78130
+        - ElementName: DrumChanger
+          ObjectType: 9
+          guid: 36977dc21200354e870bd795a85450e3
+        - ElementName: None
+          ObjectType: 8
+          guid: d799fef347e80b438e79e83e09872559
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
