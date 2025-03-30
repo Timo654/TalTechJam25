@@ -5,6 +5,7 @@ using UnityEngine;
 public class PedSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] entityPrefabs; // TODO - weighted chances
+    [SerializeField] private GameObject latvia;
     private float[] randomLanes = { -3.5f, 0f, 4f };
     private float boostIncrement = 0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -34,7 +35,15 @@ public class PedSpawner : MonoBehaviour
         {
             yield return new WaitForSeconds(1f);
             //Debug.Log("spawned ped");
-            var gameObj = Instantiate(entityPrefabs[Random.Range(0, entityPrefabs.Length)], transform); // todo weighted chances
+            GameObject randomPrefab = entityPrefabs[Random.Range(0, entityPrefabs.Length)];
+            if (randomPrefab.name == "scooter")
+            {
+                if (Random.Range(0, 100) < 5)
+                {
+                    randomPrefab = latvia;
+                }
+            }
+            var gameObj = Instantiate(randomPrefab, transform); // todo weighted chances
             // Set position and rotation
             gameObj.transform.localPosition = new Vector3(
                 randomLanes[Random.Range(0, randomLanes.Length)], // TODO  weighted chances

@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -138,10 +138,10 @@ TextureImporter:
       name: lati mopeed_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 5
-        width: 166
-        height: 154
+        x: 0
+        y: 0
+        width: 167
+        height: 159
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,10 +160,10 @@ TextureImporter:
       name: lati mopeed_1
       rect:
         serializedVersion: 2
-        x: 166
+        x: 167
         y: 0
         width: 167
-        height: 147
+        height: 159
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,55 +178,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: lati mopeed_2
-      rect:
-        serializedVersion: 2
-        x: 243
-        y: 141
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 766e9c3bb343b9be0800000000000000
-      internalID: -1469523422382266777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lati mopeed_3
-      rect:
-        serializedVersion: 2
-        x: 263
-        y: 143
-        width: 6
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8d50b7f06b6cadae0800000000000000
-      internalID: -1523687038665423400
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c806609383d3f0249b1f50265ff8d9e9
     internalID: 0
     vertices: []
     indices: 
@@ -238,8 +194,6 @@ TextureImporter:
     nameFileIdTable:
       lati mopeed_0: 8896448367610574289
       lati mopeed_1: -2397775029290429984
-      lati mopeed_2: -1469523422382266777
-      lati mopeed_3: -1523687038665423400
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
