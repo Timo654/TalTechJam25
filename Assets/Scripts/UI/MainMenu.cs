@@ -6,6 +6,7 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private CanvasGroup optionsMenuCG;
     [SerializeField] private GameObject endlessButton;
+    [SerializeField] private GameObject optionsButton;
     private GameObject lastSelect;
     void Start()
     {
@@ -46,16 +47,16 @@ public class MainMenu : MonoBehaviour
         LevelChanger.Instance.FadeToDesktop();
     }
 
-
     public void OnOptionsPressed()
     {
-        // TODO - disable menu cg
         UICommon.FadeInCG(optionsMenuCG, 0.2f);
+        EventSystem.current.SetSelectedGameObject(optionsMenuCG.transform.GetChild(0).GetChild(0).GetChild(1).gameObject);
     }
 
     public void OnLeaveSettings()
     {
         UICommon.FadeOutCG(optionsMenuCG, 0.2f);
+        EventSystem.current.SetSelectedGameObject(optionsButton);
     }
 
     public void OnCreditsPressed()

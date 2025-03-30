@@ -131,7 +131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   disableSelectAudio: 0
-  scaleBy: 0.1
+  scaleBy: 0.3
   duration: 0.15
   target: {fileID: 3725798906507017912}
 --- !u!1 &2270963089460996436

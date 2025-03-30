@@ -3,7 +3,6 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class CreditsHandler : MonoBehaviour
 {
@@ -47,6 +46,7 @@ public class CreditsHandler : MonoBehaviour
         // AudioManager.Instance.PlaySound(WWiseEvents.Instance.PlaySwitcher);
         AudioManager.Instance.SetSwitch(WWiseEvents.Instance.CreditsMusic);
         AllowInput?.Invoke(true);
+        Time.timeScale = 1f;
         LevelChanger.Instance.FadeIn();
         AudioManager.Instance.SetRTPCValue("SwooshTurnOff", 0);
     }
@@ -56,7 +56,7 @@ public class CreditsHandler : MonoBehaviour
         if (SaveManager.Instance.runtimeData.previousSceneName == "MainMenu")
         {
             LevelChanger.Instance.FadeToLevel("MainMenu");
-            return; 
+            return;
         }
         int endingCount = 0;
         if (SaveManager.Instance.gameData.f_pacifistCleared) endingCount++;
