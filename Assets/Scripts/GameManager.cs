@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     private int currentPhase = 0;
     private int lives = 3;
     private GameType gameType;
-    private bool boostCooldown;
+    private bool boostCooldown = false;
     private void OnEnable()
     {
         //LevelChanger.OnFadeInFinished += StartGame;
@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour
                 break;
             case GameType.Endless:
                 currentTime = 0f;
-                StartCoroutine(CooldownBoost());
+                StartCoroutine(endlessBoost());
                 break;
         }
 
@@ -140,22 +140,20 @@ public class GameManager : MonoBehaviour
             lastTimeValue = (int)currentTime;
             OnGameTimeChanged?.Invoke(lastTimeValue);
         }
-
-        if (currentTime % 30 == 0 && !boostCooldown)
-        {
-            BoostSpeed?.Invoke(5f);
-            currentPhase++; // enter phase 2, which is faster
-            // SWITCH TO PHASE 2 THEME HERE
-            AudioManager.Instance.SetSwitch(WWiseEvents.Instance.GameMusic2);
-            StartCoroutine(CooldownBoost());
-        }
     }
 
-    IEnumerator CooldownBoost()
+    IEnumerator endlessBoost()
     {
-        boostCooldown = true;
-        yield return new WaitForSeconds(5f);
-        boostCooldown = false;
+        while (true)
+        {
+            yield return new WaitForSeconds(30f);
+            Debug.Log("boost");
+            BoostSpeed?.Invoke(5f);
+            currentPhase++; // enter phase 2, which is faster
+                            // SWITCH TO PHASE 2 THEME HERE
+            AudioManager.Instance.SetSwitch(WWiseEvents.Instance.GameMusic2);
+        }
+
     }
 
     private void EndGame(EndingType endingType, int score)
