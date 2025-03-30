@@ -42,6 +42,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	1564184899	SFX_volume			\Default Work Unit\SFX_volume	
 	1719345792	UI_volume			\Default Work Unit\UI_volume	
 	2103583099	Drumset1Mute			\Default Work Unit\Drumset1Mute	
+	3809104128	SwooshTurnOff			\Default Work Unit\SwooshTurnOff	
 	4179668880	Master_volume			\Default Work Unit\Master_volume	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
@@ -64,6 +65,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	871205815	RoomVerb (Custom)	Wwise RoomVerb			
 	891615925	Delay (Custom)	Wwise Delay			
 	901501091	RoomVerb (Custom)	Wwise RoomVerb			
+	1057496413	Delay (Custom)	Wwise Delay			
 	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
 	4113267698	Hall_Guns	Wwise RoomVerb			
 

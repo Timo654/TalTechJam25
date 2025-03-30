@@ -882,7 +882,7 @@
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
-										<Value>90</Value>
+										<Value>-90</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -898,7 +898,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>3</Value>
+										<Value>1</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -938,7 +938,7 @@
 																<PropertyList>
 																	<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
 																	<Property Name="ERLevel" Type="Real32" Value="-37"/>
-																	<Property Name="ReverbLevel" Type="Real32" Value="-30"/>
+																	<Property Name="ReverbLevel" Type="Real32" Value="-24"/>
 																</PropertyList>
 															</Effect>
 														</Custom>
@@ -955,13 +955,69 @@
 														<Custom>
 															<Effect Name="Flanger (Custom)" ID="{BE1CFB55-91A8-43E3-A82D-5BB99C66F5AE}" ShortID="494839622" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
 																<PropertyList>
-																	<Property Name="WetDryMix" Type="Real32" Value="46"/>
+																	<Property Name="WetDryMix" Type="Real32" Value="22"/>
 																</PropertyList>
 															</Effect>
 														</Custom>
 													</Reference>
 												</ReferenceList>
 											</EffectSlot>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{F2295417-2E59-4C78-BA63-20A6EB487D3A}" ShortID="106443781">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Delay (Custom)" ID="{2F0BD2D0-0EA6-472A-A331-24B302351847}" ShortID="1057496413" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+																<PropertyList>
+																	<Property Name="DelayTime" Type="Real32" Value="0.17"/>
+																	<Property Name="Feedback" Type="Real32" Value="11.5"/>
+																	<Property Name="WetDryMix" Type="Real32" Value="19.5"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{49E99F4A-49E5-49F3-8B3F-A27E84B076E8}" ShortID="835994827">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="SwooshTurnOff" ID="{6E9AC093-E8DA-4274-970A-A8522256F11C}" WorkUnitID="{67C22182-D551-4ABB-95F7-CBC40D660655}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{29CA8387-E424-4CA3-9049-A12F7DDAC58C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
 										</Local>
 									</Reference>
 								</ObjectList>
@@ -1022,7 +1078,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>2</Value>
+										<Value>6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1052,11 +1108,6 @@
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>-180</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1135,7 +1186,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>4</Value>
+										<Value>6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

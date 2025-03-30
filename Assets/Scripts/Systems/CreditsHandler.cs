@@ -48,6 +48,7 @@ public class CreditsHandler : MonoBehaviour
         AudioManager.Instance.SetSwitch(WWiseEvents.Instance.CreditsMusic);
         AllowInput?.Invoke(true);
         LevelChanger.Instance.FadeIn();
+        AudioManager.Instance.SetRTPCValue("SwooshTurnOff", 0);
     }
     public void OnCreditsEnd()
     {
