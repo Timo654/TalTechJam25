@@ -22,7 +22,16 @@ public class GameplayAudio : MonoBehaviour
 
     private void HandleStreak(uint currentStreak)
     {
-        // TODO
+        if (currentStreak < 5)
+        {
+            AudioManager.Instance.SetRTPCValue("Drumset1Mute", 0);
+            AudioManager.Instance.SetRTPCValue("Drumset2Mute", 0);
+        }
+        else if (currentStreak > 5)
+        {
+            AudioManager.Instance.SetRTPCValue("Drumset1Mute", 100);
+            AudioManager.Instance.SetRTPCValue("Drumset2Mute", 100);
+        }
     }
 
     private void PlayAudio(EntityType _, ItemType type, int laneID, int __)
