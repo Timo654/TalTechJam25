@@ -42,6 +42,10 @@ public class PedSpawner : MonoBehaviour
                 0f
             );
             gameObj.GetComponent<EntityScript>().ConfigOnSpawn(boostIncrement);
+            // Set entitys anim speed
+            Animator anim = gameObj.GetComponent<Animator>();
+            anim.speed += boostIncrement / 2;
+            
             gameObj.transform.localRotation = Quaternion.Euler(-50f, 0f, 0f);
             var sr = gameObj.GetComponentInChildren<SpriteRenderer>();
             sr.color = new Color(1, 1, 1, 0);
