@@ -14,6 +14,7 @@ public class WWiseEvents : MonoBehaviour
     [field: SerializeField] public AK.Wwise.Event LoseCourage { get; private set; }
     [field: SerializeField] public AK.Wwise.Event TrafficSignHit { get; private set; }
     [field: SerializeField] public AK.Wwise.Event ScooterHit { get; private set; }
+    [field: SerializeField] public AK.Wwise.Event Whoosh { get; private set; }
 
     [field: Header("UI")]
     [field: SerializeField] public AK.Wwise.Event ButtonClick { get; private set; }

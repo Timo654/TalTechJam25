@@ -84,14 +84,19 @@ MonoBehaviour:
     MusicVolume: 0.2
   gameData:
     version: 2
-    money: 0
-    currentBall: 0
-    currentBody: 0
-    currentTrack: 0
-    currentLevel: 0
+    f_hasClearedOnce: 0
+    f_neutralCleared: 0
+    f_pacifistCleared: 0
+    f_goodCleared: 0
+    f_trashCleared: 0
+    bestScore: 0
+    worstScore: 0
   runtimeData:
     previousSceneName: 
     currentEnding: {fileID: 0}
+    highScoreType: 0
+    currentScore: 0
+    gameType: 0
 --- !u!1 &5016839012092585960
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,7 +181,7 @@ MonoBehaviour:
   <PedHit>k__BackingField:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 4ad85a67b95753f4b8d07a3371f35902, type: 2}
   <GetCourage>k__BackingField:
     idInternal: 0
     valueGuidInternal: 
@@ -185,6 +190,18 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 23f73bde15ace1a44a78fb2ce35d84e4, type: 2}
+  <TrafficSignHit>k__BackingField:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 63f7d3468a599c44bb3e84acafcbeabf, type: 2}
+  <ScooterHit>k__BackingField:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 92e43dd304660e545806a2818d9f742b, type: 2}
+  <Whoosh>k__BackingField:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4582ce8fbc69b3c4ca4d902695755abf, type: 2}
   <ButtonClick>k__BackingField:
     idInternal: 0
     valueGuidInternal: 
@@ -229,21 +246,3 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a598f42bfdbd9e1439c932bf856a38cd, type: 2}
-  <NoDrum>k__BackingField:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f5cf2584a0b448b4791ee18f37be3de2, type: 2}
-  <Drumset1>k__BackingField:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2eb134005c2b12840a8e28a03099ace8, type: 2}
-  <Drumset2>k__BackingField:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a8a083e42be5cd6449637bff528f6362, type: 2}

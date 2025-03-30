@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: d62b92dde4877747b03afdd74af8b072
     GuidInternal: 
-    m_lastTime: -8584583395130010824
+    m_lastTime: -8584582996332202468
     List:
     - name: Music
       guid: b95ddb8bddbe584685f413d54ce464cd
@@ -364,6 +364,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.9835391
       minDuration: 0.8512891
+    - name: Play_lane_switch_sfx
+      guid: 6459e071b3dddb4baab55afd034aaf3b
+      id: 1827318851
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 74141f36b2617b41a862b3f712e3eb14
+      - ElementName: Play_lane_switch_sfx
+        ObjectType: 3
+        guid: 6459e071b3dddb4baab55afd034aaf3b
+      Path: Events\Default Work Unit\SFX\Play_lane_switch_sfx
+      maxAttenuation: 0
+      maxDuration: 0.43370673
+      minDuration: 0.38638875
     - name: Play_MusicSwitch
       guid: 7d5edeef07703c4c83238302d081b73b
       id: 3117137027
@@ -384,6 +404,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_pedestrian_hit_sfx
+      guid: e9d273480e5ef04d97a71f26d65c25fc
+      id: 559845655
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 74141f36b2617b41a862b3f712e3eb14
+      - ElementName: Play_pedestrian_hit_sfx
+        ObjectType: 3
+        guid: e9d273480e5ef04d97a71f26d65c25fc
+      Path: Events\Default Work Unit\SFX\Play_pedestrian_hit_sfx
+      maxAttenuation: 0
+      maxDuration: 0.45903686
+      minDuration: 0.24495941
     - name: Play_pre_courage_sfx
       guid: 5b27152091ea584da6bb0625752fcc44
       id: 1894117360
@@ -424,6 +464,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.75878143
       minDuration: 0.75878143
+    - name: Play_scooter_hit_sfx
+      guid: 0382c1269d3530488faacb5903f4d6e7
+      id: 3290392989
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 74141f36b2617b41a862b3f712e3eb14
+      - ElementName: Play_scooter_hit_sfx
+        ObjectType: 3
+        guid: 0382c1269d3530488faacb5903f4d6e7
+      Path: Events\Default Work Unit\SFX\Play_scooter_hit_sfx
+      maxAttenuation: 0
+      maxDuration: 0.8405099
+      minDuration: 0.666001
+    - name: Play_sign_hit_sfx
+      guid: db078dc1af555945a344cffb505ce0a1
+      id: 3408741159
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d62b92dde4877747b03afdd74af8b072
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 74141f36b2617b41a862b3f712e3eb14
+      - ElementName: Play_sign_hit_sfx
+        ObjectType: 3
+        guid: db078dc1af555945a344cffb505ce0a1
+      Path: Events\Default Work Unit\SFX\Play_sign_hit_sfx
+      maxAttenuation: 0
+      maxDuration: 0.4953287
+      minDuration: 0.4022895
     - name: Play_wooden_bench_hit_sfx
       guid: 7e91ce114c63aa4ebe0c10bcfe83b288
       id: 1201208953

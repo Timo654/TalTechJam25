@@ -73,16 +73,19 @@ public class GameplayAudio : MonoBehaviour
         switch (type)
         {
             case ItemType.Pedestrian:
+                AudioManager.Instance.PlaySound(WWiseEvents.Instance.PedHit, audioDirections[laneID]);
                 break;
             case ItemType.Trashcan:
                 AudioManager.Instance.PlaySound(WWiseEvents.Instance.BinHit, audioDirections[laneID]);
                 break;
             case ItemType.Scooter:
+                AudioManager.Instance.PlaySound(WWiseEvents.Instance.ScooterHit, audioDirections[laneID]);
                 break;
             case ItemType.StreetLamp:
                 AudioManager.Instance.PlaySound(WWiseEvents.Instance.PostHit, audioDirections[laneID]);
                 break;
             case ItemType.TrafficSign:
+                AudioManager.Instance.PlaySound(WWiseEvents.Instance.TrafficSignHit, audioDirections[laneID]);
                 break;
             case ItemType.Bench:
                 AudioManager.Instance.PlaySound(WWiseEvents.Instance.BenchHit, audioDirections[laneID]);
