@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{15AF9294-C212-4B43-83AE-FEB6EA153484}",
     "Language": "SFX",
-    "Hash": "{7EB1F139-236C-0944-D745-5DD5548AF5D1}",
+    "Hash": "{25DADFCE-DBBA-C2C0-86F6-2F993E668DFD}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainBank",
     "ShortName": "MainBank",
     "Path": "MainBank.bnk",
@@ -40,6 +40,14 @@
       "CachePath": "B2/{B20FA2A6-C287-FA8C-2DE0-538E4C878133}.wem"
      },
      {
+      "Id": "72592624",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ScooterHit2.wav",
+      "CachePath": "11/{117D2537-D0DC-F027-552F-E8C1EE120E33}.wem"
+     },
+     {
       "Id": "93865244",
       "Language": "SFX",
       "Streaming": "false",
@@ -54,6 +62,14 @@
       "Location": "Memory",
       "ShortName": "Drumset2.wav",
       "CachePath": "83/{834061C3-ACC3-2D35-1D78-4E257A9D26AC}.wem"
+     },
+     {
+      "Id": "128525241",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlasticHit.wav",
+      "CachePath": "C6/{C6106255-BB67-CDED-4312-0AB8D18C2DD4}.wem"
      },
      {
       "Id": "152334766",
@@ -86,6 +102,38 @@
       "Location": "Memory",
       "ShortName": "NewClick.wav",
       "CachePath": "0E/{0EFA9E1B-5AF0-11BF-5C7E-26E44F56E894}.wem"
+     },
+     {
+      "Id": "416670321",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Punch2.wav",
+      "CachePath": "AE/{AE9DD1FB-2E2A-5A2E-8136-36F655FC15FF}.wem"
+     },
+     {
+      "Id": "472580317",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Punch1.wav",
+      "CachePath": "16/{16165EE1-995F-C303-6D63-D51742500367}.wem"
+     },
+     {
+      "Id": "484762871",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "ScooterHit.wav",
+      "CachePath": "4A/{4AE70F52-1843-2EF0-1CA2-E3E7B8364EC6}.wem"
+     },
+     {
+      "Id": "563626813",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LaneSwitch.wav",
+      "CachePath": "50/{50A56CF7-AF91-21E4-3151-18896E38E1C3}.wem"
      },
      {
       "Id": "686805704",
@@ -134,6 +182,14 @@
       "Location": "Memory",
       "ShortName": "Wood, Break, Ukulele, Thin, Smash 01 SND30370.wav",
       "CachePath": "FA/{FAB26A38-EE5C-7455-CE11-446F65269A84}.wem"
+     },
+     {
+      "Id": "926527818",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlasticHit2.wav",
+      "CachePath": "83/{83AE4B9A-EAA9-89B8-EFE7-43D76F914E66}.wem"
      },
      {
       "Id": "933114952",
@@ -187,6 +243,22 @@
     "Plugins": {
      "Custom": [
       {
+       "Id": "117866606",
+       "Name": "RoomVerb (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\SFX\\scooter_hit_sfx\\[Effect Slot [0]: (RoomVerb)]\\RoomVerb (Custom)",
+       "GUID": "{AFF9DD9B-77F4-432B-9E41-A7F9C4049860}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "131591035",
+       "Name": "Delay (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\SFX\\pedestrian_hit_sfx\\[Effect Slot [0]: (Delay)]\\Delay (Custom)",
+       "GUID": "{9522EF76-3581-4277-B4A9-AFB163BAAEDF}",
+       "LibName": "Wwise Delay",
+       "LibId": "6946819"
+      },
+      {
        "Id": "183688505",
        "Name": "Peak Limiter (Custom)",
        "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\SFX\\courage_drop_sfx\\[Effect Slot [0]: (Peak Limiter)]\\Peak Limiter (Custom)",
@@ -203,12 +275,28 @@
        "LibId": "7077891"
       },
       {
+       "Id": "336749324",
+       "Name": "RoomVerb (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\SFX\\lane_switch_sfx\\[Effect Slot [0]: (RoomVerb)]\\RoomVerb (Custom)",
+       "GUID": "{85AF4E47-E099-49A5-A11E-3A47E675A299}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
        "Id": "430768027",
        "Name": "Expander (Custom)",
        "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\UI\\game_start_button_sfx\\[Effect Slot [1]: (Expander)]\\Expander (Custom)",
        "GUID": "{CA04B289-2E27-44EA-899E-DC291E404518}",
        "LibName": "Wwise Expander",
        "LibId": "7143427"
+      },
+      {
+       "Id": "494839622",
+       "Name": "Flanger (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\SFX\\lane_switch_sfx\\[Effect Slot [1]: (Flanger)]\\Flanger (Custom)",
+       "GUID": "{BE1CFB55-91A8-43E3-A82D-5BB99C66F5AE}",
+       "LibName": "Wwise Flanger",
+       "LibId": "8192003"
       },
       {
        "Id": "575264795",
@@ -231,6 +319,30 @@
        "Name": "RoomVerb (Custom)",
        "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\UI\\game_start_button_sfx\\[Effect Slot [0]: (RoomVerb)]\\RoomVerb (Custom)",
        "GUID": "{4A93212B-192E-45B6-AA8B-37D2FE51D94A}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "871205815",
+       "Name": "RoomVerb (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\SFX\\pedestrian_hit_sfx\\[Effect Slot [1]: (RoomVerb)]\\RoomVerb (Custom)",
+       "GUID": "{A91AAED5-86A6-4A6B-9FF4-1B264FFF243A}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "891615925",
+       "Name": "Delay (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\SFX\\sign_hit_sfx\\[Effect Slot [0]: (Delay)]\\Delay (Custom)",
+       "GUID": "{23FF48FD-F188-42B6-B4C6-F8ACD2B21AEB}",
+       "LibName": "Wwise Delay",
+       "LibId": "6946819"
+      },
+      {
+       "Id": "901501091",
+       "Name": "RoomVerb (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\SFX\\sign_hit_sfx\\[Effect Slot [1]: (RoomVerb)]\\RoomVerb (Custom)",
+       "GUID": "{7C266BE3-F356-4287-B1DE-01808B9B6D19}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
       }
@@ -416,6 +528,30 @@
         },
         {
          "Id": "4113267698"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "1827318851",
+      "Name": "Play_lane_switch_sfx",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_lane_switch_sfx",
+      "GUID": "{71E05964-DDB3-4BDB-AAB5-5AFD034AAF3B}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.38638875",
+      "DurationMax": "0.43370673",
+      "MediaRefs": [
+       {
+        "Id": "563626813"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "336749324"
+        },
+        {
+         "Id": "494839622"
         }
        ]
       }
@@ -622,6 +758,33 @@
       ]
      },
      {
+      "Id": "559845655",
+      "Name": "Play_pedestrian_hit_sfx",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_pedestrian_hit_sfx",
+      "GUID": "{4873D2E9-5E0E-4DF0-97A7-1F26D65C25FC}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.24495941",
+      "DurationMax": "0.45903686",
+      "MediaRefs": [
+       {
+        "Id": "416670321"
+       },
+       {
+        "Id": "472580317"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "131591035"
+        },
+        {
+         "Id": "871205815"
+        }
+       ]
+      }
+     },
+     {
       "Id": "1894117360",
       "Name": "Play_pre_courage_sfx",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_pre_courage_sfx",
@@ -655,6 +818,57 @@
         },
         {
          "Id": "782873648"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3290392989",
+      "Name": "Play_scooter_hit_sfx",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_scooter_hit_sfx",
+      "GUID": "{26C18203-359D-4830-8FAA-CB5903F4D6E7}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.666001",
+      "DurationMax": "0.8405099",
+      "MediaRefs": [
+       {
+        "Id": "72592624"
+       },
+       {
+        "Id": "484762871"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "117866606"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3408741159",
+      "Name": "Play_sign_hit_sfx",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_sign_hit_sfx",
+      "GUID": "{C18D07DB-55AF-4559-A344-CFFB505CE0A1}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.4022895",
+      "DurationMax": "0.4953287",
+      "MediaRefs": [
+       {
+        "Id": "128525241"
+       },
+       {
+        "Id": "926527818"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "891615925"
+        },
+        {
+         "Id": "901501091"
         }
        ]
       }
@@ -787,6 +1001,6 @@
     ]
    }
   ],
-  "FileHash": "{967EF88A-FBB9-269C-41D1-8EC7E32A8D1E}"
+  "FileHash": "{62BA51A2-8678-9585-17AB-CEE19AA11ECC}"
  }
 }

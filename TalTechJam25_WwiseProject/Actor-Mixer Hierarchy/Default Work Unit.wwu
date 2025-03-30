@@ -528,6 +528,448 @@
 								<ActiveSource Name="PreTransitionCourageSFX" ID="{C8464CD2-0A5B-4DE3-A007-BF56079C20EE}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="pedestrian_hit_sfx" ID="{E32A0ED5-0328-4666-A8BC-A9775322CEE4}" ShortID="1045080498">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{30560B01-D8A5-4E97-9CC2-789E61C4014B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-125"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Punch1" ID="{84B40D61-D8DF-49AA-B04E-0D4DE3F2476E}" ShortID="576669025">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Punch1" ID="{6F6A3E6B-92E2-47B4-8692-CCE826692624}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.159979524177617"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.069018597712538"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0327140174128792"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.284851297476163"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Punch1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="472580317"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Punch1" ID="{6F6A3E6B-92E2-47B4-8692-CCE826692624}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Punch2" ID="{78D63769-9E69-4925-8152-67A7666071B3}" ShortID="597795078">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Punch2" ID="{6059CEAD-D71C-444B-B085-79DEF723A929}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.343298589046673"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0378865559983941"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Punch2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="416670321"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Punch2" ID="{6059CEAD-D71C-444B-B085-79DEF723A929}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{DA03EAEA-9B90-4996-982C-68DCF967B13E}" ShortID="870646290">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Delay (Custom)" ID="{9522EF76-3581-4277-B4A9-AFB163BAAEDF}" ShortID="131591035" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+																<PropertyList>
+																	<Property Name="DelayTime" Type="Real32" Value="0.22"/>
+																	<Property Name="Feedback" Type="Real32" Value="33"/>
+																	<Property Name="WetDryMix" Type="Real32" Value="17"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{A1C8ECAC-2B58-4B77-AE72-EDB76F8B9FD1}" ShortID="628699226">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="RoomVerb (Custom)" ID="{A91AAED5-86A6-4A6B-9FF4-1B264FFF243A}" ShortID="871205815" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<PropertyList>
+																	<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+																	<Property Name="ERLevel" Type="Real32" Value="-21"/>
+																	<Property Name="ReverbLevel" Type="Real32" Value="-29"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="sign_hit_sfx" ID="{9992B7F2-1A9C-4A9C-BBD2-B23D9D774DA5}" ShortID="294237626">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="PlasticHit2" ID="{282AED02-9A40-4E59-B9D0-8133D14817BE}" ShortID="763842563">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PlasticHit2" ID="{BC8D63DE-E4CB-45F5-A3FA-28B8DEC4E982}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.438687112801884"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.089334030769881"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.58466273006473"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>PlasticHit2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="926527818"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PlasticHit2" ID="{BC8D63DE-E4CB-45F5-A3FA-28B8DEC4E982}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PlasticHit" ID="{7DA227A8-5BCC-40D6-B0D6-8526C265710C}" ShortID="593493022">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PlasticHit" ID="{48849D66-BAEF-4F27-A180-3295BA0C6113}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.294160566943183"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0507925555209098"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.453082063809908"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>PlasticHit.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="128525241"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PlasticHit" ID="{48849D66-BAEF-4F27-A180-3295BA0C6113}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{4DEE4832-EF91-4451-B426-43F82CB66B22}" ShortID="490062937">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Delay (Custom)" ID="{23FF48FD-F188-42B6-B4C6-F8ACD2B21AEB}" ShortID="891615925" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+																<PropertyList>
+																	<Property Name="DelayTime" Type="Real32" Value="0.57"/>
+																	<Property Name="Feedback" Type="Real32" Value="12"/>
+																	<Property Name="WetDryMix" Type="Real32" Value="3"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{B6D2BD3D-5CD0-4A11-A275-F8C0D9F3FBE4}" ShortID="464469186">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="RoomVerb (Custom)" ID="{7C266BE3-F356-4287-B1DE-01808B9B6D19}" ShortID="901501091" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<PropertyList>
+																	<Property Name="DryLevel" Type="Real32" Value="-2.3"/>
+																	<Property Name="ERLevel" Type="Real32" Value="-23"/>
+																	<Property Name="ReverbLevel" Type="Real32" Value="-27"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="scooter_hit_sfx" ID="{112CC59A-0FA4-46F5-97F5-2BCC2F47C169}" ShortID="623758701">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ScooterHit2" ID="{1B554A4E-6758-46C5-B27E-31CFE1C69AE9}" ShortID="901150882">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ScooterHit2" ID="{1BB59C1E-A5D4-4E9C-97EB-41864085DCF5}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.840509865852435"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.840509865852435"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ScooterHit2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="72592624"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ScooterHit2" ID="{1BB59C1E-A5D4-4E9C-97EB-41864085DCF5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ScooterHit" ID="{D55D3684-3B6C-4CB8-A25B-72B1A93C4CD4}" ShortID="842829708">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ScooterHit" ID="{47B9B1BF-70DC-4FEF-B000-8BF362DE96FC}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.584321612991938"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.666001037058792"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ScooterHit.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="484762871"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ScooterHit" ID="{47B9B1BF-70DC-4FEF-B000-8BF362DE96FC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{47B58899-6C67-499A-8E23-176FC990EC57}" ShortID="491307866">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="RoomVerb (Custom)" ID="{AFF9DD9B-77F4-432B-9E41-A7F9C4049860}" ShortID="117866606" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<PropertyList>
+																	<Property Name="DryLevel" Type="Real32" Value="-1.3"/>
+																	<Property Name="ERLevel" Type="Real32" Value="-30"/>
+																	<Property Name="ReverbLevel" Type="Real32" Value="-27"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
+						<Sound Name="lane_switch_sfx" ID="{AC788811-8E59-428C-BA79-C5A795546CF9}" ShortID="400905836">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>90</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{26A2A3CF-0FFD-47E0-8DE2-B745FEEFBC3D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{79C40949-1F9A-4D18-A282-C9F4AB3782CA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{156DDBDD-EE08-4F11-AC7A-D0F52B71377A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="LaneSwitch" ID="{5EAAC9FE-E7E4-4F78-884F-D2777A1F1BB0}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0189959811265611"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.183627817556758"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.385618416869191"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.816827190031586"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>LaneSwitch.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="563626813"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{752010F4-A50F-4E77-B2BC-36998574AF1B}" ShortID="704388014">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="RoomVerb (Custom)" ID="{85AF4E47-E099-49A5-A11E-3A47E675A299}" ShortID="336749324" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<PropertyList>
+																	<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+																	<Property Name="ERLevel" Type="Real32" Value="-37"/>
+																	<Property Name="ReverbLevel" Type="Real32" Value="-30"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{C6DA7ECE-8DA9-4E33-B8CE-58EBA08371A2}" ShortID="718473027">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Flanger (Custom)" ID="{BE1CFB55-91A8-43E3-A82D-5BB99C66F5AE}" ShortID="494839622" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+																<PropertyList>
+																	<Property Name="WetDryMix" Type="Real32" Value="46"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="LaneSwitch" ID="{5EAAC9FE-E7E4-4F78-884F-D2777A1F1BB0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{A4FE66D0-0BCE-4AB6-9DF4-3B928AF2ACC4}" ShortID="979635429">

@@ -23,9 +23,13 @@ namespace AK
         static const AkUniqueID PLAY_GAME_START_BUTTON_SFX = 2194780196U;
         static const AkUniqueID PLAY_HOVER_MOUSE_SFX = 713846344U;
         static const AkUniqueID PLAY_LAMP_HIT_SFX = 1137826710U;
+        static const AkUniqueID PLAY_LANE_SWITCH_SFX = 1827318851U;
         static const AkUniqueID PLAY_MUSICSWITCH = 3117137027U;
+        static const AkUniqueID PLAY_PEDESTRIAN_HIT_SFX = 559845655U;
         static const AkUniqueID PLAY_PRE_COURAGE_SFX = 1894117360U;
         static const AkUniqueID PLAY_RUBBISH_BIN_HIT_SFX = 3520789391U;
+        static const AkUniqueID PLAY_SCOOTER_HIT_SFX = 3290392989U;
+        static const AkUniqueID PLAY_SIGN_HIT_SFX = 3408741159U;
         static const AkUniqueID PLAY_WOODEN_BENCH_HIT_SFX = 1201208953U;
     } // namespace EVENTS
 

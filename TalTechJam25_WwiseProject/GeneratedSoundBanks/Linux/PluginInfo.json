@@ -11,6 +11,13 @@
     "StaticLib": "AkParametricEQFX"
    },
    {
+    "LibName": "Wwise Delay",
+    "LibId": "6946819",
+    "Type": "Effect",
+    "DLL": "AkDelay",
+    "StaticLib": "AkDelayFX"
+   },
+   {
     "LibName": "Wwise Compressor",
     "LibId": "7077891",
     "Type": "Effect",
@@ -39,6 +46,13 @@
     "StaticLib": "AkRoomVerbFX"
    },
    {
+    "LibName": "Wwise Flanger",
+    "LibId": "8192003",
+    "Type": "Effect",
+    "DLL": "AkFlanger",
+    "StaticLib": "AkFlangerFX"
+   },
+   {
     "LibName": "System",
     "LibId": "11403271",
     "Type": "AudioDevice"
@@ -49,6 +63,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{FED822DE-9007-E9CB-7102-B3BA0544515A}"
+  "FileHash": "{88EC1884-B993-3DF1-C217-106CB134B7AF}"
  }
 }
