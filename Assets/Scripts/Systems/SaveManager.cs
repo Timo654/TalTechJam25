@@ -107,5 +107,6 @@ public class RuntimeData
 {
     public string previousSceneName;
     public EndingData currentEnding;
+    public GameType gameType = GameType.None;
 }
 

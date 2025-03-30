@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -6,12 +7,15 @@ public class HUDUpdater : MonoBehaviour
     private float scoreCounterSpeed = 100f;
     private TextMeshProUGUI m_scoreText;
     private TextMeshProUGUI m_timerText;
+    private TextMeshProUGUI m_lifeText;
     private float visualScore;
     private int targetScore;
-    private void Awake()
+    private void Start()
     {
         m_scoreText = transform.GetChild(0).GetChild(1).GetComponent<TextMeshProUGUI>();
         m_timerText = transform.GetChild(1).GetChild(1).GetComponent<TextMeshProUGUI>();
+        if (SaveManager.Instance.runtimeData.gameType != GameType.Endless) transform.GetChild(2).gameObject.SetActive(false);
+        else m_lifeText = transform.GetChild(2).GetChild(1).GetComponent<TextMeshProUGUI>();
     }
 
     private void Update()
@@ -26,12 +30,19 @@ public class HUDUpdater : MonoBehaviour
     {
         ChaosCounter.UpdateScore += UpdateScoreUI;
         GameManager.OnGameTimeChanged += UpdateTimerUI;
+        GameManager.OnLivesChanged += UpdateLivesUI;
     }
 
     private void OnDisable()
     {
         ChaosCounter.UpdateScore -= UpdateScoreUI;
         GameManager.OnGameTimeChanged -= UpdateTimerUI;
+        GameManager.OnLivesChanged -= UpdateLivesUI;
+    }
+
+    private void UpdateLivesUI(int lives)
+    {
+        m_lifeText.text = lives.ToString();
     }
 
     // fancier - lerp shit

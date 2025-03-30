@@ -4,11 +4,11 @@ using UnityEngine.EventSystems;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private CanvasGroup optionsMenuCG;
-    [SerializeField] private CanvasGroup creditsMenuCG;
+    [SerializeField] private GameObject endlessButton;
     private GameObject lastSelect;
     void Start()
     {
-        //AudioManager.Instance.PlaySound() // PLAY MENU MUSIC
+        endlessButton.SetActive(SaveManager.Instance.gameData.f_hasClearedOnce);
         AudioManager.Instance.PlaySound(WWiseEvents.Instance.PlaySwitcher);
         AudioManager.Instance.SetSwitch(WWiseEvents.Instance.MenuMusic);
         LevelChanger.Instance.FadeIn();
@@ -29,7 +29,14 @@ public class MainMenu : MonoBehaviour
 
     public void OnPlayPressed()
     {
+        SaveManager.Instance.runtimeData.gameType = GameType.Normal;
         LevelChanger.Instance.FadeToLevel("Opening");
+    }
+
+    public void OnEndlessPressed()
+    {
+        SaveManager.Instance.runtimeData.gameType = GameType.Endless;
+        LevelChanger.Instance.FadeToLevel("Gameplay");
     }
 
     public void OnQuitPressed()
