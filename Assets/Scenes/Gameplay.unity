@@ -10392,7 +10392,7 @@ MonoBehaviour:
   - {fileID: 7814299432080817148, guid: 5ef6bcd01e5cf5f4a8199a6b262f24ac, type: 3}
   - {fileID: 7814299432080817148, guid: 3072b1d98d50ffd479079898ea513a59, type: 3}
   - {fileID: 7814299432080817148, guid: 5fa8e2849a767f0468f798386df29f62, type: 3}
-  latvia: {fileID: 0}
+  latvia: {fileID: 7814299432080817148, guid: a8bc0691b8ee69745835b597b224221c, type: 3}
 --- !u!1 &1791836925
 GameObject:
   m_ObjectHideFlags: 0
