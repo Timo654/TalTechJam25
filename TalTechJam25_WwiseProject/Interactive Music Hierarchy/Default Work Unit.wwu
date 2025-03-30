@@ -168,6 +168,7 @@
 												<MusicTransition Name="Transition" ID="{ED531FBA-9FB9-43E4-BD31-E7E2498D0CF9}">
 													<PropertyList>
 														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 														<Property Name="SourceContextType" Type="int16" Value="2"/>
 													</PropertyList>
 													<ReferenceList>
@@ -183,6 +184,7 @@
 												<MusicTransition Name="Transition" ID="{1820A1A7-9EE7-451C-887D-6754390C942F}">
 													<PropertyList>
 														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 														<Property Name="SourceContextType" Type="int16" Value="2"/>
 													</PropertyList>
 													<ReferenceList>
@@ -198,6 +200,7 @@
 												<MusicTransition Name="Transition" ID="{63D4FE03-9EDD-4DEA-844A-2A3CF5ABCD7A}">
 													<PropertyList>
 														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 														<Property Name="SourceContextType" Type="int16" Value="2"/>
 													</PropertyList>
 													<ReferenceList>
@@ -206,6 +209,22 @@
 														</Reference>
 														<Reference Name="SourceContextObject">
 															<ObjectRef Name="GameTrack2" ID="{374638D5-636E-4518-A019-D1661C884969}" WorkUnitID="{901B515D-9334-4460-8F5F-EC731E0B065D}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo/>
+												</MusicTransition>
+												<MusicTransition Name="Transition" ID="{500C2DE7-26D2-49C9-AA74-13AD49E98FD1}">
+													<PropertyList>
+														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DestinationContextObject">
+															<ObjectRef Name="Credits" ID="{108D7C89-F09F-410D-9F3C-FB43A671E1E1}" WorkUnitID="{901B515D-9334-4460-8F5F-EC731E0B065D}"/>
+														</Reference>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="GameTrack1" ID="{C75C3CE4-F235-464B-804B-976A50631BE2}" WorkUnitID="{901B515D-9334-4460-8F5F-EC731E0B065D}"/>
 														</Reference>
 													</ReferenceList>
 													<TransitionInfo/>
