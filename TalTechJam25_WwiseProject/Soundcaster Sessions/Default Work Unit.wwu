@@ -4,10 +4,21 @@
 		<WorkUnit Name="Default Work Unit" ID="{D8601C75-2F68-41D9-B746-D6B8EF9342D6}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="TaltechSoundCaster" ID="{E11DF11D-C910-4FD9-8DB2-CA0D0B6B7987}">
-					<RTPCValueList ShowAll="true"/>
-					<CurrentStateList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Drumset2Mute" ID="{0309D2B8-6A02-434E-B637-5CABFD142207}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Drumset1Mute" ID="{28AEFEC9-A43D-43C5-A06C-09FE07BC3233}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="NoDrum" ID="{60A978B9-55F6-4721-89CA-5F7A3F8E343F}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="GameMain2" ID="{B112BD6C-212A-4156-A9E4-3DEF50B73BCC}"/>
+						<CurrentSwitchRef Name="Endless" ID="{5E3781C4-9089-463D-9AEC-25989A1F4C1E}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

@@ -59,6 +59,7 @@ namespace AK
             namespace SWITCH
             {
                 static const AkUniqueID CREDITS = 2201105581U;
+                static const AkUniqueID ENDLESS = 1335262199U;
                 static const AkUniqueID GAMEMAIN1 = 3055903945U;
                 static const AkUniqueID GAMEMAIN2 = 3055903946U;
                 static const AkUniqueID MENU = 2607556080U;

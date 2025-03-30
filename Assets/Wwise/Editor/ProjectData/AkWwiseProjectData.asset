@@ -778,7 +778,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: b237b0cb81fdd24280bc14337cab956c
     GuidInternal: 
-    m_lastTime: -8584583030033704845
+    m_lastTime: -8584582949262766275
     List:
     - name: MusicChanger
       guid: 6c50bbf5f32db1458c0a6ccb0a64bceb
@@ -811,6 +811,22 @@ MonoBehaviour:
         - ElementName: Credits
           ObjectType: 10
           guid: ecc783e50108fe448a0b24b648a33dcc
+      - name: Endless
+        guid: c481375e89903d469aec25989a1f4c1e
+        id: 1335262199
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b237b0cb81fdd24280bc14337cab956c
+        - ElementName: MusicChanger
+          ObjectType: 11
+          guid: 6c50bbf5f32db1458c0a6ccb0a64bceb
+        - ElementName: Endless
+          ObjectType: 10
+          guid: c481375e89903d469aec25989a1f4c1e
       - name: GameMain1
         guid: 46f52782317b0c4ca1f6b1b05be9e05d
         id: 3055903945
@@ -877,7 +893,7 @@ MonoBehaviour:
     m_lastTime: -8584584332699988291
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0200000005000000060000000700000008000000090000000a0000000c0000000d0000000e0000000f00000010000000120000001500000018000000190000001b0000003300000034000000360000002702000028020000290200002a020000
+  ExpandedWaapiItemIds: 0200000005000000060000000700000008000000090000000a0000000c0000000d0000000e0000000f000000100000001100000012000000130000001500000018000000190000001b0000003300000034000000360000002702000028020000290200002a020000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

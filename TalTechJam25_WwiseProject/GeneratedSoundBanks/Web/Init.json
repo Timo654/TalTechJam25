@@ -146,6 +146,12 @@
       "GUID": "{F5BB506C-2DF3-45B1-8C0A-6CCB0A64BCEB}",
       "Switches": [
        {
+        "Id": "1335262199",
+        "Name": "Endless",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicChanger\\Endless",
+        "GUID": "{5E3781C4-9089-463D-9AEC-25989A1F4C1E}"
+       },
+       {
         "Id": "2201105581",
         "Name": "Credits",
         "ObjectPath": "\\Switches\\Default Work Unit\\MusicChanger\\Credits",
@@ -174,6 +180,6 @@
     ]
    }
   ],
-  "FileHash": "{480C1A07-8B09-8D96-CE71-D9AEE1EF71BE}"
+  "FileHash": "{D7D175A6-7B59-EFC0-9E36-7AA0E6D546B4}"
  }
 }

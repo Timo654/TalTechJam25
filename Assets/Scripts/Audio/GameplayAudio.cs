@@ -10,7 +10,12 @@ public class GameplayAudio : MonoBehaviour
     private void Start()
     {
         AudioManager.Instance.PlaySound(WWiseEvents.Instance.PlaySwitcher);
-        AudioManager.Instance.SetSwitch(WWiseEvents.Instance.GameMusic1);
+        if (SaveManager.Instance.runtimeData.gameType == GameType.Endless) {
+            AudioManager.Instance.SetSwitch(WWiseEvents.Instance.Endless);
+        } else {
+            AudioManager.Instance.SetSwitch(WWiseEvents.Instance.GameMusic1);
+        }
+    
 
     }
     private void OnEnable()

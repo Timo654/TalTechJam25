@@ -9,6 +9,7 @@
 						<Switch Name="Credits" ID="{E583C7EC-0801-44FE-8A0B-24B648A33DCC}"/>
 						<Switch Name="GameMain1" ID="{8227F546-7B31-4C0C-A1F6-B1B05BE9E05D}"/>
 						<Switch Name="GameMain2" ID="{B112BD6C-212A-4156-A9E4-3DEF50B73BCC}"/>
+						<Switch Name="Endless" ID="{5E3781C4-9089-463D-9AEC-25989A1F4C1E}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

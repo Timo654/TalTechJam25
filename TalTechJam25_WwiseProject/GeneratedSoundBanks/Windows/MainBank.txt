@@ -22,6 +22,7 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 	2011614756	MusicChanger			\Default Work Unit\MusicChanger	
 
 Switch	ID	Name	Switch Group			Notes
+	1335262199	Endless	MusicChanger			
 	2201105581	Credits	MusicChanger			
 	2607556080	Menu	MusicChanger			
 	3055903945	GameMain1	MusicChanger			
@@ -75,9 +76,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	70246689	lamp_hit_sfx	C:\Users\Tim\Desktop\Gaming Jams\TalTechJam25\TalTechJam25_WwiseProject\.cache\B2\{B20FA2A6-C287-FA8C-2DE0-538E4C878133}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\lamp_hit_sfx		168332
 	72592624	ScooterHit2	C:\Users\Tim\Desktop\Gaming Jams\TalTechJam25\TalTechJam25_WwiseProject\.cache\11\{117D2537-D0DC-F027-552F-E8C1EE120E33}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\scooter_hit_sfx\ScooterHit2		161472
 	93865244	rubbish_bin_hit_sfx	C:\Users\Tim\Desktop\Gaming Jams\TalTechJam25\TalTechJam25_WwiseProject\.cache\E8\{E82CCE65-5CB6-313A-85D6-20BD802D052D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\rubbish_bin_hit_sfx		145780
-	109027379	Drumset2	C:\Users\Tim\Desktop\Gaming Jams\TalTechJam25\TalTechJam25_WwiseProject\.cache\83\{834061C3-ACC3-2D35-1D78-4E257A9D26AC}.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\MusicSwitch\GameTrack2\GameplayMusicSecondPartNoDrum\Drumset2		11289696
+	109027379	Drumset2	C:\Users\Tim\Desktop\Gaming Jams\TalTechJam25\TalTechJam25_WwiseProject\.cache\83\{834061C3-ACC3-2D35-1D78-4E257A9D26AC}.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\MusicSwitch\Endless\GameplayMusicFullNoDrum\Drumset2		11289696
 	128525241	PlasticHit	C:\Users\Tim\Desktop\Gaming Jams\TalTechJam25\TalTechJam25_WwiseProject\.cache\C6\{C6106255-BB67-CDED-4312-0AB8D18C2DD4}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\sign_hit_sfx\PlasticHit		77336
 	152334766	hover_mouse_sfx	C:\Users\Tim\Desktop\Gaming Jams\TalTechJam25\TalTechJam25_WwiseProject\.cache\0E\{0EA70A8F-AA01-284C-49A2-002718754828}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\hover_mouse_sfx		77272
+	195358412	GameplayMusicFullNoDrum	C:\Users\Tim\Desktop\Gaming Jams\TalTechJam25\TalTechJam25_WwiseProject\.cache\09\{094D8721-5722-737E-9AE2-54FC2F5DC29E}.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\MusicSwitch\Endless\GameplayMusicFullNoDrum\GameplayMusicFullNoDrum		23990496
 	268774127	courage_drop_sfx	C:\Users\Tim\Desktop\Gaming Jams\TalTechJam25\TalTechJam25_WwiseProject\.cache\07\{073FD70C-D08B-748A-49F2-7987FB43EF4E}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\courage_drop_sfx		535120
 	313572889	TaltechCredits	C:\Users\Tim\Desktop\Gaming Jams\TalTechJam25\TalTechJam25_WwiseProject\.cache\CA\{CA82ECA2-F02B-C1CB-A0EF-D5E4355ED5AD}.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\MusicSwitch\Credits\TaltechCredits\TaltechCredits		1411296
 	380671784	button_click_main_new	C:\Users\Tim\Desktop\Gaming Jams\TalTechJam25\TalTechJam25_WwiseProject\.cache\0E\{0EFA9E1B-5AF0-11BF-5C7E-26E44F56E894}.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\button_click_main_new		176496

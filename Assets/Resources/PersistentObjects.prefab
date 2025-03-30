@@ -246,3 +246,9 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a598f42bfdbd9e1439c932bf856a38cd, type: 2}
+  <Endless>k__BackingField:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: dad10df8b410c2b408006a7642d07b4b, type: 2}

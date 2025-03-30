@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{15AF9294-C212-4B43-83AE-FEB6EA153484}",
     "Language": "SFX",
-    "Hash": "{489A1807-25A7-E63D-14B0-BAD32A06090B}",
+    "Hash": "{8D86A520-DA8F-BF4D-943E-4BB5D125C9C1}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainBank",
     "ShortName": "MainBank",
     "Path": "MainBank.bnk",
@@ -78,6 +78,14 @@
       "Location": "Memory",
       "ShortName": "StepsWood2.wav",
       "CachePath": "0E/{0EA70A8F-AA01-284C-49A2-002718754828}.wem"
+     },
+     {
+      "Id": "195358412",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameplayMusicFullNoDrum.wav",
+      "CachePath": "09/{094D8721-5722-737E-9AE2-54FC2F5DC29E}.wem"
      },
      {
       "Id": "268774127",
@@ -642,60 +650,15 @@
         "SwitchValue": {
          "GroupType": "Switch",
          "GroupId": "2011614756",
-         "Id": "2201105581",
-         "GUID": "{E583C7EC-0801-44FE-8A0B-24B648A33DCC}"
-        },
-        "MediaRefs": [
-         {
-          "Id": "313572889"
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "2011614756",
-         "Id": "2607556080",
-         "GUID": "{72F2F132-B40D-45D4-A1CA-1A2E80CD3B29}"
-        },
-        "MediaRefs": [
-         {
-          "Id": "950094142"
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "2011614756",
-         "Id": "3055903945",
-         "GUID": "{8227F546-7B31-4C0C-A1F6-B1B05BE9E05D}"
+         "Id": "1335262199",
+         "GUID": "{5E3781C4-9089-463D-9AEC-25989A1F4C1E}"
         },
         "MediaRefs": [
          {
           "Id": "109027379"
          },
          {
-          "Id": "687490700"
-         },
-         {
-          "Id": "1064049400"
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "2011614756",
-         "Id": "3055903946",
-         "GUID": "{B112BD6C-212A-4156-A9E4-3DEF50B73BCC}"
-        },
-        "MediaRefs": [
-         {
-          "Id": "109027379"
-         },
-         {
-          "Id": "686805704"
+          "Id": "195358412"
          },
          {
           "Id": "1064049400"
@@ -760,6 +723,108 @@
          },
          {
           "Id": "686805704"
+         },
+         {
+          "Id": "1064049400"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2011614756",
+         "Id": "1335262199",
+         "GUID": "{5E3781C4-9089-463D-9AEC-25989A1F4C1E}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "109027379"
+         },
+         {
+          "Id": "195358412"
+         },
+         {
+          "Id": "1064049400"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2011614756",
+         "Id": "2201105581",
+         "GUID": "{E583C7EC-0801-44FE-8A0B-24B648A33DCC}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "313572889"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2011614756",
+         "Id": "2607556080",
+         "GUID": "{72F2F132-B40D-45D4-A1CA-1A2E80CD3B29}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "950094142"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2011614756",
+         "Id": "3055903945",
+         "GUID": "{8227F546-7B31-4C0C-A1F6-B1B05BE9E05D}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "109027379"
+         },
+         {
+          "Id": "687490700"
+         },
+         {
+          "Id": "1064049400"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2011614756",
+         "Id": "3055903946",
+         "GUID": "{B112BD6C-212A-4156-A9E4-3DEF50B73BCC}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "109027379"
+         },
+         {
+          "Id": "686805704"
+         },
+         {
+          "Id": "1064049400"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2011614756",
+         "Id": "1335262199",
+         "GUID": "{5E3781C4-9089-463D-9AEC-25989A1F4C1E}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "109027379"
+         },
+         {
+          "Id": "195358412"
          },
          {
           "Id": "1064049400"
@@ -990,6 +1055,12 @@
       "GUID": "{F5BB506C-2DF3-45B1-8C0A-6CCB0A64BCEB}",
       "Switches": [
        {
+        "Id": "1335262199",
+        "Name": "Endless",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicChanger\\Endless",
+        "GUID": "{5E3781C4-9089-463D-9AEC-25989A1F4C1E}"
+       },
+       {
         "Id": "2201105581",
         "Name": "Credits",
         "ObjectPath": "\\Switches\\Default Work Unit\\MusicChanger\\Credits",
@@ -1018,6 +1089,6 @@
     ]
    }
   ],
-  "FileHash": "{42BB303F-5553-6E9F-7F5F-16105E5E57A0}"
+  "FileHash": "{D8B8E384-F302-F34A-BD54-1D853F871B81}"
  }
 }
