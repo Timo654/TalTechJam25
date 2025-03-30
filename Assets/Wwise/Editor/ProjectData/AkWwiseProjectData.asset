@@ -490,8 +490,36 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 8221c26751d5bb4a95f7cbc40d660655
     GuidInternal: 
-    m_lastTime: -8584584332700653850
+    m_lastTime: -8584583145122149758
     List:
+    - name: Drumset1Mute
+      guid: c9feae283da4c543a06c09fe07bc3233
+      id: 2103583099
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8221c26751d5bb4a95f7cbc40d660655
+      - ElementName: Drumset1Mute
+        ObjectType: 13
+        guid: c9feae283da4c543a06c09fe07bc3233
+      Path: Game Parameters\Default Work Unit\Drumset1Mute
+    - name: Drumset2Mute
+      guid: b8d20903026a4e43b6375cabfd142207
+      id: 497269104
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8221c26751d5bb4a95f7cbc40d660655
+      - ElementName: Drumset2Mute
+        ObjectType: 13
+        guid: b8d20903026a4e43b6375cabfd142207
+      Path: Game Parameters\Default Work Unit\Drumset2Mute
     - name: Master_volume
       guid: 3d1cf039696d1646b1f233510b068d62
       id: 4179668880
@@ -560,7 +588,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 1341530b8f811e44b4a0988b2fd78130
     GuidInternal: 
-    m_lastTime: -8584583158115589642
+    m_lastTime: -8584583137913366278
     List:
     - name: DrumChanger
       guid: 36977dc21200354e870bd795a85450e3
@@ -656,74 +684,8 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: b237b0cb81fdd24280bc14337cab956c
     GuidInternal: 
-    m_lastTime: -8584583304887954523
+    m_lastTime: -8584583141528323516
     List:
-    - name: DrumChanger
-      guid: a2fa3697d4dfe646b8efcd802db59949
-      id: 863136109
-      PathAndIcons:
-      - ElementName: Switches
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: b237b0cb81fdd24280bc14337cab956c
-      - ElementName: DrumChanger
-        ObjectType: 11
-        guid: a2fa3697d4dfe646b8efcd802db59949
-      Path: Switches\Default Work Unit\DrumChanger
-      values:
-      - name: Courage1
-        guid: 1abb6bd6f934294a8b31558f7c1a4958
-        id: 481047188
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: b237b0cb81fdd24280bc14337cab956c
-        - ElementName: DrumChanger
-          ObjectType: 11
-          guid: a2fa3697d4dfe646b8efcd802db59949
-        - ElementName: Courage1
-          ObjectType: 10
-          guid: 1abb6bd6f934294a8b31558f7c1a4958
-      - name: Courage2
-        guid: 8177d6c0c5f1c9409207648d673c3d3c
-        id: 481047191
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: b237b0cb81fdd24280bc14337cab956c
-        - ElementName: DrumChanger
-          ObjectType: 11
-          guid: a2fa3697d4dfe646b8efcd802db59949
-        - ElementName: Courage2
-          ObjectType: 10
-          guid: 8177d6c0c5f1c9409207648d673c3d3c
-      - name: NoCourage
-        guid: 8608246a9b9b7947a1eae0393e46b4e4
-        id: 290397464
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: b237b0cb81fdd24280bc14337cab956c
-        - ElementName: DrumChanger
-          ObjectType: 11
-          guid: a2fa3697d4dfe646b8efcd802db59949
-        - ElementName: NoCourage
-          ObjectType: 10
-          guid: 8608246a9b9b7947a1eae0393e46b4e4
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
     - name: MusicChanger
       guid: 6c50bbf5f32db1458c0a6ccb0a64bceb
       id: 2011614756

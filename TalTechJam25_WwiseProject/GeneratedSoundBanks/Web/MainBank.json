@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{15AF9294-C212-4B43-83AE-FEB6EA153484}",
     "Language": "SFX",
-    "Hash": "{0208B3D5-B2F6-2C29-D215-BFE2CEC18BAB}",
+    "Hash": "{4619552B-AA25-05D3-C832-4EFBD86635EB}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainBank",
     "ShortName": "MainBank",
     "Path": "MainBank.bnk",
@@ -46,6 +46,14 @@
       "Location": "Memory",
       "ShortName": "Wood, Crash & Debris, Hard Impacts, Metal Details, Wood Break SND53109.wav",
       "CachePath": "E8/{E82CCE65-5CB6-313A-85D6-20BD802D052D}.wem"
+     },
+     {
+      "Id": "109027379",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Drumset2.wav",
+      "CachePath": "83/{834061C3-ACC3-2D35-1D78-4E257A9D26AC}.wem"
      },
      {
       "Id": "152334766",
@@ -166,6 +174,14 @@
       "Location": "Memory",
       "ShortName": "PreTransitionCourageSFX.wav",
       "CachePath": "8D/{8D3836EF-8D36-C33F-806E-56CE69C57F15}.wem"
+     },
+     {
+      "Id": "1064049400",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Drumset1.wav",
+      "CachePath": "FE/{FE1C956D-C763-14CA-633F-F0482A627703}.wem"
      }
     ],
     "Plugins": {
@@ -446,7 +462,13 @@
         },
         "MediaRefs": [
          {
+          "Id": "109027379"
+         },
+         {
           "Id": "687490700"
+         },
+         {
+          "Id": "1064049400"
          }
         ]
        },
@@ -459,7 +481,13 @@
         },
         "MediaRefs": [
          {
+          "Id": "109027379"
+         },
+         {
           "Id": "686805704"
+         },
+         {
+          "Id": "1064049400"
          }
         ]
        },
@@ -498,7 +526,13 @@
         },
         "MediaRefs": [
          {
+          "Id": "109027379"
+         },
+         {
           "Id": "687490700"
+         },
+         {
+          "Id": "1064049400"
          }
         ]
        },
@@ -511,7 +545,13 @@
         },
         "MediaRefs": [
          {
+          "Id": "109027379"
+         },
+         {
           "Id": "686805704"
+         },
+         {
+          "Id": "1064049400"
          }
         ]
        }
@@ -611,6 +651,12 @@
     ],
     "GameParameters": [
      {
+      "Id": "497269104",
+      "Name": "Drumset2Mute",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Drumset2Mute",
+      "GUID": "{0309D2B8-6A02-434E-B637-5CABFD142207}"
+     },
+     {
       "Id": "1006694123",
       "Name": "Music_volume",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Music_volume",
@@ -627,6 +673,12 @@
       "Name": "UI_volume",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\UI_volume",
       "GUID": "{086D344A-9ADC-4D1D-AF04-67C1FFBB6580}"
+     },
+     {
+      "Id": "2103583099",
+      "Name": "Drumset1Mute",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Drumset1Mute",
+      "GUID": "{28AEFEC9-A43D-43C5-A06C-09FE07BC3233}"
      },
      {
       "Id": "4179668880",
@@ -671,6 +723,6 @@
     ]
    }
   ],
-  "FileHash": "{05B41D3C-1017-AB0A-A6DC-813D2F46FDD5}"
+  "FileHash": "{F12DCA90-F411-2C09-54EA-8CBFB94FA722}"
  }
 }

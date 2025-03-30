@@ -29,12 +29,7 @@ public class AudioManager : MonoSingleton<AudioManager>
     {
         AkUnitySoundEngine.SetRTPCValue($"{bus}_volume" , Mathf.Clamp01(value));
     }
-
-    public void SetRTPCValue(string param, float value)
-    {
-        AkUnitySoundEngine.SetRTPCValue(param, value);
-    }
-
+    
     public void SetSwitch(AK.Wwise.Switch switchEvent)
     {
         SetSwitch(switchEvent, gameObject);
@@ -45,10 +40,11 @@ public class AudioManager : MonoSingleton<AudioManager>
         switchEvent.SetValue(gameObj);
     }
     
-    public void SetParameter(const char * , BusType bus)
+    public void SetRTPCValue(string param, float value)
     {
-        AkUnitySoundEngine.SetRTPCValue($"{bus}_volume" , Mathf.Clamp01(value));
+        AkUnitySoundEngine.SetRTPCValue(param, value);
     }
+
 
 }
 

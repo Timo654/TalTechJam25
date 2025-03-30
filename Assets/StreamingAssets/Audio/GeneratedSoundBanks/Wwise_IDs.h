@@ -29,20 +29,25 @@ namespace AK
         static const AkUniqueID PLAY_WOODEN_BENCH_HIT_SFX = 1201208953U;
     } // namespace EVENTS
 
-    namespace SWITCHES
+    namespace STATES
     {
         namespace DRUMCHANGER
         {
             static const AkUniqueID GROUP = 863136109U;
 
-            namespace SWITCH
+            namespace STATE
             {
-                static const AkUniqueID COURAGE1 = 481047188U;
-                static const AkUniqueID COURAGE2 = 481047191U;
-                static const AkUniqueID NOCOURAGE = 290397464U;
-            } // namespace SWITCH
+                static const AkUniqueID DRUMSET1 = 3983985464U;
+                static const AkUniqueID DRUMSET2 = 3983985467U;
+                static const AkUniqueID NODRUM = 3388922324U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
         } // namespace DRUMCHANGER
 
+    } // namespace STATES
+
+    namespace SWITCHES
+    {
         namespace MUSICCHANGER
         {
             static const AkUniqueID GROUP = 2011614756U;
@@ -60,6 +65,8 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID DRUMSET1MUTE = 2103583099U;
+        static const AkUniqueID DRUMSET2MUTE = 497269104U;
         static const AkUniqueID MASTER_VOLUME = 4179668880U;
         static const AkUniqueID MUSIC_VOLUME = 1006694123U;
         static const AkUniqueID SFX_VOLUME = 1564184899U;

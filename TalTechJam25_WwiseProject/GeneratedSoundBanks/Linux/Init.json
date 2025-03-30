@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{BF6526EA-1245-A333-BE45-449A3572A042}",
+    "Hash": "{B4B8B099-0949-58A2-8B61-6A530BC7F841}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -62,6 +62,12 @@
     ],
     "GameParameters": [
      {
+      "Id": "497269104",
+      "Name": "Drumset2Mute",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Drumset2Mute",
+      "GUID": "{0309D2B8-6A02-434E-B637-5CABFD142207}"
+     },
+     {
       "Id": "1006694123",
       "Name": "Music_volume",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Music_volume",
@@ -80,39 +86,53 @@
       "GUID": "{086D344A-9ADC-4D1D-AF04-67C1FFBB6580}"
      },
      {
+      "Id": "2103583099",
+      "Name": "Drumset1Mute",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Drumset1Mute",
+      "GUID": "{28AEFEC9-A43D-43C5-A06C-09FE07BC3233}"
+     },
+     {
       "Id": "4179668880",
       "Name": "Master_volume",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Master_volume",
       "GUID": "{39F01C3D-6D69-4616-B1F2-33510B068D62}"
      }
     ],
-    "SwitchGroups": [
+    "StateGroups": [
      {
       "Id": "863136109",
       "Name": "DrumChanger",
-      "ObjectPath": "\\Switches\\Default Work Unit\\DrumChanger",
-      "GUID": "{9736FAA2-DFD4-46E6-B8EF-CD802DB59949}",
-      "Switches": [
+      "ObjectPath": "\\States\\Default Work Unit\\DrumChanger",
+      "GUID": "{C27D9736-0012-4E35-870B-D795A85450E3}",
+      "States": [
        {
-        "Id": "290397464",
-        "Name": "NoCourage",
-        "ObjectPath": "\\Switches\\Default Work Unit\\DrumChanger\\NoCourage",
-        "GUID": "{6A240886-9B9B-4779-A1EA-E0393E46B4E4}"
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\DrumChanger\\None",
+        "GUID": "{F3FE99D7-E847-430B-8E79-E83E09872559}"
        },
        {
-        "Id": "481047188",
-        "Name": "Courage1",
-        "ObjectPath": "\\Switches\\Default Work Unit\\DrumChanger\\Courage1",
-        "GUID": "{D66BBB1A-34F9-4A29-8B31-558F7C1A4958}"
+        "Id": "3388922324",
+        "Name": "NoDrum",
+        "ObjectPath": "\\States\\Default Work Unit\\DrumChanger\\NoDrum",
+        "GUID": "{60A978B9-55F6-4721-89CA-5F7A3F8E343F}"
        },
        {
-        "Id": "481047191",
-        "Name": "Courage2",
-        "ObjectPath": "\\Switches\\Default Work Unit\\DrumChanger\\Courage2",
-        "GUID": "{C0D67781-F1C5-40C9-9207-648D673C3D3C}"
+        "Id": "3983985464",
+        "Name": "Drumset1",
+        "ObjectPath": "\\States\\Default Work Unit\\DrumChanger\\Drumset1",
+        "GUID": "{FB85C180-FDD6-4960-8F18-E139E6322A2C}"
+       },
+       {
+        "Id": "3983985467",
+        "Name": "Drumset2",
+        "ObjectPath": "\\States\\Default Work Unit\\DrumChanger\\Drumset2",
+        "GUID": "{AA3B72F1-F1B4-48DC-9887-F1FC6443B634}"
        }
       ]
-     },
+     }
+    ],
+    "SwitchGroups": [
      {
       "Id": "2011614756",
       "Name": "MusicChanger",
@@ -148,6 +168,6 @@
     ]
    }
   ],
-  "FileHash": "{07D0C482-92BF-84E8-3C4D-2884DED09C70}"
+  "FileHash": "{6B2C4385-AF7F-8E6E-A758-619D67FAC672}"
  }
 }

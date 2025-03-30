@@ -22,14 +22,20 @@ public class GameplayAudio : MonoBehaviour
 
     private void HandleStreak(uint currentStreak)
     {
-        if (currentStreak < 5)
+        if (currentStreak <= 5)
         {
+
             AudioManager.Instance.SetRTPCValue("Drumset1Mute", 0);
             AudioManager.Instance.SetRTPCValue("Drumset2Mute", 0);
         }
-        else if (currentStreak > 5)
+        else if (currentStreak > 5 && currentStreak <= 10) // Use && instead of "and"
         {
             AudioManager.Instance.SetRTPCValue("Drumset1Mute", 100);
+            AudioManager.Instance.SetRTPCValue("Drumset2Mute", 0);
+        } 
+        else 
+        {
+            AudioManager.Instance.SetRTPCValue("Drumset1Mute", 0);
             AudioManager.Instance.SetRTPCValue("Drumset2Mute", 100);
         }
     }
