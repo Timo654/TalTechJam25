@@ -273,6 +273,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7277222643589210726, guid: ce6d30950ccba344ba3ece681b928e74, type: 3}
   m_PrefabInstance: {fileID: 5235409}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5235411 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2554404349811374704, guid: ce6d30950ccba344ba3ece681b928e74, type: 3}
+  m_PrefabInstance: {fileID: 5235409}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6285649
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,6 +641,7 @@ GameObject:
   - component: {fileID: 697484459}
   - component: {fileID: 697484463}
   - component: {fileID: 697484464}
+  - component: {fileID: 697484465}
   m_Layer: 5
   m_Name: MenuCanvas
   m_TagString: Untagged
@@ -743,6 +749,7 @@ MonoBehaviour:
   optionsMenuCG: {fileID: 1004058431}
   endlessButton: {fileID: 334769851}
   optionsButton: {fileID: 991799681}
+  quitButton: {fileID: 5235411}
 --- !u!114 &697484464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -753,6 +760,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25982d883fc49ea4eb76ac9e484fc16f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &697484465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697484458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0d1fb9f91410ce4c83e6ceb2173ae73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &930115762
