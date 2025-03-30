@@ -9,9 +9,11 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private CanvasGroup pauseMenuCG;
     [SerializeField] private CanvasGroup optionsMenuCG;
     [SerializeField] private GameObject firstSelectedUIElement;
+    
     public static event Action<bool> OnPauseGame;
     private bool isPaused;
-    
+    private GameObject lastSelect;
+
     private void Start()
     {
         OnPauseGame?.Invoke(false); // game start
@@ -38,12 +40,14 @@ public class PauseMenu : MonoBehaviour
     public void OnOptions()
     {
         UICommon.FadeInCG(optionsMenuCG, 0.2f);
+        EventSystem.current.SetSelectedGameObject(optionsMenuCG.transform.GetChild(0).GetChild(0).GetChild(1).gameObject);
     }
     public void HandlePause()
     {
         if (optionsMenuCG != null && optionsMenuCG.alpha > 0f)
         {
             UICommon.FadeOutCG(optionsMenuCG, 0.2f);
+            EventSystem.current.SetSelectedGameObject(pauseMenuCG.transform.GetChild(0).gameObject);
             return;
         }
         OnPauseGame?.Invoke(!isPaused);
@@ -51,6 +55,17 @@ public class PauseMenu : MonoBehaviour
         else PauseGame();
     }
 
+    private void Update()
+    {
+        if (EventSystem.current.currentSelectedGameObject == null)
+        {
+            EventSystem.current.SetSelectedGameObject(lastSelect);
+        }
+        else
+        {
+            lastSelect = EventSystem.current.currentSelectedGameObject;
+        }
+    }
     private void UnpauseGame()
     {
         pauseMenuCG.DOKill();
