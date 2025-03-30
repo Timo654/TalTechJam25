@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{4E864B67-7AB7-D637-1A46-5E1431C088C0}",
+    "Hash": "{4E3CB593-A2F2-E718-6DC7-6E1A4D172AC8}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -92,6 +92,12 @@
       "GUID": "{28AEFEC9-A43D-43C5-A06C-09FE07BC3233}"
      },
      {
+      "Id": "3809104128",
+      "Name": "SwooshTurnOff",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\SwooshTurnOff",
+      "GUID": "{6E9AC093-E8DA-4274-970A-A8522256F11C}"
+     },
+     {
       "Id": "4179668880",
       "Name": "Master_volume",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Master_volume",
@@ -168,6 +174,6 @@
     ]
    }
   ],
-  "FileHash": "{D87D9E10-885B-641F-138B-BDAF4B6C2B0F}"
+  "FileHash": "{480C1A07-8B09-8D96-CE71-D9AEE1EF71BE}"
  }
 }

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{15AF9294-C212-4B43-83AE-FEB6EA153484}",
     "Language": "SFX",
-    "Hash": "{25DADFCE-DBBA-C2C0-86F6-2F993E668DFD}",
+    "Hash": "{C565E759-1CEF-19CE-05BC-E1D3E78BD25C}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainBank",
     "ShortName": "MainBank",
     "Path": "MainBank.bnk",
@@ -345,6 +345,14 @@
        "GUID": "{7C266BE3-F356-4287-B1DE-01808B9B6D19}",
        "LibName": "Wwise RoomVerb",
        "LibId": "7733251"
+      },
+      {
+       "Id": "1057496413",
+       "Name": "Delay (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\SFX\\lane_switch_sfx\\[Effect Slot [2]: (Delay)]\\Delay (Custom)",
+       "GUID": "{2F0BD2D0-0EA6-472A-A331-24B302351847}",
+       "LibName": "Wwise Delay",
+       "LibId": "6946819"
       }
      ],
      "ShareSets": [
@@ -538,8 +546,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_lane_switch_sfx",
       "GUID": "{71E05964-DDB3-4BDB-AAB5-5AFD034AAF3B}",
       "DurationType": "OneShot",
-      "DurationMin": "0.38638875",
-      "DurationMax": "0.43370673",
+      "DurationMin": "0.42872518",
+      "DurationMax": "0.48122776",
       "MediaRefs": [
        {
         "Id": "563626813"
@@ -552,6 +560,9 @@
         },
         {
          "Id": "494839622"
+        },
+        {
+         "Id": "1057496413"
         }
        ]
       }
@@ -959,6 +970,12 @@
       "GUID": "{28AEFEC9-A43D-43C5-A06C-09FE07BC3233}"
      },
      {
+      "Id": "3809104128",
+      "Name": "SwooshTurnOff",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\SwooshTurnOff",
+      "GUID": "{6E9AC093-E8DA-4274-970A-A8522256F11C}"
+     },
+     {
       "Id": "4179668880",
       "Name": "Master_volume",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Master_volume",
@@ -1001,6 +1018,6 @@
     ]
    }
   ],
-  "FileHash": "{00838813-CC05-B031-FF77-67751D79FFEF}"
+  "FileHash": "{E0E1AE1B-EA04-D557-35FD-8895060CEAD1}"
  }
 }

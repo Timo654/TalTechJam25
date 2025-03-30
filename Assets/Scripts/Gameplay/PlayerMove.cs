@@ -9,6 +9,7 @@ public class PlayerMove : MonoBehaviour
     private void OnEnable()
     {
         InputHandler.OnMoveInput += HandleMovement;
+        AudioManager.Instance.SetRTPCValue("SwooshTurnOff", 100);
     }
 
     private void OnDisable()
@@ -33,12 +34,15 @@ public class PlayerMove : MonoBehaviour
         {
             case 0:
                 transform.localPosition = new Vector3(lanes[currentLane].position.x - 1.5f, transform.localPosition.y, transform.localPosition.z);
+                AudioManager.Instance.PlaySound(WWiseEvents.Instance.Whoosh);
                 break;
             case 1:
                 transform.localPosition = new Vector3(lanes[currentLane].position.x, transform.localPosition.y, transform.localPosition.z);
+                AudioManager.Instance.PlaySound(WWiseEvents.Instance.Whoosh);
                 break;
             case 2:
                 transform.localPosition = new Vector3(lanes[currentLane].position.x + 1.5f, transform.localPosition.y, transform.localPosition.z);
+                AudioManager.Instance.PlaySound(WWiseEvents.Instance.Whoosh);
                 break;
         }
         OnLaneChanged?.Invoke(currentLane);
