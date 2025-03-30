@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 07620293821c53945bfb0e8fbed4afcf
+guid: 04167dbb2f59a704891df13900d96eff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6530300938575642825
-    second: pedestrian 2 walk and fall_0
-  - first:
-      213: 963822555136339699
-    second: pedestrian 2 walk and fall_1
-  - first:
-      213: -8305496934318805064
-    second: pedestrian 2 walk and fall_2
+      213: -2011814199348854934
+    second: police ending end scene_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -132,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pedestrian 2 walk and fall_0
+      name: police ending end scene_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 178
-        height: 191
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,52 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9c08338ca1a40aa50800000000000000
-      internalID: 6530300938575642825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pedestrian 2 walk and fall_1
-      rect:
-        serializedVersion: 2
-        x: 178
-        y: 0
-        width: 178
-        height: 191
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3fe2961e18f206d00800000000000000
-      internalID: 963822555136339699
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pedestrian 2 walk and fall_2
-      rect:
-        serializedVersion: 2
-        x: 356
-        y: 0
-        width: 178
-        height: 191
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8bfe4daea82fcbc80800000000000000
-      internalID: -8305496934318805064
+      spriteID: a6f79bd05a99414e0800000000000000
+      internalID: -2011814199348854934
       vertices: []
       indices: 
       edges: []
@@ -201,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f7323d50477f17e4caee2a6958f9e6bc
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -211,9 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pedestrian 2 walk and fall_0: 6530300938575642825
-      pedestrian 2 walk and fall_1: 963822555136339699
-      pedestrian 2 walk and fall_2: -8305496934318805064
+      police ending end scene_0: -2011814199348854934
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

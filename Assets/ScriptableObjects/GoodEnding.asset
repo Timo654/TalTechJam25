@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: GoodEnding
   m_EditorClassIdentifier: 
   endingType: 0
-  endingSprite: {fileID: -1922320232825502070, guid: ca364c58b43ed364ebaa77a0e7f413b4, type: 3}
+  endingSprite: {fileID: 3816416039095668933, guid: 85a530a407f90314e80593c86364a78f, type: 3}
   endingText: the trail of destruction
-  endingSprite2: {fileID: -1952069927907668444, guid: ca364c58b43ed364ebaa77a0e7f413b4, type: 3}
+  endingSprite2: {fileID: 0}

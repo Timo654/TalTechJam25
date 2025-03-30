@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ChaosCounter : MonoBehaviour
 {
-    public static event Action<EndingType> SendEndScore;
+    public static event Action<EndingType, int> SendEndScore;
     public static event Action<uint> UpdateStreak;
     public static event Action<int> UpdateScore;
     private uint pedsBullied = 0;
@@ -35,7 +35,7 @@ public class ChaosCounter : MonoBehaviour
             else if (trashDestroyed == 0 && pedsBullied + scootersDestroyed == 0) 
                 currentEnd = EndingType.Pacifist;
             else currentEnd = EndingType.Neutral;
-            SendEndScore?.Invoke(currentEnd);
+            SendEndScore?.Invoke(currentEnd, score);
         }
     }
 

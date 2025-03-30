@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class EndingHandler : MonoBehaviour
@@ -11,11 +12,16 @@ public class EndingHandler : MonoBehaviour
     private bool running = true;
     private Sprite endSprite1;
     private Sprite endSprite2;
+    private TextMeshProUGUI scoreText;
+    private TextMeshProUGUI highScoreGratsText;
     // Start is called before the first frame update
     private void Awake()
     {
         endingImage = transform.GetChild(0).GetComponent<Image>();
         endingText = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+        scoreText = transform.GetChild(2).GetComponent<TextMeshProUGUI>();
+        highScoreGratsText = transform.GetChild(3).GetComponent<TextMeshProUGUI>();
+        SaveManager.Instance.runtimeData.previousSceneName = SceneManager.GetActiveScene().name;
     }
     void Start()
     {
@@ -35,6 +41,22 @@ public class EndingHandler : MonoBehaviour
             StartCoroutine(AnimateEnding());
         }
         //AudioManager.Instance.PlaySound(); // TODO - play ending audio
+        scoreText.text = $"Score: {SaveManager.Instance.runtimeData.currentScore}";
+        switch (SaveManager.Instance.runtimeData.highScoreType)
+        {
+            case HighScoreType.None:
+                highScoreGratsText.text = "";
+                break;
+            case HighScoreType.Best:
+                highScoreGratsText.text = "New best score!";
+                break;
+            case HighScoreType.Worst:
+                highScoreGratsText.text = "New worst score!";
+                break;
+            case HighScoreType.First:
+                highScoreGratsText.text = "Your first score!";
+                break;
+        }
         LevelChanger.Instance.FadeIn();
         StartCoroutine(Ending());
     }

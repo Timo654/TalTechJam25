@@ -178,7 +178,6 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Go LEFT to restart or go RIGHT to return to the menu.
 
-
     PLACEHOLDER_TEXT'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 64ea42d1681ff3a43927c149f8da842b, type: 2}

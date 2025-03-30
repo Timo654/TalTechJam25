@@ -100,6 +100,8 @@ public class GameData
     public bool f_pacifistCleared = false;
     public bool f_goodCleared = false;
     public bool f_trashCleared = false;
+    public int bestScore = 0;
+    public int worstScore = 0;
 }
 
 [Serializable]
@@ -107,5 +109,8 @@ public class RuntimeData
 {
     public string previousSceneName;
     public EndingData currentEnding;
+    public HighScoreType highScoreType;
+    public int currentScore = 0;
+    public GameType gameType = GameType.None;
 }
 

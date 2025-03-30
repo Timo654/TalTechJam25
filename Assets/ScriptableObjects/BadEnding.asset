@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BadEnding
   m_EditorClassIdentifier: 
   endingType: 2
-  endingSprite: {fileID: 5167950290877453069, guid: 34676405600a0da4aa427cf442787a43, type: 3}
-  endingText: you will now be hospitalised
+  endingSprite: {fileID: -2011814199348854934, guid: 04167dbb2f59a704891df13900d96eff, type: 3}
+  endingText: you will now be arrested :(
   endingSprite2: {fileID: 0}
