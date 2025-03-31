@@ -73,6 +73,9 @@ public class CreditsHandler : MonoBehaviour
             endingText += "You have cleared ";
             switch (endingCount)
             {
+                case 0:
+                    endingText += "not a single ending..?";
+                    break;
                 case 1:
                     endingText += "one ending out of four.";
                     break;
