@@ -63,12 +63,13 @@ public class CreditsHandler : MonoBehaviour
         if (SaveManager.Instance.gameData.f_goodCleared) endingCount++;
         if (SaveManager.Instance.gameData.f_neutralCleared) endingCount++;
         if (SaveManager.Instance.gameData.f_trashCleared) endingCount++;
+        if (SaveManager.Instance.gameData.f_endlessCleared) endingCount++;
         string endingText = string.Empty;
-        if (endingCount == 4)
+        if (endingCount == 5)
             endingText = "The Group congratulates you on your accomplishments.";
-        else if (endingCount > 4)
+        else if (endingCount > 5)
             endingText = "You should not have been able to clear this many endings... Tell me your ways.";
-        else if (endingCount < 4)
+        else if (endingCount < 5)
         {
             endingText += "You have cleared ";
             switch (endingCount)
@@ -77,13 +78,16 @@ public class CreditsHandler : MonoBehaviour
                     endingText += "not a single ending..?";
                     break;
                 case 1:
-                    endingText += "one ending out of four.";
+                    endingText += "one ending out of five.";
                     break;
                 case 2:
-                    endingText += "two endings out of four.";
+                    endingText += "two endings out of five.";
                     break;
                 case 3:
-                    endingText += "three endings out of four.";
+                    endingText += "three endings out of five.";
+                    break;
+                case 4:
+                    endingText += "four endings out of five.";
                     break;
             }
         }

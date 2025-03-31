@@ -100,6 +100,7 @@ public class GameData
     public bool f_pacifistCleared = false;
     public bool f_goodCleared = false;
     public bool f_trashCleared = false;
+    public bool f_endlessCleared = false;
     public int bestScore = 0;
     public int worstScore = 0;
 }

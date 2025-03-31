@@ -18,9 +18,9 @@ public class EndingHandler : MonoBehaviour
     private void Awake()
     {
         endingImage = transform.GetChild(0).GetComponent<Image>();
-        endingText = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
-        scoreText = transform.GetChild(2).GetComponent<TextMeshProUGUI>();
-        highScoreGratsText = transform.GetChild(3).GetComponent<TextMeshProUGUI>();
+        endingText = transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>();
+        scoreText = transform.GetChild(0).GetChild(1).GetComponent<TextMeshProUGUI>();
+        highScoreGratsText = transform.GetChild(0).GetChild(2).GetComponent<TextMeshProUGUI>();
         SaveManager.Instance.runtimeData.previousSceneName = SceneManager.GetActiveScene().name;
     }
     void Start()
@@ -74,7 +74,14 @@ public class EndingHandler : MonoBehaviour
     }
     IEnumerator Ending()
     {
-        yield return new WaitForSecondsRealtime(4f); // TODO - maybe adjust ending timing or load from data
+        if (SaveManager.Instance.runtimeData.gameType == GameType.Endless)
+        {
+            yield return new WaitForSecondsRealtime(10f);
+        }
+        else
+        {
+            yield return new WaitForSecondsRealtime(5f); // TODO - maybe adjust ending timing or load from data
+        }
         running = false;
         LevelChanger.Instance.FadeToLevel("Credits");
     }

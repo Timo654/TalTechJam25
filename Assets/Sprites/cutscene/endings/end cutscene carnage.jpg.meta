@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 85a530a407f90314e80593c86364a78f
+guid: d749b45f3bf4b2f419702dc1f1ceb305
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3816416039095668933
-    second: carnage ending end scene_0
+      213: -8226790986034496953
+    second: end cutscene carnage_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: carnage ending end scene_0
+      name: end cutscene carnage_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c09665da22a6f430800000000000000
-      internalID: 3816416039095668933
+      spriteID: 74a37048f2194dd80800000000000000
+      internalID: -8226790986034496953
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      carnage ending end scene_0: 3816416039095668933
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

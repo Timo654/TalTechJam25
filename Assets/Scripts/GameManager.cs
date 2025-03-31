@@ -12,12 +12,13 @@ public class GameManager : MonoBehaviour
     public static event Action<int> OnLivesChanged;
     public static event Action<float> BoostSpeed;
     private bool gameActive = false;
-    private float currentTime = 60f;
+    private float initialTime = 90f;
+    private float currentTime;
     private int lastTimeValue;
     private int currentPhase = 0;
     private int lives = 3;
     private GameType gameType;
-    private bool boostCooldown = false;
+
     private void OnEnable()
     {
         //LevelChanger.OnFadeInFinished += StartGame;
@@ -65,7 +66,7 @@ public class GameManager : MonoBehaviour
         switch (gameType)
         {
             case GameType.Normal:
-                currentTime = 60f;
+                currentTime = initialTime;
                 break;
             case GameType.Endless:
                 currentTime = 0f;
@@ -80,7 +81,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         // set defaults
-        OnGameTimeChanged?.Invoke((int)currentTime); 
+        OnGameTimeChanged?.Invoke((int)currentTime);
         OnLivesChanged?.Invoke(lives);
         LevelChanger.Instance.FadeIn();
 
@@ -123,7 +124,7 @@ public class GameManager : MonoBehaviour
             OnGameTimeChanged?.Invoke(lastTimeValue);
         }
 
-        if (currentPhase == 0 && currentTime < 30f)
+        if (currentPhase == 0 && currentTime < initialTime / 2f)
         {
             BoostSpeed?.Invoke(5f);
             currentPhase++; // enter phase 2, which is faster
@@ -151,7 +152,8 @@ public class GameManager : MonoBehaviour
             BoostSpeed?.Invoke(5f);
             currentPhase++; // enter phase 2, which is faster
                             // SWITCH TO PHASE 2 THEME HERE
-            AudioManager.Instance.SetSwitch(WWiseEvents.Instance.GameMusic2);
+
+            if (currentPhase == 2) AudioManager.Instance.SetSwitch(WWiseEvents.Instance.GameMusic2);
         }
 
     }
@@ -177,6 +179,9 @@ public class GameManager : MonoBehaviour
                         break;
                     case EndingType.Pacifist:
                         SaveManager.Instance.gameData.f_pacifistCleared = true;
+                        break;
+                    case EndingType.Endless:
+                        SaveManager.Instance.gameData.f_endlessCleared = true;
                         break;
                 }
                 break;

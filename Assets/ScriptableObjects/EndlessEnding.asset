@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0ed4594bd9fe7e49a736dbead7b416c, type: 3}
-  m_Name: GoodEnding
+  m_Name: EndlessEnding
   m_EditorClassIdentifier: 
-  endingType: 0
-  endingSprite: {fileID: -8226790986034496953, guid: d749b45f3bf4b2f419702dc1f1ceb305, type: 3}
-  endingText: "Cool guys don't look \nat explosions."
+  endingType: 4
+  endingSprite: {fileID: 442979567275296287, guid: e51e2126618a1d44788c580b622df998, type: 3}
+  endingText: Wrong Way Down a One Way Street
   endingSprite2: {fileID: 0}

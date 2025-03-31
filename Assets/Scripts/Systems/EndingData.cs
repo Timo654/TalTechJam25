@@ -18,5 +18,6 @@ public enum EndingType
     Good,
     Neutral,
     Bad,
-    Pacifist
+    Pacifist,
+    Endless
 }
