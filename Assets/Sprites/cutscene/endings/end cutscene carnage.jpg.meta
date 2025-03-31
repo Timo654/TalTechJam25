@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      end cutscene carnage_0: -8226790986034496953
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
