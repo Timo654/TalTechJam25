@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endingType: 4
   endingSprite: {fileID: 442979567275296287, guid: e51e2126618a1d44788c580b622df998, type: 3}
-  endingText: Wrong Way Down a One Way Street
+  endingText: "Wrong Way Down \na One Way Street."
   endingSprite2: {fileID: 0}
