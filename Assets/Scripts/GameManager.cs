@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
                 break;
             case GameType.Endless:
                 currentTime = 0f;
-                StartCoroutine(endlessBoost());
+                StartCoroutine(EndlessBoost());
                 break;
         }
 
@@ -143,13 +143,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    IEnumerator endlessBoost()
+    IEnumerator EndlessBoost()
     {
         while (true)
         {
             yield return new WaitForSeconds(30f);
             Debug.Log("boost");
-            BoostSpeed?.Invoke(5f);
+            BoostSpeed?.Invoke(4f);
             currentPhase++; // enter phase 2, which is faster
                             // SWITCH TO PHASE 2 THEME HERE
 

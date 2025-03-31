@@ -47,11 +47,14 @@ TagManager:
   - name: Entities
     uniqueID: 177917811
     locked: 0
+  - name: Player
+    uniqueID: 1593269839
+    locked: 0
   - name: Pedestrians
     uniqueID: 665230923
     locked: 0
-  - name: Player
-    uniqueID: 1593269839
+  - name: Items
+    uniqueID: 3129326027
     locked: 0
   - name: Fx
     uniqueID: 356239451
