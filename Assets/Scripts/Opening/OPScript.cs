@@ -5,33 +5,47 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 using UnityEngine.UI;
+using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
+using TouchPhase = UnityEngine.InputSystem.TouchPhase;
 
 public class OPScript : MonoBehaviour
 {
     [SerializeField] Sprite[] openingSprites;
-    private InputAction skipButton;
     int currentSprite = 0;
     public string nextScene = "GameScene";
     bool inputBlocked = false;
     Image _nextImage;
     Image _image;
-    private CustomInputActions inputActions;
-
+    private bool keyPressedThisFrame = false;
+    IDisposable disposable;
     void Start()
     {
         _image = transform.GetChild(2).GetComponent<Image>();
         _image.sprite = openingSprites[currentSprite];
         _nextImage = transform.GetChild(1).GetComponent<Image>();
         LevelChanger.Instance.FadeIn();
+        disposable = InputSystem.onAnyButtonPress
+        .Call(ctrl => ButtonPressed(ctrl));
+    }
+
+    void ButtonPressed(InputControl ctrl)
+    {
+        keyPressedThisFrame = true;
+    }
+
+    private void OnDisable()
+    {
+        disposable.Dispose();
     }
     void Update()
     {
         bool mobileTouch = false;
-        if (Input.touchCount > 0)
+        if (Touch.activeTouches.Count > 0)
         {
-            if (Input.GetTouch(0).phase == UnityEngine.TouchPhase.Began) mobileTouch = true;
+            if (Touch.activeTouches[0].phase == TouchPhase.Began) mobileTouch = true;
+            else mobileTouch = false;
         }
-        if ((Input.anyKeyDown || mobileTouch) & !inputBlocked)
+        if ((keyPressedThisFrame || mobileTouch) & !inputBlocked)
         {
             currentSprite += 1;
             if (currentSprite < openingSprites.Length)
@@ -43,6 +57,7 @@ public class OPScript : MonoBehaviour
                 OnOpeningEnd();
             }
         }
+        keyPressedThisFrame = false;
     }
     public void OnOpeningEnd()
     {
