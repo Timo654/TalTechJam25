@@ -71,7 +71,7 @@ jobs:
         run: butler push StandaloneLinux64 timo654/sidewalkslam:linux
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
-       - name: Upload Windows to itch.io
+      - name: Upload Windows to itch.io
         run: butler push StandaloneWindows64 timo654/sidewalkslam:windows
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
