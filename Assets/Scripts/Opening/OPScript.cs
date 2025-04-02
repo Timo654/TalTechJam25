@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.EnhancedTouch;
 using UnityEngine.InputSystem.Utilities;
 using UnityEngine.UI;
 using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
@@ -33,9 +34,14 @@ public class OPScript : MonoBehaviour
         keyPressedThisFrame = true;
     }
 
+    private void OnEnable()
+    {
+        EnhancedTouchSupport.Enable();
+    }
     private void OnDisable()
     {
         disposable.Dispose();
+        EnhancedTouchSupport.Disable();
     }
     void Update()
     {
