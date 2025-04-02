@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
 
     private void VerifyHealth(EntityType entityType, ItemType _, int __, int ___)
     {
+        if (!gameActive) return;
         if (entityType == EntityType.Trash)
         {
             lives--;

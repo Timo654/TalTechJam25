@@ -65,7 +65,7 @@ public class EntityScript : MonoBehaviour
         int laneID = GetLaneID();
         if (currentPlayerLane != laneID) return;
         hasEnteredCollision = false;
-        var laneData = GetForcedLane();
+        var laneData = GetForcedLane(laneID);
         animator.SetTrigger("Destroy");
         EntityAttacked?.Invoke(entityType, itemType, laneID, laneData.Item1);
         transform.localPosition = new Vector3(laneData.Item2, transform.localPosition.y, transform.localPosition.z);
@@ -93,9 +93,8 @@ public class EntityScript : MonoBehaviour
         return laneID;
     }
 
-    private (int, float) GetForcedLane()
+    private (int, float) GetForcedLane(int laneID)
     {
-        int laneID = 0;
         int forcedLane = 1;
         float xPosToUse = 0f;
         switch (laneID)

@@ -7,17 +7,12 @@ using UnityEngine.InputSystem;
 public class CreditsHandler : MonoBehaviour
 {
     public static event Action<bool> AllowInput;
-    IDisposable listener;
     private Animator creditsAnimator;
     [SerializeField] private GameObject creditsText;
     [SerializeField] private TextMeshPro funnyText;
     private void Awake()
     {
         creditsAnimator = GetComponent<Animator>();
-    }
-    private void OnSkipCredits(InputControl control)
-    {
-        OnCreditsEnd();
     }
 
     private void OnDisable()

@@ -11,6 +11,7 @@ public class ChaosCounter : MonoBehaviour
     private uint scootersDestroyed = 0;
     private uint currentStreak;
     private int score;
+    bool gameActive = false;
     private void OnEnable()
     {
         EntityScript.EntityAttacked += CountEntity;
@@ -25,6 +26,7 @@ public class ChaosCounter : MonoBehaviour
 
     private void OnGameEnd(bool active)
     {
+        gameActive = active;
         if (!active)
         {
             EndingType currentEnd;
@@ -44,6 +46,7 @@ public class ChaosCounter : MonoBehaviour
 
     private void CountEntity(EntityType type, ItemType _, int __, int ___)
     {
+        if (!gameActive) return;
         switch (type)
         {
             case EntityType.Pedestrian:

@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
     private GameObject lastSelect;
     void Start()
     {
-        if (BuildConsts.isMobile) quitButton.SetActive(false);
+        if (BuildConsts.isMobile || BuildConsts.isWebGL) quitButton.SetActive(false);
         SaveManager.Instance.runtimeData.previousSceneName = SceneManager.GetActiveScene().name;
         endlessButton.SetActive(SaveManager.Instance.gameData.f_hasClearedOnce);
         AudioManager.Instance.PlaySound(WWiseEvents.Instance.PlaySwitcher);

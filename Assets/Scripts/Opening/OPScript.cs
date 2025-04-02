@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.EnhancedTouch;
@@ -19,6 +20,11 @@ public class OPScript : MonoBehaviour
     Image _image;
     private bool keyPressedThisFrame = false;
     IDisposable disposable;
+
+    private void Awake()
+    {
+        if (BuildConsts.isMobile) transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = "Tap to continue";
+    }
     void Start()
     {
         _image = transform.GetChild(2).GetComponent<Image>();

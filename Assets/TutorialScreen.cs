@@ -1,5 +1,6 @@
 using DG.Tweening;
 using System;
+using TMPro;
 using UnityEngine;
 
 public class TutorialScreen : MonoBehaviour
@@ -10,6 +11,8 @@ public class TutorialScreen : MonoBehaviour
     private void Awake()
     {
         tutorialCG = GetComponent<CanvasGroup>();
+        if (BuildConsts.isMobile)
+            transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Switch lanes by swiping left and right.";
     }
     public void OnConfirmClicked()
     {
