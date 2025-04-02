@@ -8,6 +8,7 @@ public class PedSpawner : MonoBehaviour
     [SerializeField] private GameObject latvia;
     private float[] randomLanes = { -3.5f, 0f, 4f };
     private float boostIncrement = 0f;
+    private int playerLane = 1;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,11 +18,18 @@ public class PedSpawner : MonoBehaviour
     private void OnEnable()
     {
         GameManager.BoostSpeed += IncrementBoost;
+        PlayerMove.OnLaneChanged += UpdatePlayerLane;
     }
 
     private void OnDisable()
     {
         GameManager.BoostSpeed -= IncrementBoost;
+        PlayerMove.OnLaneChanged -= UpdatePlayerLane;
+    }
+
+    private void UpdatePlayerLane(int val)
+    {
+        playerLane = val;
     }
 
     private void IncrementBoost(float increment)
@@ -50,7 +58,7 @@ public class PedSpawner : MonoBehaviour
                 Mathf.Abs(transform.position.y) + 25f,
                 0f
             );
-            gameObj.GetComponent<EntityScript>().ConfigOnSpawn(boostIncrement);
+            gameObj.GetComponent<EntityScript>().ConfigOnSpawn(boostIncrement, playerLane);
             // Set entitys anim speed
             Animator anim = gameObj.GetComponent<Animator>();
             anim.speed += boostIncrement / 2;

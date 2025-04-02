@@ -1,5 +1,4 @@
 using System;
-using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -9,8 +8,10 @@ public class EntityScript : MonoBehaviour
     [SerializeField] private ItemType itemType;
     public static event Action<EntityType, ItemType, int, int> EntityAttacked; // 3rd is lane id, 4th is lane that they get pushed to
     private Animator animator;
+    private int currentPlayerLane = 1;
     // TODO - use an event to change the speed
     public float movementSpeed = 10f;
+    private bool hasEnteredCollision = false;
     private void Awake()
     {
         animator = transform.GetComponent<Animator>();
@@ -21,10 +22,19 @@ public class EntityScript : MonoBehaviour
     private void OnEnable()
     {
         GameManager.BoostSpeed += IncreaseSpeed;
+        PlayerMove.OnLaneChanged += CheckLane;
     }
     private void OnDisable()
     {
         GameManager.BoostSpeed -= IncreaseSpeed;
+        PlayerMove.OnLaneChanged -= CheckLane;
+    }
+
+    private void CheckLane(int val)
+    {
+        currentPlayerLane = val;
+        if (hasEnteredCollision)
+            PlayerAttacked();
     }
 
     private void IncreaseSpeed(float increment)
@@ -32,24 +42,68 @@ public class EntityScript : MonoBehaviour
         movementSpeed += increment;
     }
 
-    public void ConfigOnSpawn(float increment) 
+    public void ConfigOnSpawn(float boostIncrement, int playerLane)
     {
-        IncreaseSpeed(increment);
+        currentPlayerLane = playerLane;
+        IncreaseSpeed(boostIncrement);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        hasEnteredCollision = true;
+        PlayerAttacked();
+    }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        hasEnteredCollision = false;
+    }
+
+    // TODO - check for event where lane switches, then double check if lanes match
+    private void PlayerAttacked()
+    {
+        int laneID = GetLaneID();
+        if (currentPlayerLane != laneID) return;
+        hasEnteredCollision = false;
+        var laneData = GetForcedLane();
         animator.SetTrigger("Destroy");
-        float xPosToUse = 0f;
+        EntityAttacked?.Invoke(entityType, itemType, laneID, laneData.Item1);
+        transform.localPosition = new Vector3(laneData.Item2, transform.localPosition.y, transform.localPosition.z);
+    }
+
+    private int GetLaneID()
+    {
         int laneID = 0;
-        int forcedLane = 1;
         switch (transform.localPosition.x)
         {
-            case -3f:
+            case -3.5f:
                 laneID = 0;
                 break;
             case 0f:
+                laneID = 1;
+                break;
+            case 4f:
+                laneID = 2;
+                break;
+            default:
+                // use 0f
+                break;
+        }
+        Debug.Log($"{gameObject.name}: PLAYER {currentPlayerLane}, us {laneID}");
+        return laneID;
+    }
+
+    private (int, float) GetForcedLane()
+    {
+        int laneID = 0;
+        int forcedLane = 1;
+        float xPosToUse = 0f;
+        switch (laneID)
+        {
+            case 0:
+                forcedLane = 1;
+                break;
+            case 1:
                 if (Random.value < 0.5f)
                 {
                     xPosToUse = -3.5f;
@@ -60,20 +114,15 @@ public class EntityScript : MonoBehaviour
                     xPosToUse = 4f;
                     forcedLane = 2;
                 }
-                laneID = 1;
                 break;
-            case 3f:
-                laneID = 2;
+            case 2:
+                forcedLane = 1;
                 break;
             default:
-                // use 0f
                 break;
         }
-        EntityAttacked?.Invoke(entityType, itemType, laneID, forcedLane);
-        transform.localPosition = new Vector3(xPosToUse, transform.localPosition.y, transform.localPosition.z);
-
+        return (forcedLane, xPosToUse);
     }
-
     private void Update()
     {
         // not ideal but THEY DO despawn eventually...
