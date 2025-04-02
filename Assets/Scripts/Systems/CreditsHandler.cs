@@ -32,6 +32,7 @@ public class CreditsHandler : MonoBehaviour
     IEnumerator DelaySceneSwitch(int lane)
     {
         AudioManager.Instance.PlaySound(WWiseEvents.Instance.BinHit, gameObject);
+        AudioManager.Instance.PlaySound(WWiseEvents.Instance.GetCourage, gameObject);
         yield return new WaitForSecondsRealtime(0.5f);
         if (lane == 0) LevelChanger.Instance.FadeToLevel("Gameplay");
         else if (lane == 2) LevelChanger.Instance.FadeToLevel("MainMenu");
