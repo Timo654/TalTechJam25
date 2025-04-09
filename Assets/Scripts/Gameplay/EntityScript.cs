@@ -89,7 +89,6 @@ public class EntityScript : MonoBehaviour
                 // use 0f
                 break;
         }
-        Debug.Log($"{gameObject.name}: PLAYER {currentPlayerLane}, us {laneID}");
         return laneID;
     }
 

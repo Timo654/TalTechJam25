@@ -2260,7 +2260,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1165641269
-  m_SortingLayer: 5
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -13451,6 +13451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1604428415}
   - component: {fileID: 1604428416}
+  - component: {fileID: 1604428417}
   m_Layer: 0
   m_Name: PostFx
   m_TagString: Untagged
@@ -13486,10 +13487,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IsGlobal: 1
-  priority: 0
+  priority: 1
   blendDistance: 0
   weight: 0
   sharedProfile: {fileID: 11400000, guid: 7036a5c995c7f864dac92b983bd21388, type: 2}
+--- !u!114 &1604428417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604428414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 191eaa5ab11e05a4daf2c4d63b85e63c, type: 2}
 --- !u!1 &1611084245
 GameObject:
   m_ObjectHideFlags: 0
@@ -13677,7 +13695,6 @@ GameObject:
   - component: {fileID: 1616682495}
   - component: {fileID: 1616682494}
   - component: {fileID: 1616682493}
-  - component: {fileID: 1616682492}
   m_Layer: 0
   m_Name: UI Camera
   m_TagString: MainCamera
@@ -13700,18 +13717,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1261233794}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1616682492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1616682490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1616682493
 MonoBehaviour:
   m_ObjectHideFlags: 0

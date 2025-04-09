@@ -12,7 +12,7 @@ using TouchPhase = UnityEngine.InputSystem.TouchPhase;
 
 public class OPScript : MonoBehaviour
 {
-    [SerializeField] Sprite[] openingSprites;
+    [SerializeField] OpeningPart[] openingSprites;
     int currentSprite = 0;
     public string nextScene = "GameScene";
     bool inputBlocked = false;
@@ -20,7 +20,7 @@ public class OPScript : MonoBehaviour
     Image _image;
     private bool keyPressedThisFrame = false;
     IDisposable disposable;
-
+    TextMeshProUGUI prevText;
     private void Awake()
     {
         if (BuildConsts.isMobile) transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = "Tap to continue";
@@ -28,11 +28,12 @@ public class OPScript : MonoBehaviour
     void Start()
     {
         _image = transform.GetChild(2).GetComponent<Image>();
-        _image.sprite = openingSprites[currentSprite];
+        _image.sprite = openingSprites[currentSprite].sprite;
         _nextImage = transform.GetChild(1).GetComponent<Image>();
         LevelChanger.Instance.FadeIn();
         disposable = InputSystem.onAnyButtonPress
         .Call(ctrl => ButtonPressed(ctrl));
+        openingSprites[currentSprite].textBox.gameObject.SetActive(true);
     }
 
     void ButtonPressed(InputControl ctrl)
@@ -59,10 +60,11 @@ public class OPScript : MonoBehaviour
         }
         if ((keyPressedThisFrame || mobileTouch) & !inputBlocked)
         {
+            prevText = openingSprites[currentSprite].textBox;
             currentSprite += 1;
             if (currentSprite < openingSprites.Length)
             {
-                StartCoroutine(FadeSprites(openingSprites[currentSprite]));
+                StartCoroutine(FadeSprites(openingSprites[currentSprite].sprite));
             }
             else
             {
@@ -78,13 +80,29 @@ public class OPScript : MonoBehaviour
 
     IEnumerator FadeSprites(Sprite newSprite)
     {
+        
         _nextImage.sprite = newSprite;
+        prevText?.DOFade(0f, 1f).SetUpdate(true);
         _image.DOFade(0.0f, 1f).SetUpdate(true);
         inputBlocked = true;
+        if (openingSprites[currentSprite].textBox != null)
+        {
+            openingSprites[currentSprite].textBox.alpha = 0f;
+            openingSprites[currentSprite].textBox.gameObject.SetActive(true);
+            openingSprites[currentSprite].textBox?.DOFade(1f, 0.5f).SetUpdate(true);
+        }
         yield return new WaitForSecondsRealtime(1f);
         _image.DOKill();
         _image.sprite = newSprite;
         _image.DOFade(1.0f, 0f).SetUpdate(true);
+           
         inputBlocked = false;
     }
+}
+
+[Serializable]
+public struct OpeningPart
+{
+    public Sprite sprite;
+    public TextMeshProUGUI textBox; // text to enable/disable
 }
