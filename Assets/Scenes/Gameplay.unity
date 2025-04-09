@@ -4883,8 +4883,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Switch lanes with A/D or Arrow Keys.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 64ea42d1681ff3a43927c149f8da842b, type: 2}
-  m_sharedMaterial: {fileID: -750838846202380595, guid: 64ea42d1681ff3a43927c149f8da842b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4af48c79e13572b44a7dbc75ecd02406, type: 2}
+  m_sharedMaterial: {fileID: 8008666951490463692, guid: 4af48c79e13572b44a7dbc75ecd02406, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4908,19 +4908,19 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 40
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -5194,8 +5194,8 @@ MonoBehaviour:
   m_text: Hitting <color="green">GREEN</color> things makes you <color="green">EARN</color>
     points!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 64ea42d1681ff3a43927c149f8da842b, type: 2}
-  m_sharedMaterial: {fileID: -750838846202380595, guid: 64ea42d1681ff3a43927c149f8da842b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4af48c79e13572b44a7dbc75ecd02406, type: 2}
+  m_sharedMaterial: {fileID: 8008666951490463692, guid: 4af48c79e13572b44a7dbc75ecd02406, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5219,19 +5219,19 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 40
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -7746,11 +7746,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hitting <color="yellow">YELLOW</color> makes you <color="yellow">LOSE</color>
+  m_text: Hitting <color="yellow">YELLOW</color> things makes you <color="yellow">LOSE</color>
     points!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 64ea42d1681ff3a43927c149f8da842b, type: 2}
-  m_sharedMaterial: {fileID: -750838846202380595, guid: 64ea42d1681ff3a43927c149f8da842b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4af48c79e13572b44a7dbc75ecd02406, type: 2}
+  m_sharedMaterial: {fileID: 8008666951490463692, guid: 4af48c79e13572b44a7dbc75ecd02406, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7774,19 +7774,19 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 40
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
